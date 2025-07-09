@@ -1,0 +1,6078 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[    191128,       6070]
+NotebookOptionsPosition[    182269,       5905]
+NotebookOutlinePosition[    182710,       5922]
+CellTagsIndexPosition[    182667,       5919]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell["Run in same Kernel after Perturbative-Bondi-Sachs-Gauge.nb", "Text",
+ CellChangeTimes->{{3.96104667497425*^9, 3.961046692917137*^9}, 
+   3.961046789740199*^9},ExpressionUUID->"2ff77ce8-be8d-4dcf-9ad4-\
+daccc80aae67"],
+
+Cell[CellGroupData[{
+
+Cell["\<\
+Non asymptotically flat gauge vector like the BMS gauge vector\
+\>", "Subsection",
+ CellChangeTimes->{{3.9505883788698273`*^9, 
+  3.950588415474285*^9}},ExpressionUUID->"8b35dc37-866b-4136-9260-\
+bf3ed784864e"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  InterpretationBox[
+   StyleBox[GridBox[{
+      {"h", 
+       StyleBox[GridBox[{
+          {"1", " ", " "},
+          {" ", 
+           StyleBox["1",
+            FontColor->RGBColor[0., 1., 0.]], 
+           StyleBox["1",
+            FontColor->RGBColor[0., 1., 0.]]}
+         },
+         GridBoxSpacings->{"Columns" -> {
+             Offset[0.], {
+              Offset[0.034999999999999996`]}, 
+             Offset[0.]}, "Rows" -> {{
+              Offset[0.]}}}],
+        FontSize->Rational[39, 4]]}
+     },
+     GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+     GridBoxSpacings->{"Columns" -> {
+         Offset[0.27999999999999997`], {
+          Offset[0.034999999999999996`]}, 
+         Offset[0.27999999999999997`]}, "Rows" -> {
+         Offset[0.2], {
+          Offset[0.4]}, 
+         Offset[0.2]}}],
+    ShowAutoStyles->False,
+    AutoSpacing->False],
+   $CellContext`hgeneric[
+    xAct`xTensor`LI[1], {1, -$CellContext`BS}, {1, -$CellContext`BS}],
+   Editable->False], "//", "InputForm"}]], "Input",
+ CellChangeTimes->{{3.950588518493163*^9, 3.95058852037036*^9}},
+ CellLabel->
+  "In[408]:=",ExpressionUUID->"eda0d268-af48-4456-aa57-1cb38928c2af"],
+
+Cell["hgeneric[LI[1], {1, -BS}, {1, -BS}]", "Output",
+ CellChangeTimes->{3.9505885223444586`*^9, 3.960527297873001*^9},
+ CellLabel->
+  "Out[408]//InputForm=",ExpressionUUID->"b5f962b6-d789-4572-a43c-\
+90eb5de96604"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"X0ruleBMS", "=", 
+  RowBox[{"X0rule", "/.", 
+   RowBox[{
+    RowBox[{"hgeneric", "[", 
+     RowBox[{
+      RowBox[{"LI", "[", "A_", "]"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"B_", ",", 
+        RowBox[{"-", "BS"}]}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"C_", ",", 
+        RowBox[{"-", "BS"}]}], "}"}]}], "]"}], ":>", "0"}]}]}]], "Input",
+ CellChangeTimes->{{3.9505885257197733`*^9, 3.9505885462840652`*^9}, {
+  3.9505886173909063`*^9, 3.9505886209454904`*^9}},
+ CellLabel->
+  "In[409]:=",ExpressionUUID->"b8bfc90f-1fa0-4103-ac8d-86b8c1214707"],
+
+Cell[BoxData[
+ RowBox[{
+  InterpretationBox[
+   StyleBox[GridBox[{
+      {"\[Xi]", 
+       StyleBox[GridBox[{
+          {
+           StyleBox["0",
+            FontColor->RGBColor[0., 1., 0.]]},
+          {" "}
+         },
+         GridBoxSpacings->{"Columns" -> {
+             Offset[0.], {
+              Offset[0.034999999999999996`]}, 
+             Offset[0.]}, "Rows" -> {{
+              Offset[0.]}}}],
+        FontSize->Rational[39, 4]]}
+     },
+     GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+     GridBoxSpacings->{"Columns" -> {
+         Offset[0.27999999999999997`], {
+          Offset[0.034999999999999996`]}, 
+         Offset[0.27999999999999997`]}, "Rows" -> {
+         Offset[0.2], {
+          Offset[0.4]}, 
+         Offset[0.2]}}],
+    ShowAutoStyles->False,
+    AutoSpacing->False],
+   $CellContext`X[{0, $CellContext`BS}],
+   Editable->False], "\[Rule]", 
+  InterpretationBox[
+   StyleBox[
+    SubsuperscriptBox["\[Xi]", "\[SmallCircle]", "u"],
+    ShowAutoStyles->False,
+    AutoSpacing->False],
+   $CellContext`xiucirc[],
+   Editable->False]}]], "Output",
+ CellChangeTimes->{{3.9505885043949165`*^9, 3.9505885116065254`*^9}, 
+   3.9505885469103823`*^9, 3.950588621569874*^9, 3.9605272980110817`*^9},
+ CellLabel->
+  "Out[409]=",ExpressionUUID->"66336f91-2ffe-4b15-aa35-0c8c5e4f5583"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"X1ruleBMS", "=", 
+  RowBox[{"X1rule", "/.", 
+   RowBox[{
+    RowBox[{"hgeneric", "[", 
+     RowBox[{
+      RowBox[{"LI", "[", "A_", "]"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"B_", ",", 
+        RowBox[{"-", "BS"}]}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"C_", ",", 
+        RowBox[{"-", "BS"}]}], "}"}]}], "]"}], ":>", "0"}]}]}]], "Input",
+ CellChangeTimes->{{3.9505885523025165`*^9, 3.9505885542703676`*^9}, {
+  3.950588625788702*^9, 3.9505886289280205`*^9}},
+ CellLabel->
+  "In[410]:=",ExpressionUUID->"97af68ca-5dc5-443f-98f8-bd248a26138a"],
+
+Cell[BoxData[
+ RowBox[{
+  InterpretationBox[
+   StyleBox[GridBox[{
+      {"\[Xi]", 
+       StyleBox[GridBox[{
+          {
+           StyleBox["1",
+            FontColor->RGBColor[0., 1., 0.]]},
+          {" "}
+         },
+         GridBoxSpacings->{"Columns" -> {
+             Offset[0.], {
+              Offset[0.034999999999999996`]}, 
+             Offset[0.]}, "Rows" -> {{
+              Offset[0.]}}}],
+        FontSize->Rational[39, 4]]}
+     },
+     GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+     GridBoxSpacings->{"Columns" -> {
+         Offset[0.27999999999999997`], {
+          Offset[0.034999999999999996`]}, 
+         Offset[0.27999999999999997`]}, "Rows" -> {
+         Offset[0.2], {
+          Offset[0.4]}, 
+         Offset[0.2]}}],
+    ShowAutoStyles->False,
+    AutoSpacing->False],
+   $CellContext`X[{1, $CellContext`BS}],
+   Editable->False], "\[Rule]", 
+  InterpretationBox[
+   RowBox[{
+    RowBox[{
+     FractionBox["1", "2"], " ", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"-", 
+         RowBox[{
+          InterpretationBox[
+           StyleBox["Cot",
+            ShowAutoStyles->False,
+            AutoSpacing->False],
+           Cot,
+           Editable->False], "[", 
+          InterpretationBox[
+           StyleBox[
+            OverscriptBox["\[Theta]", "^"],
+            ShowAutoStyles->False,
+            AutoSpacing->False],
+           $CellContext`\[Theta]BS[],
+           Editable->False], "]"}]}], " ", 
+        InterpretationBox[
+         StyleBox[
+          SubsuperscriptBox["\[Xi]", "\[SmallCircle]", "\[Theta]"],
+          ShowAutoStyles->False,
+          AutoSpacing->False],
+         $CellContext`xitcirc[],
+         Editable->False]}], "-", 
+       InterpretationBox[
+        StyleBox[
+         RowBox[{
+          SubscriptBox["\[PartialD]", 
+           StyleBox["2",
+            FontColor->RGBColor[0., 1., 0.]]], 
+          SubsuperscriptBox["\[Xi]", "\[SmallCircle]", "\[Theta]"]}],
+         ShowAutoStyles->False,
+         AutoSpacing->False],
+        xAct`xTensor`PD[{2, -$CellContext`BS}][
+         $CellContext`xitcirc[]],
+        Editable->False], "-", 
+       InterpretationBox[
+        StyleBox[
+         RowBox[{
+          SubscriptBox["\[PartialD]", 
+           StyleBox["3",
+            FontColor->RGBColor[0., 1., 0.]]], 
+          SubsuperscriptBox["\[Xi]", "\[SmallCircle]", "\[Phi]"]}],
+         ShowAutoStyles->False,
+         AutoSpacing->False],
+        xAct`xTensor`PD[{3, -$CellContext`BS}][
+         $CellContext`xipcirc[]],
+        Editable->False]}], ")"}], " ", 
+     InterpretationBox[
+      StyleBox[
+       OverscriptBox["r", "^"],
+       ShowAutoStyles->False,
+       AutoSpacing->False],
+      $CellContext`rBS[],
+      Editable->False]}], "+", 
+    RowBox[{
+     FractionBox["1", "4"], " ", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"2", " ", 
+        RowBox[{
+         InterpretationBox[
+          StyleBox["Cot",
+           ShowAutoStyles->False,
+           AutoSpacing->False],
+          Cot,
+          Editable->False], "[", 
+         InterpretationBox[
+          StyleBox[
+           OverscriptBox["\[Theta]", "^"],
+           ShowAutoStyles->False,
+           AutoSpacing->False],
+          $CellContext`\[Theta]BS[],
+          Editable->False], "]"}], " ", 
+        InterpretationBox[
+         StyleBox[
+          RowBox[{
+           SubscriptBox["\[PartialD]", 
+            StyleBox["2",
+             FontColor->RGBColor[0., 1., 0.]]], 
+           SubsuperscriptBox["\[Xi]", "\[SmallCircle]", "u"]}],
+          ShowAutoStyles->False,
+          AutoSpacing->False],
+         xAct`xTensor`PD[{2, -$CellContext`BS}][
+          $CellContext`xiucirc[]],
+         Editable->False]}], "+", 
+       RowBox[{"2", " ", 
+        InterpretationBox[
+         StyleBox[
+          RowBox[{
+           SubscriptBox["\[PartialD]", 
+            StyleBox["2",
+             FontColor->RGBColor[0., 1., 0.]]], 
+           SubscriptBox["\[PartialD]", 
+            StyleBox["2",
+             FontColor->RGBColor[0., 1., 0.]]], 
+           SubsuperscriptBox["\[Xi]", "\[SmallCircle]", "u"]}],
+          ShowAutoStyles->False,
+          AutoSpacing->False],
+         xAct`xTensor`PD[{2, -$CellContext`BS}][
+          xAct`xTensor`PD[{2, -$CellContext`BS}][
+           $CellContext`xiucirc[]]],
+         Editable->False]}], "+", 
+       RowBox[{"2", " ", 
+        SuperscriptBox[
+         RowBox[{
+          InterpretationBox[
+           StyleBox["Csc",
+            ShowAutoStyles->False,
+            AutoSpacing->False],
+           Csc,
+           Editable->False], "[", 
+          InterpretationBox[
+           StyleBox[
+            OverscriptBox["\[Theta]", "^"],
+            ShowAutoStyles->False,
+            AutoSpacing->False],
+           $CellContext`\[Theta]BS[],
+           Editable->False], "]"}], "2"], " ", 
+        InterpretationBox[
+         StyleBox[
+          RowBox[{
+           SubscriptBox["\[PartialD]", 
+            StyleBox["3",
+             FontColor->RGBColor[0., 1., 0.]]], 
+           SubscriptBox["\[PartialD]", 
+            StyleBox["3",
+             FontColor->RGBColor[0., 1., 0.]]], 
+           SubsuperscriptBox["\[Xi]", "\[SmallCircle]", "u"]}],
+          ShowAutoStyles->False,
+          AutoSpacing->False],
+         xAct`xTensor`PD[{3, -$CellContext`BS}][
+          xAct`xTensor`PD[{3, -$CellContext`BS}][
+           $CellContext`xiucirc[]]],
+         Editable->False]}]}], ")"}]}], "+", 
+    FractionBox[
+     RowBox[{
+      RowBox[{
+       RowBox[{"-", "3"}], " ", 
+       SuperscriptBox[
+        InterpretationBox[
+         StyleBox["A",
+          ShowAutoStyles->False,
+          AutoSpacing->False],
+         $CellContext`A,
+         Editable->False], "2"], " ", 
+       InterpretationBox[
+        StyleBox["M",
+         ShowAutoStyles->False,
+         AutoSpacing->False],
+        $CellContext`M,
+        Editable->False], " ", 
+       RowBox[{
+        InterpretationBox[
+         StyleBox["Cos",
+          ShowAutoStyles->False,
+          AutoSpacing->False],
+         Cos,
+         Editable->False], "[", 
+        InterpretationBox[
+         StyleBox[
+          OverscriptBox["\[Theta]", "^"],
+          ShowAutoStyles->False,
+          AutoSpacing->False],
+         $CellContext`\[Theta]BS[],
+         Editable->False], "]"}], " ", 
+       RowBox[{
+        InterpretationBox[
+         StyleBox["Sin",
+          ShowAutoStyles->False,
+          AutoSpacing->False],
+         Sin,
+         Editable->False], "[", 
+        InterpretationBox[
+         StyleBox[
+          OverscriptBox["\[Theta]", "^"],
+          ShowAutoStyles->False,
+          AutoSpacing->False],
+         $CellContext`\[Theta]BS[],
+         Editable->False], "]"}], " ", 
+       InterpretationBox[
+        StyleBox[
+         SubsuperscriptBox["\[Xi]", "\[SmallCircle]", "\[Theta]"],
+         ShowAutoStyles->False,
+         AutoSpacing->False],
+        $CellContext`xitcirc[],
+        Editable->False]}], "+", 
+      RowBox[{"3", " ", 
+       SuperscriptBox[
+        InterpretationBox[
+         StyleBox["A",
+          ShowAutoStyles->False,
+          AutoSpacing->False],
+         $CellContext`A,
+         Editable->False], "2"], " ", 
+       InterpretationBox[
+        StyleBox["M",
+         ShowAutoStyles->False,
+         AutoSpacing->False],
+        $CellContext`M,
+        Editable->False], " ", 
+       SuperscriptBox[
+        RowBox[{
+         InterpretationBox[
+          StyleBox["Sin",
+           ShowAutoStyles->False,
+           AutoSpacing->False],
+          Sin,
+          Editable->False], "[", 
+         InterpretationBox[
+          StyleBox[
+           OverscriptBox["\[Theta]", "^"],
+           ShowAutoStyles->False,
+           AutoSpacing->False],
+          $CellContext`\[Theta]BS[],
+          Editable->False], "]"}], "2"], " ", 
+       InterpretationBox[
+        StyleBox[
+         RowBox[{
+          SubscriptBox["\[PartialD]", 
+           StyleBox["2",
+            FontColor->RGBColor[0., 1., 0.]]], 
+          SubsuperscriptBox["\[Xi]", "\[SmallCircle]", "\[Theta]"]}],
+         ShowAutoStyles->False,
+         AutoSpacing->False],
+        xAct`xTensor`PD[{2, -$CellContext`BS}][
+         $CellContext`xitcirc[]],
+        Editable->False]}], "-", 
+      RowBox[{"3", " ", 
+       SuperscriptBox[
+        InterpretationBox[
+         StyleBox["A",
+          ShowAutoStyles->False,
+          AutoSpacing->False],
+         $CellContext`A,
+         Editable->False], "2"], " ", 
+       InterpretationBox[
+        StyleBox["M",
+         ShowAutoStyles->False,
+         AutoSpacing->False],
+        $CellContext`M,
+        Editable->False], " ", 
+       SuperscriptBox[
+        RowBox[{
+         InterpretationBox[
+          StyleBox["Sin",
+           ShowAutoStyles->False,
+           AutoSpacing->False],
+          Sin,
+          Editable->False], "[", 
+         InterpretationBox[
+          StyleBox[
+           OverscriptBox["\[Theta]", "^"],
+           ShowAutoStyles->False,
+           AutoSpacing->False],
+          $CellContext`\[Theta]BS[],
+          Editable->False], "]"}], "2"], " ", 
+       InterpretationBox[
+        StyleBox[
+         RowBox[{
+          SubscriptBox["\[PartialD]", 
+           StyleBox["3",
+            FontColor->RGBColor[0., 1., 0.]]], 
+          SubsuperscriptBox["\[Xi]", "\[SmallCircle]", "\[Phi]"]}],
+         ShowAutoStyles->False,
+         AutoSpacing->False],
+        xAct`xTensor`PD[{3, -$CellContext`BS}][
+         $CellContext`xipcirc[]],
+        Editable->False]}], "+", 
+      RowBox[{"6", " ", 
+       InterpretationBox[
+        StyleBox["A",
+         ShowAutoStyles->False,
+         AutoSpacing->False],
+        $CellContext`A,
+        Editable->False], " ", 
+       InterpretationBox[
+        StyleBox["M",
+         ShowAutoStyles->False,
+         AutoSpacing->False],
+        $CellContext`M,
+        Editable->False], " ", 
+       InterpretationBox[
+        StyleBox[
+         RowBox[{
+          SubscriptBox["\[PartialD]", 
+           StyleBox["3",
+            FontColor->RGBColor[0., 1., 0.]]], 
+          SubsuperscriptBox["\[Xi]", "\[SmallCircle]", "u"]}],
+         ShowAutoStyles->False,
+         AutoSpacing->False],
+        xAct`xTensor`PD[{3, -$CellContext`BS}][
+         $CellContext`xiucirc[]],
+        Editable->False]}]}], 
+     RowBox[{"6", " ", 
+      SuperscriptBox[
+       InterpretationBox[
+        StyleBox[
+         OverscriptBox["r", "^"],
+         ShowAutoStyles->False,
+         AutoSpacing->False],
+        $CellContext`rBS[],
+        Editable->False], "2"]}]], "+", 
+    InterpretationBox[
+     SuperscriptBox[
+      RowBox[{"O", "[", 
+       FractionBox["1", 
+        InterpretationBox[
+         StyleBox[
+          OverscriptBox["r", "^"],
+          ShowAutoStyles->False,
+          AutoSpacing->False],
+         $CellContext`rBS[],
+         Editable->False]], "]"}], "3"],
+     SeriesData[
+      $CellContext`rBS[], 
+      DirectedInfinity[1], {}, -1, 3, 1],
+     Editable->False]}],
+   SeriesData[
+    $CellContext`rBS[], 
+    DirectedInfinity[1], {Rational[1, 2] (-Cot[
+         $CellContext`\[Theta]BS[]] $CellContext`xitcirc[] - 
+      xAct`xTensor`PD[{2, -$CellContext`BS}][
+       $CellContext`xitcirc[]] - xAct`xTensor`PD[{3, -$CellContext`BS}][
+       $CellContext`xipcirc[]]), Rational[1, 4] (2 Cot[
+         $CellContext`\[Theta]BS[]] xAct`xTensor`PD[{2, -$CellContext`BS}][
+         $CellContext`xiucirc[]] + 2 xAct`xTensor`PD[{2, -$CellContext`BS}][
+         xAct`xTensor`PD[{2, -$CellContext`BS}][
+          $CellContext`xiucirc[]]] + 2 Csc[
+          $CellContext`\[Theta]BS[]]^2 xAct`xTensor`PD[{3, -$CellContext`BS}][
+         xAct`xTensor`PD[{3, -$CellContext`BS}][
+          $CellContext`xiucirc[]]]), 0, 
+     Rational[1, 6] ((-3) $CellContext`A^2 $CellContext`M Cos[
+         $CellContext`\[Theta]BS[]] Sin[
+         $CellContext`\[Theta]BS[]] $CellContext`xitcirc[] + 
+      3 $CellContext`A^2 $CellContext`M Sin[
+          $CellContext`\[Theta]BS[]]^2 xAct`xTensor`PD[{2, -$CellContext`BS}][
+         $CellContext`xitcirc[]] - 3 $CellContext`A^2 $CellContext`M Sin[
+         $CellContext`\[Theta]BS[]]^2 xAct`xTensor`PD[{3, -$CellContext`BS}][
+        $CellContext`xipcirc[]] + 
+      6 $CellContext`A $CellContext`M xAct`xTensor`PD[{3, -$CellContext`BS}][
+         $CellContext`xiucirc[]])}, -1, 3, 1],
+   Editable->False]}]], "Output",
+ CellChangeTimes->{3.950588555258416*^9, 3.950588629518097*^9, 
+  3.960527298085329*^9},
+ CellLabel->
+  "Out[410]=",ExpressionUUID->"6b6d1c74-d460-4cb4-82f0-7f017b5b571c"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"X2ruleBMS", "=", 
+  RowBox[{"X2rule", "/.", 
+   RowBox[{
+    RowBox[{"hgeneric", "[", 
+     RowBox[{
+      RowBox[{"LI", "[", "A_", "]"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"B_", ",", 
+        RowBox[{"-", "BS"}]}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"C_", ",", 
+        RowBox[{"-", "BS"}]}], "}"}]}], "]"}], ":>", "0"}]}]}]], "Input",
+ CellChangeTimes->{
+  3.9505885607479734`*^9, {3.950588632243695*^9, 3.95058863507935*^9}},
+ CellLabel->
+  "In[411]:=",ExpressionUUID->"2b4327b2-c83a-4624-9169-8d979e521786"],
+
+Cell[BoxData[
+ RowBox[{
+  InterpretationBox[
+   StyleBox[GridBox[{
+      {"\[Xi]", 
+       StyleBox[GridBox[{
+          {
+           StyleBox["2",
+            FontColor->RGBColor[0., 1., 0.]]},
+          {" "}
+         },
+         GridBoxSpacings->{"Columns" -> {
+             Offset[0.], {
+              Offset[0.034999999999999996`]}, 
+             Offset[0.]}, "Rows" -> {{
+              Offset[0.]}}}],
+        FontSize->Rational[39, 4]]}
+     },
+     GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+     GridBoxSpacings->{"Columns" -> {
+         Offset[0.27999999999999997`], {
+          Offset[0.034999999999999996`]}, 
+         Offset[0.27999999999999997`]}, "Rows" -> {
+         Offset[0.2], {
+          Offset[0.4]}, 
+         Offset[0.2]}}],
+    ShowAutoStyles->False,
+    AutoSpacing->False],
+   $CellContext`X[{2, $CellContext`BS}],
+   Editable->False], "\[Rule]", 
+  InterpretationBox[
+   RowBox[{
+    InterpretationBox[
+     StyleBox[
+      SubsuperscriptBox["\[Xi]", "\[SmallCircle]", "\[Theta]"],
+      ShowAutoStyles->False,
+      AutoSpacing->False],
+     $CellContext`xitcirc[],
+     Editable->False], "-", 
+    FractionBox[
+     InterpretationBox[
+      StyleBox[
+       RowBox[{
+        SubscriptBox["\[PartialD]", 
+         StyleBox["2",
+          FontColor->RGBColor[0., 1., 0.]]], 
+        SubsuperscriptBox["\[Xi]", "\[SmallCircle]", "u"]}],
+       ShowAutoStyles->False,
+       AutoSpacing->False],
+      xAct`xTensor`PD[{2, -$CellContext`BS}][
+       $CellContext`xiucirc[]],
+      Editable->False], 
+     InterpretationBox[
+      StyleBox[
+       OverscriptBox["r", "^"],
+       ShowAutoStyles->False,
+       AutoSpacing->False],
+      $CellContext`rBS[],
+      Editable->False]], "-", 
+    FractionBox[
+     RowBox[{
+      SuperscriptBox[
+       InterpretationBox[
+        StyleBox["A",
+         ShowAutoStyles->False,
+         AutoSpacing->False],
+        $CellContext`A,
+        Editable->False], "2"], " ", 
+      InterpretationBox[
+       StyleBox["M",
+        ShowAutoStyles->False,
+        AutoSpacing->False],
+       $CellContext`M,
+       Editable->False], " ", 
+      SuperscriptBox[
+       RowBox[{
+        InterpretationBox[
+         StyleBox["Sin",
+          ShowAutoStyles->False,
+          AutoSpacing->False],
+         Sin,
+         Editable->False], "[", 
+        InterpretationBox[
+         StyleBox[
+          OverscriptBox["\[Theta]", "^"],
+          ShowAutoStyles->False,
+          AutoSpacing->False],
+         $CellContext`\[Theta]BS[],
+         Editable->False], "]"}], "2"], " ", 
+      InterpretationBox[
+       StyleBox[
+        RowBox[{
+         SubscriptBox["\[PartialD]", 
+          StyleBox["2",
+           FontColor->RGBColor[0., 1., 0.]]], 
+         SubsuperscriptBox["\[Xi]", "\[SmallCircle]", "u"]}],
+        ShowAutoStyles->False,
+        AutoSpacing->False],
+       xAct`xTensor`PD[{2, -$CellContext`BS}][
+        $CellContext`xiucirc[]],
+       Editable->False]}], 
+     RowBox[{"4", " ", 
+      SuperscriptBox[
+       InterpretationBox[
+        StyleBox[
+         OverscriptBox["r", "^"],
+         ShowAutoStyles->False,
+         AutoSpacing->False],
+        $CellContext`rBS[],
+        Editable->False], "4"]}]], "+", 
+    InterpretationBox[
+     SuperscriptBox[
+      RowBox[{"O", "[", 
+       FractionBox["1", 
+        InterpretationBox[
+         StyleBox[
+          OverscriptBox["r", "^"],
+          ShowAutoStyles->False,
+          AutoSpacing->False],
+         $CellContext`rBS[],
+         Editable->False]], "]"}], "6"],
+     SeriesData[
+      $CellContext`rBS[], 
+      DirectedInfinity[1], {}, 0, 6, 1],
+     Editable->False]}],
+   SeriesData[
+    $CellContext`rBS[], 
+    DirectedInfinity[1], {
+     $CellContext`xitcirc[], -xAct`xTensor`PD[{2, -$CellContext`BS}][
+       $CellContext`xiucirc[]], 0, 0, 
+     Rational[-1, 4] $CellContext`A^2 $CellContext`M Sin[
+        $CellContext`\[Theta]BS[]]^2 xAct`xTensor`PD[{2, -$CellContext`BS}][
+       $CellContext`xiucirc[]]}, 0, 6, 1],
+   Editable->False]}]], "Output",
+ CellChangeTimes->{3.9505885620386295`*^9, 3.9505886359369535`*^9, 
+  3.9605272981735106`*^9},
+ CellLabel->
+  "Out[411]=",ExpressionUUID->"ba830947-17b8-4156-8a83-06750c8ae9eb"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"X3ruleBMS", "=", 
+  RowBox[{"X3rule", "/.", 
+   RowBox[{
+    RowBox[{"hgeneric", "[", 
+     RowBox[{
+      RowBox[{"LI", "[", "A_", "]"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"B_", ",", 
+        RowBox[{"-", "BS"}]}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"C_", ",", 
+        RowBox[{"-", "BS"}]}], "}"}]}], "]"}], ":>", "0"}]}]}]], "Input",
+ CellChangeTimes->{
+  3.95058856650924*^9, {3.950588638765778*^9, 3.9505886479561095`*^9}},
+ CellLabel->
+  "In[412]:=",ExpressionUUID->"1b936853-dd51-44b3-97c6-47a518fcd81c"],
+
+Cell[BoxData[
+ RowBox[{
+  InterpretationBox[
+   StyleBox[GridBox[{
+      {"\[Xi]", 
+       StyleBox[GridBox[{
+          {
+           StyleBox["3",
+            FontColor->RGBColor[0., 1., 0.]]},
+          {" "}
+         },
+         GridBoxSpacings->{"Columns" -> {
+             Offset[0.], {
+              Offset[0.034999999999999996`]}, 
+             Offset[0.]}, "Rows" -> {{
+              Offset[0.]}}}],
+        FontSize->Rational[39, 4]]}
+     },
+     GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Center}}},
+     GridBoxSpacings->{"Columns" -> {
+         Offset[0.27999999999999997`], {
+          Offset[0.034999999999999996`]}, 
+         Offset[0.27999999999999997`]}, "Rows" -> {
+         Offset[0.2], {
+          Offset[0.4]}, 
+         Offset[0.2]}}],
+    ShowAutoStyles->False,
+    AutoSpacing->False],
+   $CellContext`X[{3, $CellContext`BS}],
+   Editable->False], "\[Rule]", 
+  InterpretationBox[
+   RowBox[{
+    InterpretationBox[
+     StyleBox[
+      SubsuperscriptBox["\[Xi]", "\[SmallCircle]", "\[Phi]"],
+      ShowAutoStyles->False,
+      AutoSpacing->False],
+     $CellContext`xipcirc[],
+     Editable->False], "-", 
+    FractionBox[
+     RowBox[{
+      SuperscriptBox[
+       RowBox[{
+        InterpretationBox[
+         StyleBox["Csc",
+          ShowAutoStyles->False,
+          AutoSpacing->False],
+         Csc,
+         Editable->False], "[", 
+        InterpretationBox[
+         StyleBox[
+          OverscriptBox["\[Theta]", "^"],
+          ShowAutoStyles->False,
+          AutoSpacing->False],
+         $CellContext`\[Theta]BS[],
+         Editable->False], "]"}], "2"], " ", 
+      InterpretationBox[
+       StyleBox[
+        RowBox[{
+         SubscriptBox["\[PartialD]", 
+          StyleBox["3",
+           FontColor->RGBColor[0., 1., 0.]]], 
+         SubsuperscriptBox["\[Xi]", "\[SmallCircle]", "u"]}],
+        ShowAutoStyles->False,
+        AutoSpacing->False],
+       xAct`xTensor`PD[{3, -$CellContext`BS}][
+        $CellContext`xiucirc[]],
+       Editable->False]}], 
+     InterpretationBox[
+      StyleBox[
+       OverscriptBox["r", "^"],
+       ShowAutoStyles->False,
+       AutoSpacing->False],
+      $CellContext`rBS[],
+      Editable->False]], "+", 
+    FractionBox[
+     RowBox[{
+      SuperscriptBox[
+       InterpretationBox[
+        StyleBox["A",
+         ShowAutoStyles->False,
+         AutoSpacing->False],
+        $CellContext`A,
+        Editable->False], "2"], " ", 
+      InterpretationBox[
+       StyleBox["M",
+        ShowAutoStyles->False,
+        AutoSpacing->False],
+       $CellContext`M,
+       Editable->False], " ", 
+      InterpretationBox[
+       StyleBox[
+        RowBox[{
+         SubscriptBox["\[PartialD]", 
+          StyleBox["3",
+           FontColor->RGBColor[0., 1., 0.]]], 
+         SubsuperscriptBox["\[Xi]", "\[SmallCircle]", "u"]}],
+        ShowAutoStyles->False,
+        AutoSpacing->False],
+       xAct`xTensor`PD[{3, -$CellContext`BS}][
+        $CellContext`xiucirc[]],
+       Editable->False]}], 
+     RowBox[{"4", " ", 
+      SuperscriptBox[
+       InterpretationBox[
+        StyleBox[
+         OverscriptBox["r", "^"],
+         ShowAutoStyles->False,
+         AutoSpacing->False],
+        $CellContext`rBS[],
+        Editable->False], "4"]}]], "+", 
+    InterpretationBox[
+     SuperscriptBox[
+      RowBox[{"O", "[", 
+       FractionBox["1", 
+        InterpretationBox[
+         StyleBox[
+          OverscriptBox["r", "^"],
+          ShowAutoStyles->False,
+          AutoSpacing->False],
+         $CellContext`rBS[],
+         Editable->False]], "]"}], "6"],
+     SeriesData[
+      $CellContext`rBS[], 
+      DirectedInfinity[1], {}, 0, 6, 1],
+     Editable->False]}],
+   SeriesData[
+    $CellContext`rBS[], 
+    DirectedInfinity[1], {
+     $CellContext`xipcirc[], -Csc[
+        $CellContext`\[Theta]BS[]]^2 xAct`xTensor`PD[{3, -$CellContext`BS}][
+       $CellContext`xiucirc[]], 0, 0, 
+     Rational[1, 4] $CellContext`A^2 $CellContext`M 
+     xAct`xTensor`PD[{3, -$CellContext`BS}][
+       $CellContext`xiucirc[]]}, 0, 6, 1],
+   Editable->False]}]], "Output",
+ CellChangeTimes->{3.9505886485098*^9, 3.960527298232574*^9},
+ CellLabel->
+  "Out[412]=",ExpressionUUID->"657ef774-9787-4487-bc35-54b4e7d44a31"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Test flatness of components with generic circ vector", "Subsection",
+ CellChangeTimes->{{3.9605273939390383`*^9, 
+  3.960527432173797*^9}},ExpressionUUID->"07abccf3-85d0-4469-94de-\
+e89fb7edb97c"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{
+    RowBox[{
+     RowBox[{
+      RowBox[{"GaugeTransformBSCoords", "[", 
+       RowBox[{"[", 
+        RowBox[{"1", ",", "1"}], "]"}], "]"}], "//.", "X0ruleBMS"}], "//.", 
+     "X3ruleBMS"}], "//.", "X2ruleBMS"}], "//.", "X1ruleBMS"}], "/.", 
+  "RDerivativeRule"}]], "Input",
+ CellChangeTimes->{{3.9605274396359105`*^9, 3.960527442537951*^9}},
+ CellLabel->
+  "In[446]:=",ExpressionUUID->"9424e90e-902a-4ea5-b474-dd692dfd0e93"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   RowBox[{
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{
+       RowBox[{
+        InterpretationBox[
+         StyleBox["Cot",
+          ShowAutoStyles->False,
+          AutoSpacing->False],
+         Cot,
+         Editable->False], "[", 
+        InterpretationBox[
+         StyleBox[
+          OverscriptBox["\[Theta]", "^"],
+          ShowAutoStyles->False,
+          AutoSpacing->False],
+         $CellContext`\[Theta]BS[],
+         Editable->False], "]"}], " ", 
+       InterpretationBox[
+        StyleBox[
+         RowBox[{
+          SubscriptBox["\[PartialD]", 
+           StyleBox["0",
+            FontColor->RGBColor[0., 1., 0.]]], 
+          SubsuperscriptBox["\[Xi]", "\[SmallCircle]", "\[Theta]"]}],
+         ShowAutoStyles->False,
+         AutoSpacing->False],
+        xAct`xTensor`PD[{0, -$CellContext`BS}][
+         $CellContext`xitcirc[]],
+        Editable->False]}], "+", 
+      InterpretationBox[
+       StyleBox[
+        RowBox[{
+         SubscriptBox["\[PartialD]", 
+          StyleBox["0",
+           FontColor->RGBColor[0., 1., 0.]]], 
+         SubscriptBox["\[PartialD]", 
+          StyleBox["2",
+           FontColor->RGBColor[0., 1., 0.]]], 
+         SubsuperscriptBox["\[Xi]", "\[SmallCircle]", "\[Theta]"]}],
+        ShowAutoStyles->False,
+        AutoSpacing->False],
+       xAct`xTensor`PD[{0, -$CellContext`BS}][
+        xAct`xTensor`PD[{2, -$CellContext`BS}][
+         $CellContext`xitcirc[]]],
+       Editable->False], "+", 
+      InterpretationBox[
+       StyleBox[
+        RowBox[{
+         SubscriptBox["\[PartialD]", 
+          StyleBox["0",
+           FontColor->RGBColor[0., 1., 0.]]], 
+         SubscriptBox["\[PartialD]", 
+          StyleBox["3",
+           FontColor->RGBColor[0., 1., 0.]]], 
+         SubsuperscriptBox["\[Xi]", "\[SmallCircle]", "\[Phi]"]}],
+        ShowAutoStyles->False,
+        AutoSpacing->False],
+       xAct`xTensor`PD[{0, -$CellContext`BS}][
+        xAct`xTensor`PD[{3, -$CellContext`BS}][
+         $CellContext`xipcirc[]]],
+       Editable->False]}], ")"}], " ", 
+    InterpretationBox[
+     StyleBox[
+      OverscriptBox["r", "^"],
+      ShowAutoStyles->False,
+      AutoSpacing->False],
+     $CellContext`rBS[],
+     Editable->False]}], "+", 
+   RowBox[{"(", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"-", "2"}], " ", 
+      InterpretationBox[
+       StyleBox[
+        RowBox[{
+         SubscriptBox["\[PartialD]", 
+          StyleBox["0",
+           FontColor->RGBColor[0., 1., 0.]]], 
+         SubsuperscriptBox["\[Xi]", "\[SmallCircle]", "u"]}],
+        ShowAutoStyles->False,
+        AutoSpacing->False],
+       xAct`xTensor`PD[{0, -$CellContext`BS}][
+        $CellContext`xiucirc[]],
+       Editable->False]}], "-", 
+     RowBox[{
+      RowBox[{
+       InterpretationBox[
+        StyleBox["Cot",
+         ShowAutoStyles->False,
+         AutoSpacing->False],
+        Cot,
+        Editable->False], "[", 
+       InterpretationBox[
+        StyleBox[
+         OverscriptBox["\[Theta]", "^"],
+         ShowAutoStyles->False,
+         AutoSpacing->False],
+        $CellContext`\[Theta]BS[],
+        Editable->False], "]"}], " ", 
+      InterpretationBox[
+       StyleBox[
+        RowBox[{
+         SubscriptBox["\[PartialD]", 
+          StyleBox["0",
+           FontColor->RGBColor[0., 1., 0.]]], 
+         SubscriptBox["\[PartialD]", 
+          StyleBox["2",
+           FontColor->RGBColor[0., 1., 0.]]], 
+         SubsuperscriptBox["\[Xi]", "\[SmallCircle]", "u"]}],
+        ShowAutoStyles->False,
+        AutoSpacing->False],
+       xAct`xTensor`PD[{0, -$CellContext`BS}][
+        xAct`xTensor`PD[{2, -$CellContext`BS}][
+         $CellContext`xiucirc[]]],
+       Editable->False]}], "-", 
+     InterpretationBox[
+      StyleBox[
+       RowBox[{
+        SubscriptBox["\[PartialD]", 
+         StyleBox["0",
+          FontColor->RGBColor[0., 1., 0.]]], 
+        SubscriptBox["\[PartialD]", 
+         StyleBox["2",
+          FontColor->RGBColor[0., 1., 0.]]], 
+        SubscriptBox["\[PartialD]", 
+         StyleBox["2",
+          FontColor->RGBColor[0., 1., 0.]]], 
+        SubsuperscriptBox["\[Xi]", "\[SmallCircle]", "u"]}],
+       ShowAutoStyles->False,
+       AutoSpacing->False],
+      xAct`xTensor`PD[{0, -$CellContext`BS}][
+       xAct`xTensor`PD[{2, -$CellContext`BS}][
+        xAct`xTensor`PD[{2, -$CellContext`BS}][
+         $CellContext`xiucirc[]]]],
+      Editable->False], "-", 
+     RowBox[{
+      SuperscriptBox[
+       RowBox[{
+        InterpretationBox[
+         StyleBox["Csc",
+          ShowAutoStyles->False,
+          AutoSpacing->False],
+         Csc,
+         Editable->False], "[", 
+        InterpretationBox[
+         StyleBox[
+          OverscriptBox["\[Theta]", "^"],
+          ShowAutoStyles->False,
+          AutoSpacing->False],
+         $CellContext`\[Theta]BS[],
+         Editable->False], "]"}], "2"], " ", 
+      InterpretationBox[
+       StyleBox[
+        RowBox[{
+         SubscriptBox["\[PartialD]", 
+          StyleBox["0",
+           FontColor->RGBColor[0., 1., 0.]]], 
+         SubscriptBox["\[PartialD]", 
+          StyleBox["3",
+           FontColor->RGBColor[0., 1., 0.]]], 
+         SubscriptBox["\[PartialD]", 
+          StyleBox["3",
+           FontColor->RGBColor[0., 1., 0.]]], 
+         SubsuperscriptBox["\[Xi]", "\[SmallCircle]", "u"]}],
+        ShowAutoStyles->False,
+        AutoSpacing->False],
+       xAct`xTensor`PD[{0, -$CellContext`BS}][
+        xAct`xTensor`PD[{3, -$CellContext`BS}][
+         xAct`xTensor`PD[{3, -$CellContext`BS}][
+          $CellContext`xiucirc[]]]],
+       Editable->False]}]}], ")"}], "+", 
+   FractionBox[
+    RowBox[{
+     RowBox[{
+      InterpretationBox[
+       StyleBox["M",
+        ShowAutoStyles->False,
+        AutoSpacing->False],
+       $CellContext`M,
+       Editable->False], " ", 
+      RowBox[{
+       InterpretationBox[
+        StyleBox["Cot",
+         ShowAutoStyles->False,
+         AutoSpacing->False],
+        Cot,
+        Editable->False], "[", 
+       InterpretationBox[
+        StyleBox[
+         OverscriptBox["\[Theta]", "^"],
+         ShowAutoStyles->False,
+         AutoSpacing->False],
+        $CellContext`\[Theta]BS[],
+        Editable->False], "]"}], " ", 
+      InterpretationBox[
+       StyleBox[
+        SubsuperscriptBox["\[Xi]", "\[SmallCircle]", "\[Theta]"],
+        ShowAutoStyles->False,
+        AutoSpacing->False],
+       $CellContext`xitcirc[],
+       Editable->False]}], "-", 
+     RowBox[{"4", " ", 
+      InterpretationBox[
+       StyleBox["A",
+        ShowAutoStyles->False,
+        AutoSpacing->False],
+       $CellContext`A,
+       Editable->False], " ", 
+      InterpretationBox[
+       StyleBox["M",
+        ShowAutoStyles->False,
+        AutoSpacing->False],
+       $CellContext`M,
+       Editable->False], " ", 
+      SuperscriptBox[
+       RowBox[{
+        InterpretationBox[
+         StyleBox["Sin",
+          ShowAutoStyles->False,
+          AutoSpacing->False],
+         Sin,
+         Editable->False], "[", 
+        InterpretationBox[
+         StyleBox[
+          OverscriptBox["\[Theta]", "^"],
+          ShowAutoStyles->False,
+          AutoSpacing->False],
+         $CellContext`\[Theta]BS[],
+         Editable->False], "]"}], "2"], " ", 
+      InterpretationBox[
+       StyleBox[
+        RowBox[{
+         SubscriptBox["\[PartialD]", 
+          StyleBox["0",
+           FontColor->RGBColor[0., 1., 0.]]], 
+         SubsuperscriptBox["\[Xi]", "\[SmallCircle]", "\[Phi]"]}],
+        ShowAutoStyles->False,
+        AutoSpacing->False],
+       xAct`xTensor`PD[{0, -$CellContext`BS}][
+        $CellContext`xipcirc[]],
+       Editable->False]}], "+", 
+     RowBox[{"4", " ", 
+      InterpretationBox[
+       StyleBox["M",
+        ShowAutoStyles->False,
+        AutoSpacing->False],
+       $CellContext`M,
+       Editable->False], " ", 
+      InterpretationBox[
+       StyleBox[
+        RowBox[{
+         SubscriptBox["\[PartialD]", 
+          StyleBox["0",
+           FontColor->RGBColor[0., 1., 0.]]], 
+         SubsuperscriptBox["\[Xi]", "\[SmallCircle]", "u"]}],
+        ShowAutoStyles->False,
+        AutoSpacing->False],
+       xAct`xTensor`PD[{0, -$CellContext`BS}][
+        $CellContext`xiucirc[]],
+       Editable->False]}], "+", 
+     RowBox[{
+      InterpretationBox[
+       StyleBox["M",
+        ShowAutoStyles->False,
+        AutoSpacing->False],
+       $CellContext`M,
+       Editable->False], " ", 
+      InterpretationBox[
+       StyleBox[
+        RowBox[{
+         SubscriptBox["\[PartialD]", 
+          StyleBox["2",
+           FontColor->RGBColor[0., 1., 0.]]], 
+         SubsuperscriptBox["\[Xi]", "\[SmallCircle]", "\[Theta]"]}],
+        ShowAutoStyles->False,
+        AutoSpacing->False],
+       xAct`xTensor`PD[{2, -$CellContext`BS}][
+        $CellContext`xitcirc[]],
+       Editable->False]}], "+", 
+     RowBox[{
+      InterpretationBox[
+       StyleBox["M",
+        ShowAutoStyles->False,
+        AutoSpacing->False],
+       $CellContext`M,
+       Editable->False], " ", 
+      InterpretationBox[
+       StyleBox[
+        RowBox[{
+         SubscriptBox["\[PartialD]", 
+          StyleBox["3",
+           FontColor->RGBColor[0., 1., 0.]]], 
+         SubsuperscriptBox["\[Xi]", "\[SmallCircle]", "\[Phi]"]}],
+        ShowAutoStyles->False,
+        AutoSpacing->False],
+       xAct`xTensor`PD[{3, -$CellContext`BS}][
+        $CellContext`xipcirc[]],
+       Editable->False]}]}], 
+    InterpretationBox[
+     StyleBox[
+      OverscriptBox["r", "^"],
+      ShowAutoStyles->False,
+      AutoSpacing->False],
+     $CellContext`rBS[],
+     Editable->False]], "+", 
+   FractionBox[
+    RowBox[{
+     SuperscriptBox[
+      RowBox[{
+       InterpretationBox[
+        StyleBox["Sin",
+         ShowAutoStyles->False,
+         AutoSpacing->False],
+        Sin,
+        Editable->False], "[", 
+       InterpretationBox[
+        StyleBox[
+         OverscriptBox["\[Theta]", "^"],
+         ShowAutoStyles->False,
+         AutoSpacing->False],
+        $CellContext`\[Theta]BS[],
+        Editable->False], "]"}], "2"], " ", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"7", " ", 
+        SuperscriptBox[
+         InterpretationBox[
+          StyleBox["A",
+           ShowAutoStyles->False,
+           AutoSpacing->False],
+          $CellContext`A,
+          Editable->False], "2"], " ", 
+        InterpretationBox[
+         StyleBox["M",
+          ShowAutoStyles->False,
+          AutoSpacing->False],
+         $CellContext`M,
+         Editable->False], " ", 
+        RowBox[{
+         InterpretationBox[
+          StyleBox["Cot",
+           ShowAutoStyles->False,
+           AutoSpacing->False],
+          Cot,
+          Editable->False], "[", 
+         InterpretationBox[
+          StyleBox[
+           OverscriptBox["\[Theta]", "^"],
+           ShowAutoStyles->False,
+           AutoSpacing->False],
+          $CellContext`\[Theta]BS[],
+          Editable->False], "]"}], " ", 
+        InterpretationBox[
+         StyleBox[
+          RowBox[{
+           SubscriptBox["\[PartialD]", 
+            StyleBox["0",
+             FontColor->RGBColor[0., 1., 0.]]], 
+           SubsuperscriptBox["\[Xi]", "\[SmallCircle]", "\[Theta]"]}],
+          ShowAutoStyles->False,
+          AutoSpacing->False],
+         xAct`xTensor`PD[{0, -$CellContext`BS}][
+          $CellContext`xitcirc[]],
+         Editable->False]}], "-", 
+       RowBox[{
+        SuperscriptBox[
+         InterpretationBox[
+          StyleBox["A",
+           ShowAutoStyles->False,
+           AutoSpacing->False],
+          $CellContext`A,
+          Editable->False], "2"], " ", 
+        InterpretationBox[
+         StyleBox["M",
+          ShowAutoStyles->False,
+          AutoSpacing->False],
+         $CellContext`M,
+         Editable->False], " ", 
+        InterpretationBox[
+         StyleBox[
+          RowBox[{
+           SubscriptBox["\[PartialD]", 
+            StyleBox["0",
+             FontColor->RGBColor[0., 1., 0.]]], 
+           SubscriptBox["\[PartialD]", 
+            StyleBox["2",
+             FontColor->RGBColor[0., 1., 0.]]], 
+           SubsuperscriptBox["\[Xi]", "\[SmallCircle]", "\[Theta]"]}],
+          ShowAutoStyles->False,
+          AutoSpacing->False],
+         xAct`xTensor`PD[{0, -$CellContext`BS}][
+          xAct`xTensor`PD[{2, -$CellContext`BS}][
+           $CellContext`xitcirc[]]],
+         Editable->False]}], "+", 
+       RowBox[{
+        SuperscriptBox[
+         InterpretationBox[
+          StyleBox["A",
+           ShowAutoStyles->False,
+           AutoSpacing->False],
+          $CellContext`A,
+          Editable->False], "2"], " ", 
+        InterpretationBox[
+         StyleBox["M",
+          ShowAutoStyles->False,
+          AutoSpacing->False],
+         $CellContext`M,
+         Editable->False], " ", 
+        InterpretationBox[
+         StyleBox[
+          RowBox[{
+           SubscriptBox["\[PartialD]", 
+            StyleBox["0",
+             FontColor->RGBColor[0., 1., 0.]]], 
+           SubscriptBox["\[PartialD]", 
+            StyleBox["3",
+             FontColor->RGBColor[0., 1., 0.]]], 
+           SubsuperscriptBox["\[Xi]", "\[SmallCircle]", "\[Phi]"]}],
+          ShowAutoStyles->False,
+          AutoSpacing->False],
+         xAct`xTensor`PD[{0, -$CellContext`BS}][
+          xAct`xTensor`PD[{3, -$CellContext`BS}][
+           $CellContext`xipcirc[]]],
+         Editable->False]}], "+", 
+       RowBox[{"2", " ", 
+        InterpretationBox[
+         StyleBox["A",
+          ShowAutoStyles->False,
+          AutoSpacing->False],
+         $CellContext`A,
+         Editable->False], " ", 
+        InterpretationBox[
+         StyleBox["M",
+          ShowAutoStyles->False,
+          AutoSpacing->False],
+         $CellContext`M,
+         Editable->False], " ", 
+        SuperscriptBox[
+         RowBox[{
+          InterpretationBox[
+           StyleBox["Csc",
+            ShowAutoStyles->False,
+            AutoSpacing->False],
+           Csc,
+           Editable->False], "[", 
+          InterpretationBox[
+           StyleBox[
+            OverscriptBox["\[Theta]", "^"],
+            ShowAutoStyles->False,
+            AutoSpacing->False],
+           $CellContext`\[Theta]BS[],
+           Editable->False], "]"}], "2"], " ", 
+        InterpretationBox[
+         StyleBox[
+          RowBox[{
+           SubscriptBox["\[PartialD]", 
+            StyleBox["0",
+             FontColor->RGBColor[0., 1., 0.]]], 
+           SubscriptBox["\[PartialD]", 
+            StyleBox["3",
+             FontColor->RGBColor[0., 1., 0.]]], 
+           SubsuperscriptBox["\[Xi]", "\[SmallCircle]", "u"]}],
+          ShowAutoStyles->False,
+          AutoSpacing->False],
+         xAct`xTensor`PD[{0, -$CellContext`BS}][
+          xAct`xTensor`PD[{3, -$CellContext`BS}][
+           $CellContext`xiucirc[]]],
+         Editable->False]}], "-", 
+       RowBox[{
+        InterpretationBox[
+         StyleBox["M",
+          ShowAutoStyles->False,
+          AutoSpacing->False],
+         $CellContext`M,
+         Editable->False], " ", 
+        RowBox[{
+         InterpretationBox[
+          StyleBox["Cot",
+           ShowAutoStyles->False,
+           AutoSpacing->False],
+          Cot,
+          Editable->False], "[", 
+         InterpretationBox[
+          StyleBox[
+           OverscriptBox["\[Theta]", "^"],
+           ShowAutoStyles->False,
+           AutoSpacing->False],
+          $CellContext`\[Theta]BS[],
+          Editable->False], "]"}], " ", 
+        SuperscriptBox[
+         RowBox[{
+          InterpretationBox[
+           StyleBox["Csc",
+            ShowAutoStyles->False,
+            AutoSpacing->False],
+           Csc,
+           Editable->False], "[", 
+          InterpretationBox[
+           StyleBox[
+            OverscriptBox["\[Theta]", "^"],
+            ShowAutoStyles->False,
+            AutoSpacing->False],
+           $CellContext`\[Theta]BS[],
+           Editable->False], "]"}], "2"], " ", 
+        InterpretationBox[
+         StyleBox[
+          RowBox[{
+           SubscriptBox["\[PartialD]", 
+            StyleBox["2",
+             FontColor->RGBColor[0., 1., 0.]]], 
+           SubsuperscriptBox["\[Xi]", "\[SmallCircle]", "u"]}],
+          ShowAutoStyles->False,
+          AutoSpacing->False],
+         xAct`xTensor`PD[{2, -$CellContext`BS}][
+          $CellContext`xiucirc[]],
+         Editable->False]}], "-", 
+       RowBox[{
+        InterpretationBox[
+         StyleBox["M",
+          ShowAutoStyles->False,
+          AutoSpacing->False],
+         $CellContext`M,
+         Editable->False], " ", 
+        SuperscriptBox[
+         RowBox[{
+          InterpretationBox[
+           StyleBox["Csc",
+            ShowAutoStyles->False,
+            AutoSpacing->False],
+           Csc,
+           Editable->False], "[", 
+          InterpretationBox[
+           StyleBox[
+            OverscriptBox["\[Theta]", "^"],
+            ShowAutoStyles->False,
+            AutoSpacing->False],
+           $CellContext`\[Theta]BS[],
+           Editable->False], "]"}], "2"], " ", 
+        InterpretationBox[
+         StyleBox[
+          RowBox[{
+           SubscriptBox["\[PartialD]", 
+            StyleBox["2",
+             FontColor->RGBColor[0., 1., 0.]]], 
+           SubscriptBox["\[PartialD]", 
+            StyleBox["2",
+             FontColor->RGBColor[0., 1., 0.]]], 
+           SubsuperscriptBox["\[Xi]", "\[SmallCircle]", "u"]}],
+          ShowAutoStyles->False,
+          AutoSpacing->False],
+         xAct`xTensor`PD[{2, -$CellContext`BS}][
+          xAct`xTensor`PD[{2, -$CellContext`BS}][
+           $CellContext`xiucirc[]]],
+         Editable->False]}], "-", 
+       RowBox[{
+        InterpretationBox[
+         StyleBox["M",
+          ShowAutoStyles->False,
+          AutoSpacing->False],
+         $CellContext`M,
+         Editable->False], " ", 
+        SuperscriptBox[
+         RowBox[{
+          InterpretationBox[
+           StyleBox["Csc",
+            ShowAutoStyles->False,
+            AutoSpacing->False],
+           Csc,
+           Editable->False], "[", 
+          InterpretationBox[
+           StyleBox[
+            OverscriptBox["\[Theta]", "^"],
+            ShowAutoStyles->False,
+            AutoSpacing->False],
+           $CellContext`\[Theta]BS[],
+           Editable->False], "]"}], "4"], " ", 
+        InterpretationBox[
+         StyleBox[
+          RowBox[{
+           SubscriptBox["\[PartialD]", 
+            StyleBox["3",
+             FontColor->RGBColor[0., 1., 0.]]], 
+           SubscriptBox["\[PartialD]", 
+            StyleBox["3",
+             FontColor->RGBColor[0., 1., 0.]]], 
+           SubsuperscriptBox["\[Xi]", "\[SmallCircle]", "u"]}],
+          ShowAutoStyles->False,
+          AutoSpacing->False],
+         xAct`xTensor`PD[{3, -$CellContext`BS}][
+          xAct`xTensor`PD[{3, -$CellContext`BS}][
+           $CellContext`xiucirc[]]],
+         Editable->False]}]}], ")"}]}], 
+    SuperscriptBox[
+     InterpretationBox[
+      StyleBox[
+       OverscriptBox["r", "^"],
+       ShowAutoStyles->False,
+       AutoSpacing->False],
+      $CellContext`rBS[],
+      Editable->False], "2"]], "+", 
+   InterpretationBox[
+    SuperscriptBox[
+     RowBox[{"O", "[", 
+      FractionBox["1", 
+       InterpretationBox[
+        StyleBox[
+         OverscriptBox["r", "^"],
+         ShowAutoStyles->False,
+         AutoSpacing->False],
+        $CellContext`rBS[],
+        Editable->False]], "]"}], "3"],
+    SeriesData[
+     $CellContext`rBS[], 
+     DirectedInfinity[1], {}, -1, 3, 1],
+    Editable->False]}],
+  SeriesData[
+   $CellContext`rBS[], 
+   DirectedInfinity[1], {Cot[
+       $CellContext`\[Theta]BS[]] xAct`xTensor`PD[{0, -$CellContext`BS}][
+       $CellContext`xitcirc[]] + xAct`xTensor`PD[{0, -$CellContext`BS}][
+      xAct`xTensor`PD[{2, -$CellContext`BS}][
+       $CellContext`xitcirc[]]] + xAct`xTensor`PD[{0, -$CellContext`BS}][
+      xAct`xTensor`PD[{3, -$CellContext`BS}][
+       $CellContext`xipcirc[]]], (-2) xAct`xTensor`PD[{0, -$CellContext`BS}][
+       $CellContext`xiucirc[]] - Cot[
+      $CellContext`\[Theta]BS[]] xAct`xTensor`PD[{0, -$CellContext`BS}][
+      xAct`xTensor`PD[{2, -$CellContext`BS}][
+       $CellContext`xiucirc[]]] - xAct`xTensor`PD[{0, -$CellContext`BS}][
+     xAct`xTensor`PD[{2, -$CellContext`BS}][
+      xAct`xTensor`PD[{2, -$CellContext`BS}][
+       $CellContext`xiucirc[]]]] - Csc[
+       $CellContext`\[Theta]BS[]]^2 xAct`xTensor`PD[{0, -$CellContext`BS}][
+      xAct`xTensor`PD[{3, -$CellContext`BS}][
+       xAct`xTensor`PD[{3, -$CellContext`BS}][
+        $CellContext`xiucirc[]]]], $CellContext`M Cot[
+       $CellContext`\[Theta]BS[]] $CellContext`xitcirc[] - 
+    4 $CellContext`A $CellContext`M Sin[
+       $CellContext`\[Theta]BS[]]^2 xAct`xTensor`PD[{0, -$CellContext`BS}][
+      $CellContext`xipcirc[]] + 
+    4 $CellContext`M xAct`xTensor`PD[{0, -$CellContext`BS}][
+       $CellContext`xiucirc[]] + $CellContext`M 
+     xAct`xTensor`PD[{2, -$CellContext`BS}][
+       $CellContext`xitcirc[]] + $CellContext`M 
+     xAct`xTensor`PD[{3, -$CellContext`BS}][
+       $CellContext`xipcirc[]], Sin[
+       $CellContext`\[Theta]BS[]]^2 (7 $CellContext`A^2 $CellContext`M Cot[
+        $CellContext`\[Theta]BS[]] xAct`xTensor`PD[{0, -$CellContext`BS}][
+        $CellContext`xitcirc[]] - $CellContext`A^2 $CellContext`M 
+     xAct`xTensor`PD[{0, -$CellContext`BS}][
+       xAct`xTensor`PD[{2, -$CellContext`BS}][
+        $CellContext`xitcirc[]]] + $CellContext`A^2 $CellContext`M 
+      xAct`xTensor`PD[{0, -$CellContext`BS}][
+        xAct`xTensor`PD[{3, -$CellContext`BS}][
+         $CellContext`xipcirc[]]] + 2 $CellContext`A $CellContext`M Csc[
+         $CellContext`\[Theta]BS[]]^2 xAct`xTensor`PD[{0, -$CellContext`BS}][
+        xAct`xTensor`PD[{3, -$CellContext`BS}][
+         $CellContext`xiucirc[]]] - $CellContext`M Cot[
+       $CellContext`\[Theta]BS[]] Csc[
+        $CellContext`\[Theta]BS[]]^2 xAct`xTensor`PD[{2, -$CellContext`BS}][
+       $CellContext`xiucirc[]] - $CellContext`M Csc[
+        $CellContext`\[Theta]BS[]]^2 xAct`xTensor`PD[{2, -$CellContext`BS}][
+       xAct`xTensor`PD[{2, -$CellContext`BS}][
+        $CellContext`xiucirc[]]] - $CellContext`M Csc[
+        $CellContext`\[Theta]BS[]]^4 xAct`xTensor`PD[{3, -$CellContext`BS}][
+       xAct`xTensor`PD[{3, -$CellContext`BS}][
+        $CellContext`xiucirc[]]])}, -1, 3, 1],
+  Editable->False]], "Output",
+ CellChangeTimes->{3.9605274431920547`*^9},
+ CellLabel->
+  "Out[446]=",ExpressionUUID->"bfa2d5d5-3986-466c-8206-e3d8e93ae7b0"]
+}, Open  ]],
+
+Cell[TextData[{
+ "=> ",
+ Cell[BoxData[
+  SubsuperscriptBox["\[Xi]", "\[SmallCircle]", "\[Theta]"]],
+  CellChangeTimes->{3.9605274431920547`*^9},ExpressionUUID->
+  "203ae68d-1de2-42b1-ae68-149bdc9db6b6"],
+ " and ",
+ Cell[BoxData[
+  SubsuperscriptBox["\[Xi]", "\[SmallCircle]", "\[Phi]"]],
+  CellChangeTimes->{3.9605274431920547`*^9},ExpressionUUID->
+  "0b5cc8d0-62d6-4ca2-be12-a8cf495fca13"],
+ " are u independent\n",
+ Cell[BoxData[
+  RowBox[{"4", " ", 
+   InterpretationBox[
+    StyleBox["M",
+     ShowAutoStyles->False,
+     AutoSpacing->False],
+    $CellContext`M,
+    Editable->False], " ", 
+   InterpretationBox[
+    StyleBox[
+     RowBox[{
+      SubscriptBox["\[PartialD]", 
+       StyleBox["0",
+        FontColor->RGBColor[0., 1., 0.]]], 
+      SubsuperscriptBox["\[Xi]", "\[SmallCircle]", "u"]}],
+     ShowAutoStyles->False,
+     AutoSpacing->False],
+    xAct`xTensor`PD[{0, -$CellContext`BS}][
+     $CellContext`xiucirc[]],
+    Editable->False]}]],
+  CellChangeTimes->{3.9605274431920547`*^9},ExpressionUUID->
+  "ef691909-8205-4eba-862c-5e03193cf3bc"],
+ " is the boost changing MB^(1)\n"
+}], "Text",
+ CellChangeTimes->{{3.960527521616108*^9, 3.9605275701315427`*^9}, {
+  3.960527622650009*^9, 3.9605276648137293`*^9}, {3.9605277290229316`*^9, 
+  3.9605277295562143`*^9}},ExpressionUUID->"35ff1e59-3f7c-4b4b-9f19-\
+8e6b5d20f234"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{
+    RowBox[{
+     RowBox[{
+      RowBox[{"GaugeTransformBSCoords", "[", 
+       RowBox[{"[", 
+        RowBox[{"1", ",", "2"}], "]"}], "]"}], "//.", "X0ruleBMS"}], "//.", 
+     "X3ruleBMS"}], "//.", "X2ruleBMS"}], "//.", "X1ruleBMS"}], "/.", 
+  "RDerivativeRule"}]], "Input",
+ CellChangeTimes->{3.9605276787895913`*^9},
+ CellLabel->
+  "In[447]:=",ExpressionUUID->"3987fcf4-d1dc-4119-9a3c-6bc612e8e227"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   RowBox[{
+    FractionBox["1", "2"], " ", 
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{
+       RowBox[{
+        InterpretationBox[
+         StyleBox["Cot",
+          ShowAutoStyles->False,
+          AutoSpacing->False],
+         Cot,
+         Editable->False], "[", 
+        InterpretationBox[
+         StyleBox[
+          OverscriptBox["\[Theta]", "^"],
+          ShowAutoStyles->False,
+          AutoSpacing->False],
+         $CellContext`\[Theta]BS[],
+         Editable->False], "]"}], " ", 
+       InterpretationBox[
+        StyleBox[
+         SubsuperscriptBox["\[Xi]", "\[SmallCircle]", "\[Theta]"],
+         ShowAutoStyles->False,
+         AutoSpacing->False],
+        $CellContext`xitcirc[],
+        Editable->False]}], "-", 
+      RowBox[{"2", " ", 
+       InterpretationBox[
+        StyleBox[
+         RowBox[{
+          SubscriptBox["\[PartialD]", 
+           StyleBox["0",
+            FontColor->RGBColor[0., 1., 0.]]], 
+          SubsuperscriptBox["\[Xi]", "\[SmallCircle]", "u"]}],
+         ShowAutoStyles->False,
+         AutoSpacing->False],
+        xAct`xTensor`PD[{0, -$CellContext`BS}][
+         $CellContext`xiucirc[]],
+        Editable->False]}], "+", 
+      InterpretationBox[
+       StyleBox[
+        RowBox[{
+         SubscriptBox["\[PartialD]", 
+          StyleBox["2",
+           FontColor->RGBColor[0., 1., 0.]]], 
+         SubsuperscriptBox["\[Xi]", "\[SmallCircle]", "\[Theta]"]}],
+        ShowAutoStyles->False,
+        AutoSpacing->False],
+       xAct`xTensor`PD[{2, -$CellContext`BS}][
+        $CellContext`xitcirc[]],
+       Editable->False], "+", 
+      InterpretationBox[
+       StyleBox[
+        RowBox[{
+         SubscriptBox["\[PartialD]", 
+          StyleBox["3",
+           FontColor->RGBColor[0., 1., 0.]]], 
+         SubsuperscriptBox["\[Xi]", "\[SmallCircle]", "\[Phi]"]}],
+        ShowAutoStyles->False,
+        AutoSpacing->False],
+       xAct`xTensor`PD[{3, -$CellContext`BS}][
+        $CellContext`xipcirc[]],
+       Editable->False]}], ")"}]}], "+", 
+   FractionBox[
+    RowBox[{
+     RowBox[{
+      RowBox[{"-", 
+       SuperscriptBox[
+        InterpretationBox[
+         StyleBox["A",
+          ShowAutoStyles->False,
+          AutoSpacing->False],
+         $CellContext`A,
+         Editable->False], "2"]}], " ", 
+      InterpretationBox[
+       StyleBox["M",
+        ShowAutoStyles->False,
+        AutoSpacing->False],
+       $CellContext`M,
+       Editable->False], " ", 
+      RowBox[{
+       InterpretationBox[
+        StyleBox["Cos",
+         ShowAutoStyles->False,
+         AutoSpacing->False],
+        Cos,
+        Editable->False], "[", 
+       InterpretationBox[
+        StyleBox[
+         OverscriptBox["\[Theta]", "^"],
+         ShowAutoStyles->False,
+         AutoSpacing->False],
+        $CellContext`\[Theta]BS[],
+        Editable->False], "]"}], " ", 
+      RowBox[{
+       InterpretationBox[
+        StyleBox["Sin",
+         ShowAutoStyles->False,
+         AutoSpacing->False],
+        Sin,
+        Editable->False], "[", 
+       InterpretationBox[
+        StyleBox[
+         OverscriptBox["\[Theta]", "^"],
+         ShowAutoStyles->False,
+         AutoSpacing->False],
+        $CellContext`\[Theta]BS[],
+        Editable->False], "]"}], " ", 
+      InterpretationBox[
+       StyleBox[
+        SubsuperscriptBox["\[Xi]", "\[SmallCircle]", "\[Theta]"],
+        ShowAutoStyles->False,
+        AutoSpacing->False],
+       $CellContext`xitcirc[],
+       Editable->False]}], "+", 
+     RowBox[{
+      SuperscriptBox[
+       InterpretationBox[
+        StyleBox["A",
+         ShowAutoStyles->False,
+         AutoSpacing->False],
+        $CellContext`A,
+        Editable->False], "2"], " ", 
+      InterpretationBox[
+       StyleBox["M",
+        ShowAutoStyles->False,
+        AutoSpacing->False],
+       $CellContext`M,
+       Editable->False], " ", 
+      SuperscriptBox[
+       RowBox[{
+        InterpretationBox[
+         StyleBox["Sin",
+          ShowAutoStyles->False,
+          AutoSpacing->False],
+         Sin,
+         Editable->False], "[", 
+        InterpretationBox[
+         StyleBox[
+          OverscriptBox["\[Theta]", "^"],
+          ShowAutoStyles->False,
+          AutoSpacing->False],
+         $CellContext`\[Theta]BS[],
+         Editable->False], "]"}], "2"], " ", 
+      InterpretationBox[
+       StyleBox[
+        RowBox[{
+         SubscriptBox["\[PartialD]", 
+          StyleBox["2",
+           FontColor->RGBColor[0., 1., 0.]]], 
+         SubsuperscriptBox["\[Xi]", "\[SmallCircle]", "\[Theta]"]}],
+        ShowAutoStyles->False,
+        AutoSpacing->False],
+       xAct`xTensor`PD[{2, -$CellContext`BS}][
+        $CellContext`xitcirc[]],
+       Editable->False]}], "-", 
+     RowBox[{
+      SuperscriptBox[
+       InterpretationBox[
+        StyleBox["A",
+         ShowAutoStyles->False,
+         AutoSpacing->False],
+        $CellContext`A,
+        Editable->False], "2"], " ", 
+      InterpretationBox[
+       StyleBox["M",
+        ShowAutoStyles->False,
+        AutoSpacing->False],
+       $CellContext`M,
+       Editable->False], " ", 
+      SuperscriptBox[
+       RowBox[{
+        InterpretationBox[
+         StyleBox["Sin",
+          ShowAutoStyles->False,
+          AutoSpacing->False],
+         Sin,
+         Editable->False], "[", 
+        InterpretationBox[
+         StyleBox[
+          OverscriptBox["\[Theta]", "^"],
+          ShowAutoStyles->False,
+          AutoSpacing->False],
+         $CellContext`\[Theta]BS[],
+         Editable->False], "]"}], "2"], " ", 
+      InterpretationBox[
+       StyleBox[
+        RowBox[{
+         SubscriptBox["\[PartialD]", 
+          StyleBox["3",
+           FontColor->RGBColor[0., 1., 0.]]], 
+         SubsuperscriptBox["\[Xi]", "\[SmallCircle]", "\[Phi]"]}],
+        ShowAutoStyles->False,
+        AutoSpacing->False],
+       xAct`xTensor`PD[{3, -$CellContext`BS}][
+        $CellContext`xipcirc[]],
+       Editable->False]}]}], 
+    SuperscriptBox[
+     InterpretationBox[
+      StyleBox[
+       OverscriptBox["r", "^"],
+       ShowAutoStyles->False,
+       AutoSpacing->False],
+      $CellContext`rBS[],
+      Editable->False], "3"]], "+", 
+   InterpretationBox[
+    SuperscriptBox[
+     RowBox[{"O", "[", 
+      FractionBox["1", 
+       InterpretationBox[
+        StyleBox[
+         OverscriptBox["r", "^"],
+         ShowAutoStyles->False,
+         AutoSpacing->False],
+        $CellContext`rBS[],
+        Editable->False]], "]"}], "4"],
+    SeriesData[
+     $CellContext`rBS[], 
+     DirectedInfinity[1], {}, 0, 4, 1],
+    Editable->False]}],
+  SeriesData[
+   $CellContext`rBS[], 
+   DirectedInfinity[1], {Rational[1, 2] (Cot[
+        $CellContext`\[Theta]BS[]] $CellContext`xitcirc[] - 2 
+     xAct`xTensor`PD[{0, -$CellContext`BS}][
+       $CellContext`xiucirc[]] + xAct`xTensor`PD[{2, -$CellContext`BS}][
+       $CellContext`xitcirc[]] + xAct`xTensor`PD[{3, -$CellContext`BS}][
+       $CellContext`xipcirc[]]), 0, 0, -$CellContext`A^2 $CellContext`M Cos[
+       $CellContext`\[Theta]BS[]] Sin[
+       $CellContext`\[Theta]BS[]] $CellContext`xitcirc[] + $CellContext`A^2 \
+$CellContext`M Sin[
+        $CellContext`\[Theta]BS[]]^2 xAct`xTensor`PD[{2, -$CellContext`BS}][
+       $CellContext`xitcirc[]] - $CellContext`A^2 $CellContext`M Sin[
+       $CellContext`\[Theta]BS[]]^2 xAct`xTensor`PD[{3, -$CellContext`BS}][
+      $CellContext`xipcirc[]]}, 0, 4, 1],
+  Editable->False]], "Output",
+ CellChangeTimes->{3.9605276795502505`*^9},
+ CellLabel->
+  "Out[447]=",ExpressionUUID->"feb78036-6810-4ec8-b44f-763aeeeed73a"]
+}, Open  ]],
+
+Cell[TextData[{
+ Cell[BoxData[
+  RowBox[{
+   InterpretationBox[
+    StyleBox[
+     RowBox[{
+      SubscriptBox["\[PartialD]", 
+       StyleBox["2",
+        FontColor->RGBColor[0., 1., 0.]]], 
+      SubsuperscriptBox["\[Xi]", "\[SmallCircle]", "\[Theta]"]}],
+     ShowAutoStyles->False,
+     AutoSpacing->False],
+    xAct`xTensor`PD[{2, -$CellContext`BS}][
+     $CellContext`xitcirc[]],
+    Editable->False], "+", 
+   InterpretationBox[
+    StyleBox[
+     RowBox[{
+      SubscriptBox["\[PartialD]", 
+       StyleBox["3",
+        FontColor->RGBColor[0., 1., 0.]]], 
+      SubsuperscriptBox["\[Xi]", "\[SmallCircle]", "\[Phi]"]}],
+     ShowAutoStyles->False,
+     AutoSpacing->False],
+    xAct`xTensor`PD[{3, -$CellContext`BS}][
+     $CellContext`xipcirc[]],
+    Editable->False]}]],
+  CellChangeTimes->{3.9605276795502505`*^9},ExpressionUUID->
+  "3ee3c017-6c4a-42ae-8b6d-aeb63f3e8699"],
+ "+",
+ Cell[BoxData[
+  RowBox[{
+   RowBox[{
+    InterpretationBox[
+     StyleBox["Cot",
+      ShowAutoStyles->False,
+      AutoSpacing->False],
+     Cot,
+     Editable->False], "[", 
+    InterpretationBox[
+     StyleBox[
+      OverscriptBox["\[Theta]", "^"],
+      ShowAutoStyles->False,
+      AutoSpacing->False],
+     $CellContext`\[Theta]BS[],
+     Editable->False], "]"}], " ", 
+   InterpretationBox[
+    StyleBox[
+     SubsuperscriptBox["\[Xi]", "\[SmallCircle]", "\[Theta]"],
+     ShowAutoStyles->False,
+     AutoSpacing->False],
+    $CellContext`xitcirc[],
+    Editable->False]}]],
+  CellChangeTimes->{3.9605276795502505`*^9},ExpressionUUID->
+  "cbe46827-0fb9-47b4-88b2-c7c6a71fb610"],
+ " is "
+}], "Text",
+ CellChangeTimes->{{3.9605276976026716`*^9, 
+  3.960527735061818*^9}},ExpressionUUID->"3c86280b-92ea-4df5-9de9-\
+1df22f608c7d"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{
+    RowBox[{
+     RowBox[{
+      RowBox[{"GaugeTransformBSCoords", "[", 
+       RowBox[{"[", 
+        RowBox[{"3", ",", "3"}], "]"}], "]"}], "//.", "X0ruleBMS"}], "//.", 
+     "X3ruleBMS"}], "//.", "X2ruleBMS"}], "//.", "X1ruleBMS"}], "/.", 
+  "RDerivativeRule"}]], "Input",
+ CellChangeTimes->{{3.950588661190876*^9, 3.950588664973647*^9}},
+ CellLabel->
+  "In[413]:=",ExpressionUUID->"48555c9b-dc43-4e39-85b8-7912b4f83b70"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   RowBox[{
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"-", 
+        RowBox[{
+         InterpretationBox[
+          StyleBox["Cot",
+           ShowAutoStyles->False,
+           AutoSpacing->False],
+          Cot,
+          Editable->False], "[", 
+         InterpretationBox[
+          StyleBox[
+           OverscriptBox["\[Theta]", "^"],
+           ShowAutoStyles->False,
+           AutoSpacing->False],
+          $CellContext`\[Theta]BS[],
+          Editable->False], "]"}]}], " ", 
+       InterpretationBox[
+        StyleBox[
+         SubsuperscriptBox["\[Xi]", "\[SmallCircle]", "\[Theta]"],
+         ShowAutoStyles->False,
+         AutoSpacing->False],
+        $CellContext`xitcirc[],
+        Editable->False]}], "+", 
+      InterpretationBox[
+       StyleBox[
+        RowBox[{
+         SubscriptBox["\[PartialD]", 
+          StyleBox["2",
+           FontColor->RGBColor[0., 1., 0.]]], 
+         SubsuperscriptBox["\[Xi]", "\[SmallCircle]", "\[Theta]"]}],
+        ShowAutoStyles->False,
+        AutoSpacing->False],
+       xAct`xTensor`PD[{2, -$CellContext`BS}][
+        $CellContext`xitcirc[]],
+       Editable->False], "-", 
+      InterpretationBox[
+       StyleBox[
+        RowBox[{
+         SubscriptBox["\[PartialD]", 
+          StyleBox["3",
+           FontColor->RGBColor[0., 1., 0.]]], 
+         SubsuperscriptBox["\[Xi]", "\[SmallCircle]", "\[Phi]"]}],
+        ShowAutoStyles->False,
+        AutoSpacing->False],
+       xAct`xTensor`PD[{3, -$CellContext`BS}][
+        $CellContext`xipcirc[]],
+       Editable->False]}], ")"}], " ", 
+    SuperscriptBox[
+     InterpretationBox[
+      StyleBox[
+       OverscriptBox["r", "^"],
+       ShowAutoStyles->False,
+       AutoSpacing->False],
+      $CellContext`rBS[],
+      Editable->False], "2"]}], "+", 
+   RowBox[{
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{
+       RowBox[{
+        InterpretationBox[
+         StyleBox["Cot",
+          ShowAutoStyles->False,
+          AutoSpacing->False],
+         Cot,
+         Editable->False], "[", 
+        InterpretationBox[
+         StyleBox[
+          OverscriptBox["\[Theta]", "^"],
+          ShowAutoStyles->False,
+          AutoSpacing->False],
+         $CellContext`\[Theta]BS[],
+         Editable->False], "]"}], " ", 
+       InterpretationBox[
+        StyleBox[
+         RowBox[{
+          SubscriptBox["\[PartialD]", 
+           StyleBox["2",
+            FontColor->RGBColor[0., 1., 0.]]], 
+          SubsuperscriptBox["\[Xi]", "\[SmallCircle]", "u"]}],
+         ShowAutoStyles->False,
+         AutoSpacing->False],
+        xAct`xTensor`PD[{2, -$CellContext`BS}][
+         $CellContext`xiucirc[]],
+        Editable->False]}], "-", 
+      InterpretationBox[
+       StyleBox[
+        RowBox[{
+         SubscriptBox["\[PartialD]", 
+          StyleBox["2",
+           FontColor->RGBColor[0., 1., 0.]]], 
+         SubscriptBox["\[PartialD]", 
+          StyleBox["2",
+           FontColor->RGBColor[0., 1., 0.]]], 
+         SubsuperscriptBox["\[Xi]", "\[SmallCircle]", "u"]}],
+        ShowAutoStyles->False,
+        AutoSpacing->False],
+       xAct`xTensor`PD[{2, -$CellContext`BS}][
+        xAct`xTensor`PD[{2, -$CellContext`BS}][
+         $CellContext`xiucirc[]]],
+       Editable->False], "+", 
+      RowBox[{
+       SuperscriptBox[
+        RowBox[{
+         InterpretationBox[
+          StyleBox["Csc",
+           ShowAutoStyles->False,
+           AutoSpacing->False],
+          Csc,
+          Editable->False], "[", 
+         InterpretationBox[
+          StyleBox[
+           OverscriptBox["\[Theta]", "^"],
+           ShowAutoStyles->False,
+           AutoSpacing->False],
+          $CellContext`\[Theta]BS[],
+          Editable->False], "]"}], "2"], " ", 
+       InterpretationBox[
+        StyleBox[
+         RowBox[{
+          SubscriptBox["\[PartialD]", 
+           StyleBox["3",
+            FontColor->RGBColor[0., 1., 0.]]], 
+          SubscriptBox["\[PartialD]", 
+           StyleBox["3",
+            FontColor->RGBColor[0., 1., 0.]]], 
+          SubsuperscriptBox["\[Xi]", "\[SmallCircle]", "u"]}],
+         ShowAutoStyles->False,
+         AutoSpacing->False],
+        xAct`xTensor`PD[{3, -$CellContext`BS}][
+         xAct`xTensor`PD[{3, -$CellContext`BS}][
+          $CellContext`xiucirc[]]],
+        Editable->False]}]}], ")"}], " ", 
+    InterpretationBox[
+     StyleBox[
+      OverscriptBox["r", "^"],
+      ShowAutoStyles->False,
+      AutoSpacing->False],
+     $CellContext`rBS[],
+     Editable->False]}], "+", 
+   FractionBox[
+    RowBox[{
+     RowBox[{
+      RowBox[{"-", "7"}], " ", 
+      SuperscriptBox[
+       InterpretationBox[
+        StyleBox["A",
+         ShowAutoStyles->False,
+         AutoSpacing->False],
+        $CellContext`A,
+        Editable->False], "2"], " ", 
+      InterpretationBox[
+       StyleBox["M",
+        ShowAutoStyles->False,
+        AutoSpacing->False],
+       $CellContext`M,
+       Editable->False], " ", 
+      RowBox[{
+       InterpretationBox[
+        StyleBox["Cos",
+         ShowAutoStyles->False,
+         AutoSpacing->False],
+        Cos,
+        Editable->False], "[", 
+       InterpretationBox[
+        StyleBox[
+         OverscriptBox["\[Theta]", "^"],
+         ShowAutoStyles->False,
+         AutoSpacing->False],
+        $CellContext`\[Theta]BS[],
+        Editable->False], "]"}], " ", 
+      RowBox[{
+       InterpretationBox[
+        StyleBox["Sin",
+         ShowAutoStyles->False,
+         AutoSpacing->False],
+        Sin,
+        Editable->False], "[", 
+       InterpretationBox[
+        StyleBox[
+         OverscriptBox["\[Theta]", "^"],
+         ShowAutoStyles->False,
+         AutoSpacing->False],
+        $CellContext`\[Theta]BS[],
+        Editable->False], "]"}], " ", 
+      InterpretationBox[
+       StyleBox[
+        SubsuperscriptBox["\[Xi]", "\[SmallCircle]", "\[Theta]"],
+        ShowAutoStyles->False,
+        AutoSpacing->False],
+       $CellContext`xitcirc[],
+       Editable->False]}], "-", 
+     RowBox[{"3", " ", 
+      SuperscriptBox[
+       InterpretationBox[
+        StyleBox["A",
+         ShowAutoStyles->False,
+         AutoSpacing->False],
+        $CellContext`A,
+        Editable->False], "2"], " ", 
+      InterpretationBox[
+       StyleBox["M",
+        ShowAutoStyles->False,
+        AutoSpacing->False],
+       $CellContext`M,
+       Editable->False], " ", 
+      SuperscriptBox[
+       RowBox[{
+        InterpretationBox[
+         StyleBox["Sin",
+          ShowAutoStyles->False,
+          AutoSpacing->False],
+         Sin,
+         Editable->False], "[", 
+        InterpretationBox[
+         StyleBox[
+          OverscriptBox["\[Theta]", "^"],
+          ShowAutoStyles->False,
+          AutoSpacing->False],
+         $CellContext`\[Theta]BS[],
+         Editable->False], "]"}], "2"], " ", 
+      InterpretationBox[
+       StyleBox[
+        RowBox[{
+         SubscriptBox["\[PartialD]", 
+          StyleBox["2",
+           FontColor->RGBColor[0., 1., 0.]]], 
+         SubsuperscriptBox["\[Xi]", "\[SmallCircle]", "\[Theta]"]}],
+        ShowAutoStyles->False,
+        AutoSpacing->False],
+       xAct`xTensor`PD[{2, -$CellContext`BS}][
+        $CellContext`xitcirc[]],
+       Editable->False]}], "-", 
+     RowBox[{"3", " ", 
+      SuperscriptBox[
+       InterpretationBox[
+        StyleBox["A",
+         ShowAutoStyles->False,
+         AutoSpacing->False],
+        $CellContext`A,
+        Editable->False], "2"], " ", 
+      InterpretationBox[
+       StyleBox["M",
+        ShowAutoStyles->False,
+        AutoSpacing->False],
+       $CellContext`M,
+       Editable->False], " ", 
+      SuperscriptBox[
+       RowBox[{
+        InterpretationBox[
+         StyleBox["Sin",
+          ShowAutoStyles->False,
+          AutoSpacing->False],
+         Sin,
+         Editable->False], "[", 
+        InterpretationBox[
+         StyleBox[
+          OverscriptBox["\[Theta]", "^"],
+          ShowAutoStyles->False,
+          AutoSpacing->False],
+         $CellContext`\[Theta]BS[],
+         Editable->False], "]"}], "2"], " ", 
+      InterpretationBox[
+       StyleBox[
+        RowBox[{
+         SubscriptBox["\[PartialD]", 
+          StyleBox["3",
+           FontColor->RGBColor[0., 1., 0.]]], 
+         SubsuperscriptBox["\[Xi]", "\[SmallCircle]", "\[Phi]"]}],
+        ShowAutoStyles->False,
+        AutoSpacing->False],
+       xAct`xTensor`PD[{3, -$CellContext`BS}][
+        $CellContext`xipcirc[]],
+       Editable->False]}], "+", 
+     RowBox[{"4", " ", 
+      InterpretationBox[
+       StyleBox["A",
+        ShowAutoStyles->False,
+        AutoSpacing->False],
+       $CellContext`A,
+       Editable->False], " ", 
+      InterpretationBox[
+       StyleBox["M",
+        ShowAutoStyles->False,
+        AutoSpacing->False],
+       $CellContext`M,
+       Editable->False], " ", 
+      InterpretationBox[
+       StyleBox[
+        RowBox[{
+         SubscriptBox["\[PartialD]", 
+          StyleBox["3",
+           FontColor->RGBColor[0., 1., 0.]]], 
+         SubsuperscriptBox["\[Xi]", "\[SmallCircle]", "u"]}],
+        ShowAutoStyles->False,
+        AutoSpacing->False],
+       xAct`xTensor`PD[{3, -$CellContext`BS}][
+        $CellContext`xiucirc[]],
+       Editable->False]}]}], 
+    RowBox[{"2", " ", 
+     InterpretationBox[
+      StyleBox[
+       OverscriptBox["r", "^"],
+       ShowAutoStyles->False,
+       AutoSpacing->False],
+      $CellContext`rBS[],
+      Editable->False]}]], "+", 
+   InterpretationBox[
+    SuperscriptBox[
+     RowBox[{"O", "[", 
+      FractionBox["1", 
+       InterpretationBox[
+        StyleBox[
+         OverscriptBox["r", "^"],
+         ShowAutoStyles->False,
+         AutoSpacing->False],
+        $CellContext`rBS[],
+        Editable->False]], "]"}], "2"],
+    SeriesData[
+     $CellContext`rBS[], 
+     DirectedInfinity[1], {}, -2, 2, 1],
+    Editable->False]}],
+  SeriesData[
+   $CellContext`rBS[], 
+   DirectedInfinity[1], {-Cot[
+       $CellContext`\[Theta]BS[]] $CellContext`xitcirc[] + 
+    xAct`xTensor`PD[{2, -$CellContext`BS}][
+      $CellContext`xitcirc[]] - xAct`xTensor`PD[{3, -$CellContext`BS}][
+     $CellContext`xipcirc[]], Cot[
+       $CellContext`\[Theta]BS[]] xAct`xTensor`PD[{2, -$CellContext`BS}][
+       $CellContext`xiucirc[]] - xAct`xTensor`PD[{2, -$CellContext`BS}][
+     xAct`xTensor`PD[{2, -$CellContext`BS}][
+      $CellContext`xiucirc[]]] + Csc[
+        $CellContext`\[Theta]BS[]]^2 xAct`xTensor`PD[{3, -$CellContext`BS}][
+       xAct`xTensor`PD[{3, -$CellContext`BS}][
+        $CellContext`xiucirc[]]], 0, 
+    Rational[1, 2] ((-7) $CellContext`A^2 $CellContext`M Cos[
+        $CellContext`\[Theta]BS[]] Sin[
+        $CellContext`\[Theta]BS[]] $CellContext`xitcirc[] - 
+     3 $CellContext`A^2 $CellContext`M Sin[
+        $CellContext`\[Theta]BS[]]^2 xAct`xTensor`PD[{2, -$CellContext`BS}][
+       $CellContext`xitcirc[]] - 3 $CellContext`A^2 $CellContext`M Sin[
+        $CellContext`\[Theta]BS[]]^2 xAct`xTensor`PD[{3, -$CellContext`BS}][
+       $CellContext`xipcirc[]] + 
+     4 $CellContext`A $CellContext`M xAct`xTensor`PD[{3, -$CellContext`BS}][
+        $CellContext`xiucirc[]])}, -2, 2, 1],
+  Editable->False]], "Output",
+ CellChangeTimes->{3.950588665729519*^9, 3.9605272983246145`*^9},
+ CellLabel->
+  "Out[413]=",ExpressionUUID->"f51e0bff-7890-40f9-a479-f9f6c0e5c04b"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Test BMS vector", "Subsection",
+ CellChangeTimes->{{3.9505886737664003`*^9, 
+  3.950588705512102*^9}},ExpressionUUID->"3827f4bd-6b23-405f-9727-\
+f0a79266261a"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Y1", "=", 
+  RowBox[{
+   RowBox[{"Sin", "[", 
+    RowBox[{"\[Theta]BS", "[", "]"}], "]"}], 
+   RowBox[{"Exp", "[", 
+    RowBox[{
+     RowBox[{"-", "I"}], " ", 
+     RowBox[{"\[Phi]BS", "[", "]"}]}], "]"}]}]}]], "Input",
+ CellChangeTimes->{{3.95058883129867*^9, 3.950588835624178*^9}, {
+   3.950588895255914*^9, 3.9505889070392904`*^9}, 3.9505891706776047`*^9, {
+   3.9505899397124414`*^9, 3.950589952026896*^9}},
+ CellLabel->
+  "In[414]:=",ExpressionUUID->"1f1a822a-1bee-4a43-989a-e62f164b4d38"],
+
+Cell[BoxData[
+ RowBox[{
+  SuperscriptBox["\[ExponentialE]", 
+   RowBox[{
+    RowBox[{"-", "\[ImaginaryI]"}], " ", 
+    InterpretationBox[
+     StyleBox[
+      OverscriptBox["\[Phi]", "^"],
+      ShowAutoStyles->False,
+      AutoSpacing->False],
+     $CellContext`\[Phi]BS[],
+     Editable->False]}]], " ", 
+  RowBox[{
+   InterpretationBox[
+    StyleBox["Sin",
+     ShowAutoStyles->False,
+     AutoSpacing->False],
+    Sin,
+    Editable->False], "[", 
+   InterpretationBox[
+    StyleBox[
+     OverscriptBox["\[Theta]", "^"],
+     ShowAutoStyles->False,
+     AutoSpacing->False],
+    $CellContext`\[Theta]BS[],
+    Editable->False], "]"}]}]], "Output",
+ CellChangeTimes->{3.9505889078139052`*^9, 3.950589194591707*^9, 
+  3.9505899527235117`*^9, 3.950590184900302*^9, 3.960527303267062*^9},
+ CellLabel->
+  "Out[414]=",ExpressionUUID->"0f1a96d4-4ef1-428c-ab71-206800b412e1"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Ytheta", "=", 
+  RowBox[{"D", "[", 
+   RowBox[{"Y1", ",", 
+    RowBox[{"\[Theta]BS", "[", "]"}]}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.9505887214198236`*^9, 3.950588722920436*^9}, {
+   3.950588821265457*^9, 3.95058886958274*^9}, {3.95058895807358*^9, 
+   3.950588965734336*^9}, {3.9505891528883996`*^9, 3.9505891556385593`*^9}, 
+   3.950589191888598*^9},
+ CellLabel->
+  "In[415]:=",ExpressionUUID->"1bb55631-190a-4b61-8762-ae69549a281b"],
+
+Cell[BoxData[
+ RowBox[{
+  SuperscriptBox["\[ExponentialE]", 
+   RowBox[{
+    RowBox[{"-", "\[ImaginaryI]"}], " ", 
+    InterpretationBox[
+     StyleBox[
+      OverscriptBox["\[Phi]", "^"],
+      ShowAutoStyles->False,
+      AutoSpacing->False],
+     $CellContext`\[Phi]BS[],
+     Editable->False]}]], " ", 
+  RowBox[{
+   InterpretationBox[
+    StyleBox["Cos",
+     ShowAutoStyles->False,
+     AutoSpacing->False],
+    Cos,
+    Editable->False], "[", 
+   InterpretationBox[
+    StyleBox[
+     OverscriptBox["\[Theta]", "^"],
+     ShowAutoStyles->False,
+     AutoSpacing->False],
+    $CellContext`\[Theta]BS[],
+    Editable->False], "]"}]}]], "Output",
+ CellChangeTimes->{{3.9505891927354155`*^9, 3.9505891957646*^9}, 
+   3.9505899551515837`*^9, 3.950590184967424*^9, 3.960527303444959*^9},
+ CellLabel->
+  "Out[415]=",ExpressionUUID->"a53b9fe3-c8ea-4540-b2c7-4f1a34dad58a"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Yphi", "=", 
+  RowBox[{
+   RowBox[{"1", "/", 
+    RowBox[{
+     RowBox[{"Sin", "[", 
+      RowBox[{"\[Theta]BS", "[", "]"}], "]"}], "^", "2"}]}], 
+   RowBox[{"D", "[", 
+    RowBox[{"Y1", ",", 
+     RowBox[{"\[Phi]BS", "[", "]"}]}], "]"}]}]}]], "Input",
+ CellChangeTimes->{{3.9505889677632203`*^9, 3.9505889741418734`*^9}, {
+  3.9505891798581195`*^9, 3.9505891822346497`*^9}, {3.950590124914486*^9, 
+  3.9505901252992706`*^9}},
+ CellLabel->
+  "In[416]:=",ExpressionUUID->"7e7ab496-9888-4f8c-a7ce-256b368fa40c"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"-", "\[ImaginaryI]"}], " ", 
+  SuperscriptBox["\[ExponentialE]", 
+   RowBox[{
+    RowBox[{"-", "\[ImaginaryI]"}], " ", 
+    InterpretationBox[
+     StyleBox[
+      OverscriptBox["\[Phi]", "^"],
+      ShowAutoStyles->False,
+      AutoSpacing->False],
+     $CellContext`\[Phi]BS[],
+     Editable->False]}]], " ", 
+  RowBox[{
+   InterpretationBox[
+    StyleBox["Csc",
+     ShowAutoStyles->False,
+     AutoSpacing->False],
+    Csc,
+    Editable->False], "[", 
+   InterpretationBox[
+    StyleBox[
+     OverscriptBox["\[Theta]", "^"],
+     ShowAutoStyles->False,
+     AutoSpacing->False],
+    $CellContext`\[Theta]BS[],
+    Editable->False], "]"}]}]], "Output",
+ CellChangeTimes->{
+  3.950588974933109*^9, {3.950589185619131*^9, 3.950589197220287*^9}, 
+   3.9505899568100386`*^9, 3.9505901258920813`*^9, 3.9505901850053253`*^9, 
+   3.9605273035059457`*^9},
+ CellLabel->
+  "Out[416]=",ExpressionUUID->"331af1a6-a8c6-45cc-aa94-9b0c6363b5c6"]
+}, Open  ]],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{3.9505892664108915`*^9},
+ CellLabel->
+  "In[417]:=",ExpressionUUID->"bde8966b-1b87-4b00-adc2-ac31b33a3f94"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"xiu", "=", 
+  RowBox[{
+   RowBox[{"alpha", "+", 
+    RowBox[{
+     RowBox[{"1", "/", "2"}], " ", 
+     RowBox[{"uBS", "[", "]"}], 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"-", "2"}], "Y1"}], ")"}]}]}], "/.", 
+   RowBox[{"alpha", "->", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"Sin", "[", 
+       RowBox[{"\[Theta]BS", "[", "]"}], "]"}], "^", "3"}], 
+     RowBox[{"Exp", "[", 
+      RowBox[{
+       RowBox[{"-", "3"}], " ", "I", " ", 
+       RowBox[{"\[Phi]BS", "[", "]"}]}], "]"}]}]}]}]}]], "Input",
+ CellChangeTimes->{{3.950589120758211*^9, 3.950589145536543*^9}, {
+  3.9505892155698223`*^9, 3.950589271995187*^9}, {3.9505897747159786`*^9, 
+  3.950589809146969*^9}, {3.950589858834013*^9, 3.95058986442396*^9}, {
+  3.950590078434148*^9, 3.9505900966963625`*^9}, {3.9505901363678026`*^9, 
+  3.9505901379974117`*^9}},
+ CellLabel->
+  "In[418]:=",ExpressionUUID->"72c715b5-4c83-45b9-8e28-19be7395f7df"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   SuperscriptBox["\[ExponentialE]", 
+    RowBox[{
+     RowBox[{"-", "3"}], " ", "\[ImaginaryI]", " ", 
+     InterpretationBox[
+      StyleBox[
+       OverscriptBox["\[Phi]", "^"],
+       ShowAutoStyles->False,
+       AutoSpacing->False],
+      $CellContext`\[Phi]BS[],
+      Editable->False]}]], " ", 
+   SuperscriptBox[
+    RowBox[{
+     InterpretationBox[
+      StyleBox["Sin",
+       ShowAutoStyles->False,
+       AutoSpacing->False],
+      Sin,
+      Editable->False], "[", 
+     InterpretationBox[
+      StyleBox[
+       OverscriptBox["\[Theta]", "^"],
+       ShowAutoStyles->False,
+       AutoSpacing->False],
+      $CellContext`\[Theta]BS[],
+      Editable->False], "]"}], "3"]}], "-", 
+  RowBox[{
+   SuperscriptBox["\[ExponentialE]", 
+    RowBox[{
+     RowBox[{"-", "\[ImaginaryI]"}], " ", 
+     InterpretationBox[
+      StyleBox[
+       OverscriptBox["\[Phi]", "^"],
+       ShowAutoStyles->False,
+       AutoSpacing->False],
+      $CellContext`\[Phi]BS[],
+      Editable->False]}]], " ", 
+   RowBox[{
+    InterpretationBox[
+     StyleBox["Sin",
+      ShowAutoStyles->False,
+      AutoSpacing->False],
+     Sin,
+     Editable->False], "[", 
+    InterpretationBox[
+     StyleBox[
+      OverscriptBox["\[Theta]", "^"],
+      ShowAutoStyles->False,
+      AutoSpacing->False],
+     $CellContext`\[Theta]BS[],
+     Editable->False], "]"}], " ", 
+   InterpretationBox[
+    StyleBox["u",
+     ShowAutoStyles->False,
+     AutoSpacing->False],
+    $CellContext`uBS[],
+    Editable->False]}]}]], "Output",
+ CellChangeTimes->{3.9505900974484344`*^9, 3.950590138462502*^9, 
+  3.950590185043298*^9, 3.9605273035769463`*^9},
+ CellLabel->
+  "Out[418]=",ExpressionUUID->"b7631409-212a-4fe5-8b22-3c7167b1a9db"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  InterpretationBox[
+   StyleBox[
+    SubsuperscriptBox["\[Xi]", "\[SmallCircle]", "\[Theta]"],
+    ShowAutoStyles->False,
+    AutoSpacing->False],
+   $CellContext`xitcirc[],
+   Editable->False], "//", "InputForm"}]], "Input",
+ CellChangeTimes->{{3.950588997400117*^9, 3.950588998349902*^9}},
+ CellLabel->
+  "In[419]:=",ExpressionUUID->"98212b4a-582a-4513-8647-3c91fbcd7098"],
+
+Cell["xitcirc[]", "Output",
+ CellChangeTimes->{3.950588998745902*^9, 3.95059018508034*^9, 
+  3.9605273036263046`*^9},
+ CellLabel->
+  "Out[419]//InputForm=",ExpressionUUID->"76432baa-61e6-4be6-ac45-\
+e7015e873438"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"BMSgaugevectorRule", "=", 
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"xitcirc", "[", "]"}], "->", "Ytheta"}], ",", 
+    RowBox[{
+     RowBox[{"xipcirc", "[", "]"}], "->", "Yphi"}], ",", 
+    RowBox[{
+     RowBox[{"xiucirc", "[", "]"}], "->", "xiu"}]}], "}"}]}]], "Input",
+ CellChangeTimes->{{3.950589292036747*^9, 3.9505893061650095`*^9}},
+ CellLabel->
+  "In[420]:=",ExpressionUUID->"e0666a8d-e7d7-4e35-836b-ac767d799b90"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{
+    InterpretationBox[
+     StyleBox[
+      SubsuperscriptBox["\[Xi]", "\[SmallCircle]", "\[Theta]"],
+      ShowAutoStyles->False,
+      AutoSpacing->False],
+     $CellContext`xitcirc[],
+     Editable->False], "\[Rule]", 
+    RowBox[{
+     SuperscriptBox["\[ExponentialE]", 
+      RowBox[{
+       RowBox[{"-", "\[ImaginaryI]"}], " ", 
+       InterpretationBox[
+        StyleBox[
+         OverscriptBox["\[Phi]", "^"],
+         ShowAutoStyles->False,
+         AutoSpacing->False],
+        $CellContext`\[Phi]BS[],
+        Editable->False]}]], " ", 
+     RowBox[{
+      InterpretationBox[
+       StyleBox["Cos",
+        ShowAutoStyles->False,
+        AutoSpacing->False],
+       Cos,
+       Editable->False], "[", 
+      InterpretationBox[
+       StyleBox[
+        OverscriptBox["\[Theta]", "^"],
+        ShowAutoStyles->False,
+        AutoSpacing->False],
+       $CellContext`\[Theta]BS[],
+       Editable->False], "]"}]}]}], ",", 
+   RowBox[{
+    InterpretationBox[
+     StyleBox[
+      SubsuperscriptBox["\[Xi]", "\[SmallCircle]", "\[Phi]"],
+      ShowAutoStyles->False,
+      AutoSpacing->False],
+     $CellContext`xipcirc[],
+     Editable->False], "\[Rule]", 
+    RowBox[{
+     RowBox[{"-", "\[ImaginaryI]"}], " ", 
+     SuperscriptBox["\[ExponentialE]", 
+      RowBox[{
+       RowBox[{"-", "\[ImaginaryI]"}], " ", 
+       InterpretationBox[
+        StyleBox[
+         OverscriptBox["\[Phi]", "^"],
+         ShowAutoStyles->False,
+         AutoSpacing->False],
+        $CellContext`\[Phi]BS[],
+        Editable->False]}]], " ", 
+     RowBox[{
+      InterpretationBox[
+       StyleBox["Csc",
+        ShowAutoStyles->False,
+        AutoSpacing->False],
+       Csc,
+       Editable->False], "[", 
+      InterpretationBox[
+       StyleBox[
+        OverscriptBox["\[Theta]", "^"],
+        ShowAutoStyles->False,
+        AutoSpacing->False],
+       $CellContext`\[Theta]BS[],
+       Editable->False], "]"}]}]}], ",", 
+   RowBox[{
+    InterpretationBox[
+     StyleBox[
+      SubsuperscriptBox["\[Xi]", "\[SmallCircle]", "u"],
+      ShowAutoStyles->False,
+      AutoSpacing->False],
+     $CellContext`xiucirc[],
+     Editable->False], "\[Rule]", 
+    RowBox[{
+     RowBox[{
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{"-", "3"}], " ", "\[ImaginaryI]", " ", 
+        InterpretationBox[
+         StyleBox[
+          OverscriptBox["\[Phi]", "^"],
+          ShowAutoStyles->False,
+          AutoSpacing->False],
+         $CellContext`\[Phi]BS[],
+         Editable->False]}]], " ", 
+      SuperscriptBox[
+       RowBox[{
+        InterpretationBox[
+         StyleBox["Sin",
+          ShowAutoStyles->False,
+          AutoSpacing->False],
+         Sin,
+         Editable->False], "[", 
+        InterpretationBox[
+         StyleBox[
+          OverscriptBox["\[Theta]", "^"],
+          ShowAutoStyles->False,
+          AutoSpacing->False],
+         $CellContext`\[Theta]BS[],
+         Editable->False], "]"}], "3"]}], "-", 
+     RowBox[{
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{"-", "\[ImaginaryI]"}], " ", 
+        InterpretationBox[
+         StyleBox[
+          OverscriptBox["\[Phi]", "^"],
+          ShowAutoStyles->False,
+          AutoSpacing->False],
+         $CellContext`\[Phi]BS[],
+         Editable->False]}]], " ", 
+      RowBox[{
+       InterpretationBox[
+        StyleBox["Sin",
+         ShowAutoStyles->False,
+         AutoSpacing->False],
+        Sin,
+        Editable->False], "[", 
+       InterpretationBox[
+        StyleBox[
+         OverscriptBox["\[Theta]", "^"],
+         ShowAutoStyles->False,
+         AutoSpacing->False],
+        $CellContext`\[Theta]BS[],
+        Editable->False], "]"}], " ", 
+      InterpretationBox[
+       StyleBox["u",
+        ShowAutoStyles->False,
+        AutoSpacing->False],
+       $CellContext`uBS[],
+       Editable->False]}]}]}]}], "}"}]], "Output",
+ CellChangeTimes->{
+  3.950589306661105*^9, 3.95058981753189*^9, 3.9505898692912827`*^9, 
+   3.9505899605430512`*^9, {3.9505900995288067`*^9, 3.950590129199602*^9}, 
+   3.950590185093297*^9, 3.960527303692424*^9},
+ CellLabel->
+  "Out[420]=",ExpressionUUID->"d8199480-f570-47b0-ab42-82963c1dc437"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Check flatness of other conmponents", "Subsubsection",
+ CellChangeTimes->{{3.9505893540906277`*^9, 
+  3.9505893677152023`*^9}},ExpressionUUID->"6ee9a251-a09d-4fb9-83fc-\
+ce5e361f2ee5"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{
+    RowBox[{
+     RowBox[{
+      RowBox[{
+       RowBox[{
+        RowBox[{"GaugeTransformBSCoords", "[", 
+         RowBox[{"[", 
+          RowBox[{"1", ",", "1"}], "]"}], "]"}], "//.", "X0ruleBMS"}], "//.", 
+       "X3ruleBMS"}], "//.", "X2ruleBMS"}], "//.", "X1ruleBMS"}], "/.", 
+    "RDerivativeRule"}], "/.", "BMSgaugevectorRule"}], "//", 
+  "FullSimplify"}]], "Input",
+ CellChangeTimes->{{3.950588989916703*^9, 3.950589049227337*^9}, {
+   3.950589313221798*^9, 3.9505893181657667`*^9}, {3.9505894067746663`*^9, 
+   3.950589408185322*^9}, 3.9505899726191807`*^9},
+ CellLabel->
+  "In[427]:=",ExpressionUUID->"751e2c09-2a35-498d-ab68-7684a8cf6a99"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   RowBox[{"-", 
+    FractionBox[
+     RowBox[{"6", " ", 
+      RowBox[{"(", 
+       RowBox[{
+        SuperscriptBox["\[ExponentialE]", 
+         RowBox[{
+          RowBox[{"-", "\[ImaginaryI]"}], " ", 
+          InterpretationBox[
+           StyleBox[
+            OverscriptBox["\[Phi]", "^"],
+            ShowAutoStyles->False,
+            AutoSpacing->False],
+           $CellContext`\[Phi]BS[],
+           Editable->False]}]], " ", 
+        InterpretationBox[
+         StyleBox["M",
+          ShowAutoStyles->False,
+          AutoSpacing->False],
+         $CellContext`M,
+         Editable->False], " ", 
+        RowBox[{
+         InterpretationBox[
+          StyleBox["Sin",
+           ShowAutoStyles->False,
+           AutoSpacing->False],
+          Sin,
+          Editable->False], "[", 
+         InterpretationBox[
+          StyleBox[
+           OverscriptBox["\[Theta]", "^"],
+           ShowAutoStyles->False,
+           AutoSpacing->False],
+          $CellContext`\[Theta]BS[],
+          Editable->False], "]"}]}], ")"}]}], 
+     InterpretationBox[
+      StyleBox[
+       OverscriptBox["r", "^"],
+       ShowAutoStyles->False,
+       AutoSpacing->False],
+      $CellContext`rBS[],
+      Editable->False]]}], "+", 
+   FractionBox[
+    RowBox[{"2", " ", 
+     SuperscriptBox["\[ExponentialE]", 
+      RowBox[{
+       RowBox[{"-", "3"}], " ", "\[ImaginaryI]", " ", 
+       InterpretationBox[
+        StyleBox[
+         OverscriptBox["\[Phi]", "^"],
+         ShowAutoStyles->False,
+         AutoSpacing->False],
+        $CellContext`\[Phi]BS[],
+        Editable->False]}]], " ", 
+     InterpretationBox[
+      StyleBox["M",
+       ShowAutoStyles->False,
+       AutoSpacing->False],
+      $CellContext`M,
+      Editable->False], " ", 
+     RowBox[{
+      InterpretationBox[
+       StyleBox["Sin",
+        ShowAutoStyles->False,
+        AutoSpacing->False],
+       Sin,
+       Editable->False], "[", 
+      InterpretationBox[
+       StyleBox[
+        OverscriptBox["\[Theta]", "^"],
+        ShowAutoStyles->False,
+        AutoSpacing->False],
+       $CellContext`\[Theta]BS[],
+       Editable->False], "]"}], " ", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"6", " ", 
+        SuperscriptBox[
+         RowBox[{
+          InterpretationBox[
+           StyleBox["Sin",
+            ShowAutoStyles->False,
+            AutoSpacing->False],
+           Sin,
+           Editable->False], "[", 
+          InterpretationBox[
+           StyleBox[
+            OverscriptBox["\[Theta]", "^"],
+            ShowAutoStyles->False,
+            AutoSpacing->False],
+           $CellContext`\[Theta]BS[],
+           Editable->False], "]"}], "2"]}], "+", 
+       RowBox[{"\[ImaginaryI]", " ", 
+        SuperscriptBox["\[ExponentialE]", 
+         RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+          InterpretationBox[
+           StyleBox[
+            OverscriptBox["\[Phi]", "^"],
+            ShowAutoStyles->False,
+            AutoSpacing->False],
+           $CellContext`\[Phi]BS[],
+           Editable->False]}]], " ", 
+        RowBox[{"(", 
+         RowBox[{
+          InterpretationBox[
+           StyleBox["A",
+            ShowAutoStyles->False,
+            AutoSpacing->False],
+           $CellContext`A,
+           Editable->False], "+", 
+          RowBox[{"\[ImaginaryI]", " ", 
+           InterpretationBox[
+            StyleBox["u",
+             ShowAutoStyles->False,
+             AutoSpacing->False],
+            $CellContext`uBS[],
+            Editable->False]}]}], ")"}]}]}], ")"}]}], 
+    SuperscriptBox[
+     InterpretationBox[
+      StyleBox[
+       OverscriptBox["r", "^"],
+       ShowAutoStyles->False,
+       AutoSpacing->False],
+      $CellContext`rBS[],
+      Editable->False], "2"]], "+", 
+   InterpretationBox[
+    SuperscriptBox[
+     RowBox[{"O", "[", 
+      FractionBox["1", 
+       InterpretationBox[
+        StyleBox[
+         OverscriptBox["r", "^"],
+         ShowAutoStyles->False,
+         AutoSpacing->False],
+        $CellContext`rBS[],
+        Editable->False]], "]"}], "3"],
+    SeriesData[
+     $CellContext`rBS[], 
+     DirectedInfinity[1], {}, 1, 3, 1],
+    Editable->False]}],
+  SeriesData[
+   $CellContext`rBS[], 
+   DirectedInfinity[
+   1], {(-6) E^(Complex[0, -1] $CellContext`\[Phi]BS[]) $CellContext`M Sin[
+      $CellContext`\[Theta]BS[]], 2 
+    E^(Complex[0, -3] $CellContext`\[Phi]BS[]) $CellContext`M Sin[
+      $CellContext`\[Theta]BS[]] (6 Sin[
+         $CellContext`\[Theta]BS[]]^2 + 
+     Complex[0, 1] 
+      E^(Complex[0, 2] $CellContext`\[Phi]BS[]) ($CellContext`A + 
+       Complex[0, 1] $CellContext`uBS[]))}, 1, 3, 1],
+  Editable->False]], "Output",
+ CellChangeTimes->{
+  3.9505894090695844`*^9, 3.9505898199125195`*^9, 3.9505898731982417`*^9, {
+   3.9505899629379473`*^9, 3.9505899738465767`*^9}, {3.9505901020353537`*^9, 
+   3.95059013056151*^9}, 3.9505901854944725`*^9, {3.960527304455085*^9, 
+   3.960527315030348*^9}},
+ CellLabel->
+  "Out[427]=",ExpressionUUID->"c4841a0f-64f4-46bd-9fb4-6324f3d3eea7"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{
+    RowBox[{
+     RowBox[{
+      RowBox[{
+       RowBox[{
+        RowBox[{"GaugeTransformBSCoords", "[", 
+         RowBox[{"[", 
+          RowBox[{"1", ",", "2"}], "]"}], "]"}], "//.", "X0ruleBMS"}], "//.", 
+       "X3ruleBMS"}], "//.", "X2ruleBMS"}], "//.", "X1ruleBMS"}], "/.", 
+    "RDerivativeRule"}], "/.", "BMSgaugevectorRule"}], "//", 
+  "FullSimplify"}]], "Input",
+ CellChangeTimes->{{3.950588989916703*^9, 3.950589049227337*^9}, {
+   3.950589313221798*^9, 3.9505893181657667`*^9}, {3.9505894195129104`*^9, 
+   3.9505894207516108`*^9}, 3.9505899770734024`*^9},
+ CellLabel->
+  "In[428]:=",ExpressionUUID->"5f955396-6f42-40e0-8508-1cf5ec2a1af9"],
+
+Cell[BoxData[
+ InterpretationBox[
+  SuperscriptBox[
+   RowBox[{"O", "[", 
+    FractionBox["1", 
+     InterpretationBox[
+      StyleBox[
+       OverscriptBox["r", "^"],
+       ShowAutoStyles->False,
+       AutoSpacing->False],
+      $CellContext`rBS[],
+      Editable->False]], "]"}], "4"],
+  SeriesData[
+   $CellContext`rBS[], 
+   DirectedInfinity[1], {}, 4, 4, 1],
+  Editable->False]], "Output",
+ CellChangeTimes->{
+  3.9505894215730133`*^9, 3.9505894741803217`*^9, 3.9505898200245237`*^9, 
+   3.9505898732722144`*^9, 3.9505899782818737`*^9, {3.9505901021684713`*^9, 
+   3.9505901306342864`*^9}, 3.950590185579506*^9, {3.9605273046635523`*^9, 
+   3.960527315126964*^9}},
+ CellLabel->
+  "Out[428]=",ExpressionUUID->"021606c3-c8fe-4482-9459-519f85f4977a"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{
+    RowBox[{
+     RowBox[{
+      RowBox[{
+       RowBox[{
+        RowBox[{"GaugeTransformBSCoords", "[", 
+         RowBox[{"[", 
+          RowBox[{"1", ",", "3"}], "]"}], "]"}], "//.", "X0ruleBMS"}], "//.", 
+       "X3ruleBMS"}], "//.", "X2ruleBMS"}], "//.", "X1ruleBMS"}], "/.", 
+    "RDerivativeRule"}], "/.", "BMSgaugevectorRule"}], "//", 
+  "FullSimplify"}]], "Input",
+ CellChangeTimes->{{3.950588989916703*^9, 3.950589049227337*^9}, {
+   3.950589313221798*^9, 3.9505893181657667`*^9}, 3.950589433173*^9, 
+   3.9505894988279886`*^9},
+ CellLabel->
+  "In[429]:=",ExpressionUUID->"b74ecc44-d268-43e5-a93c-7fc6b73ed41e"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   RowBox[{"15", " ", 
+    SuperscriptBox["\[ExponentialE]", 
+     RowBox[{
+      RowBox[{"-", "3"}], " ", "\[ImaginaryI]", " ", 
+      InterpretationBox[
+       StyleBox[
+        OverscriptBox["\[Phi]", "^"],
+        ShowAutoStyles->False,
+        AutoSpacing->False],
+       $CellContext`\[Phi]BS[],
+       Editable->False]}]], " ", 
+    RowBox[{
+     InterpretationBox[
+      StyleBox["Cos",
+       ShowAutoStyles->False,
+       AutoSpacing->False],
+      Cos,
+      Editable->False], "[", 
+     InterpretationBox[
+      StyleBox[
+       OverscriptBox["\[Theta]", "^"],
+       ShowAutoStyles->False,
+       AutoSpacing->False],
+      $CellContext`\[Theta]BS[],
+      Editable->False], "]"}], " ", 
+    SuperscriptBox[
+     RowBox[{
+      InterpretationBox[
+       StyleBox["Sin",
+        ShowAutoStyles->False,
+        AutoSpacing->False],
+       Sin,
+       Editable->False], "[", 
+      InterpretationBox[
+       StyleBox[
+        OverscriptBox["\[Theta]", "^"],
+        ShowAutoStyles->False,
+        AutoSpacing->False],
+       $CellContext`\[Theta]BS[],
+       Editable->False], "]"}], "2"]}], "-", 
+   FractionBox[
+    RowBox[{
+     SuperscriptBox["\[ExponentialE]", 
+      RowBox[{
+       RowBox[{"-", "3"}], " ", "\[ImaginaryI]", " ", 
+       InterpretationBox[
+        StyleBox[
+         OverscriptBox["\[Phi]", "^"],
+         ShowAutoStyles->False,
+         AutoSpacing->False],
+        $CellContext`\[Phi]BS[],
+        Editable->False]}]], " ", 
+     InterpretationBox[
+      StyleBox["M",
+       ShowAutoStyles->False,
+       AutoSpacing->False],
+      $CellContext`M,
+      Editable->False], " ", 
+     RowBox[{
+      InterpretationBox[
+       StyleBox["Cos",
+        ShowAutoStyles->False,
+        AutoSpacing->False],
+       Cos,
+       Editable->False], "[", 
+      InterpretationBox[
+       StyleBox[
+        OverscriptBox["\[Theta]", "^"],
+        ShowAutoStyles->False,
+        AutoSpacing->False],
+       $CellContext`\[Theta]BS[],
+       Editable->False], "]"}], " ", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"-", "6"}], " ", 
+        SuperscriptBox[
+         RowBox[{
+          InterpretationBox[
+           StyleBox["Sin",
+            ShowAutoStyles->False,
+            AutoSpacing->False],
+           Sin,
+           Editable->False], "[", 
+          InterpretationBox[
+           StyleBox[
+            OverscriptBox["\[Theta]", "^"],
+            ShowAutoStyles->False,
+            AutoSpacing->False],
+           $CellContext`\[Theta]BS[],
+           Editable->False], "]"}], "2"]}], "+", 
+       RowBox[{"2", " ", 
+        SuperscriptBox["\[ExponentialE]", 
+         RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+          InterpretationBox[
+           StyleBox[
+            OverscriptBox["\[Phi]", "^"],
+            ShowAutoStyles->False,
+            AutoSpacing->False],
+           $CellContext`\[Phi]BS[],
+           Editable->False]}]], " ", 
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"\[ImaginaryI]", " ", 
+           InterpretationBox[
+            StyleBox["A",
+             ShowAutoStyles->False,
+             AutoSpacing->False],
+            $CellContext`A,
+            Editable->False]}], "+", 
+          InterpretationBox[
+           StyleBox["u",
+            ShowAutoStyles->False,
+            AutoSpacing->False],
+           $CellContext`uBS[],
+           Editable->False]}], ")"}]}]}], ")"}]}], 
+    InterpretationBox[
+     StyleBox[
+      OverscriptBox["r", "^"],
+      ShowAutoStyles->False,
+      AutoSpacing->False],
+     $CellContext`rBS[],
+     Editable->False]], "+", 
+   FractionBox[
+    RowBox[{"3", " ", 
+     InterpretationBox[
+      StyleBox["A",
+       ShowAutoStyles->False,
+       AutoSpacing->False],
+      $CellContext`A,
+      Editable->False], " ", 
+     SuperscriptBox["\[ExponentialE]", 
+      RowBox[{
+       RowBox[{"-", "3"}], " ", "\[ImaginaryI]", " ", 
+       InterpretationBox[
+        StyleBox[
+         OverscriptBox["\[Phi]", "^"],
+         ShowAutoStyles->False,
+         AutoSpacing->False],
+        $CellContext`\[Phi]BS[],
+        Editable->False]}]], " ", 
+     InterpretationBox[
+      StyleBox["M",
+       ShowAutoStyles->False,
+       AutoSpacing->False],
+      $CellContext`M,
+      Editable->False], " ", 
+     RowBox[{
+      InterpretationBox[
+       StyleBox["Cos",
+        ShowAutoStyles->False,
+        AutoSpacing->False],
+       Cos,
+       Editable->False], "[", 
+      InterpretationBox[
+       StyleBox[
+        OverscriptBox["\[Theta]", "^"],
+        ShowAutoStyles->False,
+        AutoSpacing->False],
+       $CellContext`\[Theta]BS[],
+       Editable->False], "]"}], " ", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"8", " ", "\[ImaginaryI]", " ", 
+        SuperscriptBox[
+         RowBox[{
+          InterpretationBox[
+           StyleBox["Sin",
+            ShowAutoStyles->False,
+            AutoSpacing->False],
+           Sin,
+           Editable->False], "[", 
+          InterpretationBox[
+           StyleBox[
+            OverscriptBox["\[Theta]", "^"],
+            ShowAutoStyles->False,
+            AutoSpacing->False],
+           $CellContext`\[Theta]BS[],
+           Editable->False], "]"}], "2"]}], "+", 
+       RowBox[{
+        SuperscriptBox["\[ExponentialE]", 
+         RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+          InterpretationBox[
+           StyleBox[
+            OverscriptBox["\[Phi]", "^"],
+            ShowAutoStyles->False,
+            AutoSpacing->False],
+           $CellContext`\[Phi]BS[],
+           Editable->False]}]], " ", 
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{
+           RowBox[{"-", "17"}], " ", 
+           InterpretationBox[
+            StyleBox["A",
+             ShowAutoStyles->False,
+             AutoSpacing->False],
+            $CellContext`A,
+            Editable->False]}], "+", 
+          RowBox[{"25", " ", 
+           InterpretationBox[
+            StyleBox["A",
+             ShowAutoStyles->False,
+             AutoSpacing->False],
+            $CellContext`A,
+            Editable->False], " ", 
+           RowBox[{
+            InterpretationBox[
+             StyleBox["Cos",
+              ShowAutoStyles->False,
+              AutoSpacing->False],
+             Cos,
+             Editable->False], "[", 
+            RowBox[{"2", " ", 
+             InterpretationBox[
+              StyleBox[
+               OverscriptBox["\[Theta]", "^"],
+               ShowAutoStyles->False,
+               AutoSpacing->False],
+              $CellContext`\[Theta]BS[],
+              Editable->False]}], "]"}]}], "-", 
+          RowBox[{"8", " ", "\[ImaginaryI]", " ", 
+           InterpretationBox[
+            StyleBox["u",
+             ShowAutoStyles->False,
+             AutoSpacing->False],
+            $CellContext`uBS[],
+            Editable->False]}]}], ")"}]}]}], ")"}]}], 
+    RowBox[{"8", " ", 
+     SuperscriptBox[
+      InterpretationBox[
+       StyleBox[
+        OverscriptBox["r", "^"],
+        ShowAutoStyles->False,
+        AutoSpacing->False],
+       $CellContext`rBS[],
+       Editable->False], "2"]}]], "+", 
+   InterpretationBox[
+    SuperscriptBox[
+     RowBox[{"O", "[", 
+      FractionBox["1", 
+       InterpretationBox[
+        StyleBox[
+         OverscriptBox["r", "^"],
+         ShowAutoStyles->False,
+         AutoSpacing->False],
+        $CellContext`rBS[],
+        Editable->False]], "]"}], "3"],
+    SeriesData[
+     $CellContext`rBS[], 
+     DirectedInfinity[1], {}, 0, 3, 1],
+    Editable->False]}],
+  SeriesData[
+   $CellContext`rBS[], 
+   DirectedInfinity[1], {15 E^(Complex[0, -3] $CellContext`\[Phi]BS[]) Cos[
+      $CellContext`\[Theta]BS[]] Sin[
+       $CellContext`\[Theta]BS[]]^2, -
+    E^(Complex[0, -3] $CellContext`\[Phi]BS[]) $CellContext`M Cos[
+      $CellContext`\[Theta]BS[]] ((-6) Sin[
+         $CellContext`\[Theta]BS[]]^2 + 
+     2 E^(Complex[0, 2] $CellContext`\[Phi]BS[]) (
+       Complex[0, 1] $CellContext`A + $CellContext`uBS[])), 
+    Rational[3, 8] $CellContext`A 
+    E^(Complex[0, -3] $CellContext`\[Phi]BS[]) $CellContext`M Cos[
+      $CellContext`\[Theta]BS[]] (Complex[0, 8] Sin[
+         $CellContext`\[Theta]BS[]]^2 + 
+     E^(Complex[0, 2] $CellContext`\[Phi]BS[]) ((-17) $CellContext`A + 
+       25 $CellContext`A Cos[2 $CellContext`\[Theta]BS[]] + 
+       Complex[0, -8] $CellContext`uBS[]))}, 0, 3, 1],
+  Editable->False]], "Output",
+ CellChangeTimes->{
+  3.9505894356009984`*^9, {3.950589476153678*^9, 3.9505894997099366`*^9}, 
+   3.950589820314588*^9, 3.950589873803257*^9, 3.950590028687522*^9, {
+   3.9505901023813534`*^9, 3.9505901308103223`*^9}, 3.950590186326441*^9, {
+   3.960527306006624*^9, 3.960527315391232*^9}},
+ CellLabel->
+  "Out[429]=",ExpressionUUID->"9279fcc4-9c49-43f5-8b73-4bb9c77fdff9"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{
+    RowBox[{
+     RowBox[{
+      RowBox[{
+       RowBox[{
+        RowBox[{"GaugeTransformBSCoords", "[", 
+         RowBox[{"[", 
+          RowBox[{"1", ",", "4"}], "]"}], "]"}], "//.", "X0ruleBMS"}], "//.", 
+       "X3ruleBMS"}], "//.", "X2ruleBMS"}], "//.", "X1ruleBMS"}], "/.", 
+    "RDerivativeRule"}], "/.", "BMSgaugevectorRule"}], "//", 
+  "FullSimplify"}]], "Input",
+ CellChangeTimes->{{3.950588989916703*^9, 3.950589049227337*^9}, {
+   3.950589313221798*^9, 3.9505893181657667`*^9}, 3.950589433173*^9, {
+   3.9505894988279886`*^9, 3.9505895107602425`*^9}},
+ CellLabel->
+  "In[430]:=",ExpressionUUID->"04da65d4-4beb-4661-bb06-0277b2b8ba3e"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   RowBox[{"-", 
+    RowBox[{"15", " ", "\[ImaginaryI]", " ", 
+     SuperscriptBox["\[ExponentialE]", 
+      RowBox[{
+       RowBox[{"-", "3"}], " ", "\[ImaginaryI]", " ", 
+       InterpretationBox[
+        StyleBox[
+         OverscriptBox["\[Phi]", "^"],
+         ShowAutoStyles->False,
+         AutoSpacing->False],
+        $CellContext`\[Phi]BS[],
+        Editable->False]}]], " ", 
+     SuperscriptBox[
+      RowBox[{
+       InterpretationBox[
+        StyleBox["Sin",
+         ShowAutoStyles->False,
+         AutoSpacing->False],
+        Sin,
+        Editable->False], "[", 
+       InterpretationBox[
+        StyleBox[
+         OverscriptBox["\[Theta]", "^"],
+         ShowAutoStyles->False,
+         AutoSpacing->False],
+        $CellContext`\[Theta]BS[],
+        Editable->False], "]"}], "3"]}]}], "+", 
+   FractionBox[
+    RowBox[{
+     SuperscriptBox["\[ExponentialE]", 
+      RowBox[{
+       RowBox[{"-", "3"}], " ", "\[ImaginaryI]", " ", 
+       InterpretationBox[
+        StyleBox[
+         OverscriptBox["\[Phi]", "^"],
+         ShowAutoStyles->False,
+         AutoSpacing->False],
+        $CellContext`\[Phi]BS[],
+        Editable->False]}]], " ", 
+     InterpretationBox[
+      StyleBox["M",
+       ShowAutoStyles->False,
+       AutoSpacing->False],
+      $CellContext`M,
+      Editable->False], " ", 
+     RowBox[{
+      InterpretationBox[
+       StyleBox["Sin",
+        ShowAutoStyles->False,
+        AutoSpacing->False],
+       Sin,
+       Editable->False], "[", 
+      InterpretationBox[
+       StyleBox[
+        OverscriptBox["\[Theta]", "^"],
+        ShowAutoStyles->False,
+        AutoSpacing->False],
+       $CellContext`\[Theta]BS[],
+       Editable->False], "]"}], " ", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"-", "6"}], " ", "\[ImaginaryI]", " ", 
+        SuperscriptBox[
+         RowBox[{
+          InterpretationBox[
+           StyleBox["Sin",
+            ShowAutoStyles->False,
+            AutoSpacing->False],
+           Sin,
+           Editable->False], "[", 
+          InterpretationBox[
+           StyleBox[
+            OverscriptBox["\[Theta]", "^"],
+            ShowAutoStyles->False,
+            AutoSpacing->False],
+           $CellContext`\[Theta]BS[],
+           Editable->False], "]"}], "2"]}], "-", 
+       RowBox[{"2", " ", 
+        SuperscriptBox["\[ExponentialE]", 
+         RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+          InterpretationBox[
+           StyleBox[
+            OverscriptBox["\[Phi]", "^"],
+            ShowAutoStyles->False,
+            AutoSpacing->False],
+           $CellContext`\[Phi]BS[],
+           Editable->False]}]], " ", 
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"-", 
+           InterpretationBox[
+            StyleBox["A",
+             ShowAutoStyles->False,
+             AutoSpacing->False],
+            $CellContext`A,
+            Editable->False]}], "+", 
+          RowBox[{"2", " ", 
+           InterpretationBox[
+            StyleBox["A",
+             ShowAutoStyles->False,
+             AutoSpacing->False],
+            $CellContext`A,
+            Editable->False], " ", 
+           RowBox[{
+            InterpretationBox[
+             StyleBox["Cos",
+              ShowAutoStyles->False,
+              AutoSpacing->False],
+             Cos,
+             Editable->False], "[", 
+            RowBox[{"2", " ", 
+             InterpretationBox[
+              StyleBox[
+               OverscriptBox["\[Theta]", "^"],
+               ShowAutoStyles->False,
+               AutoSpacing->False],
+              $CellContext`\[Theta]BS[],
+              Editable->False]}], "]"}]}], "-", 
+          RowBox[{"\[ImaginaryI]", " ", 
+           InterpretationBox[
+            StyleBox["u",
+             ShowAutoStyles->False,
+             AutoSpacing->False],
+            $CellContext`uBS[],
+            Editable->False]}]}], ")"}]}]}], ")"}]}], 
+    InterpretationBox[
+     StyleBox[
+      OverscriptBox["r", "^"],
+      ShowAutoStyles->False,
+      AutoSpacing->False],
+     $CellContext`rBS[],
+     Editable->False]], "+", 
+   FractionBox[
+    RowBox[{"3", " ", 
+     InterpretationBox[
+      StyleBox["A",
+       ShowAutoStyles->False,
+       AutoSpacing->False],
+      $CellContext`A,
+      Editable->False], " ", 
+     SuperscriptBox["\[ExponentialE]", 
+      RowBox[{
+       RowBox[{"-", "3"}], " ", "\[ImaginaryI]", " ", 
+       InterpretationBox[
+        StyleBox[
+         OverscriptBox["\[Phi]", "^"],
+         ShowAutoStyles->False,
+         AutoSpacing->False],
+        $CellContext`\[Phi]BS[],
+        Editable->False]}]], " ", 
+     InterpretationBox[
+      StyleBox["M",
+       ShowAutoStyles->False,
+       AutoSpacing->False],
+      $CellContext`M,
+      Editable->False], " ", 
+     RowBox[{
+      InterpretationBox[
+       StyleBox["Sin",
+        ShowAutoStyles->False,
+        AutoSpacing->False],
+       Sin,
+       Editable->False], "[", 
+      InterpretationBox[
+       StyleBox[
+        OverscriptBox["\[Theta]", "^"],
+        ShowAutoStyles->False,
+        AutoSpacing->False],
+       $CellContext`\[Theta]BS[],
+       Editable->False], "]"}], " ", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"8", " ", 
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"-", "3"}], "+", 
+          RowBox[{"4", " ", 
+           RowBox[{
+            InterpretationBox[
+             StyleBox["Cos",
+              ShowAutoStyles->False,
+              AutoSpacing->False],
+             Cos,
+             Editable->False], "[", 
+            RowBox[{"2", " ", 
+             InterpretationBox[
+              StyleBox[
+               OverscriptBox["\[Theta]", "^"],
+               ShowAutoStyles->False,
+               AutoSpacing->False],
+              $CellContext`\[Theta]BS[],
+              Editable->False]}], "]"}]}]}], ")"}], " ", 
+        SuperscriptBox[
+         RowBox[{
+          InterpretationBox[
+           StyleBox["Sin",
+            ShowAutoStyles->False,
+            AutoSpacing->False],
+           Sin,
+           Editable->False], "[", 
+          InterpretationBox[
+           StyleBox[
+            OverscriptBox["\[Theta]", "^"],
+            ShowAutoStyles->False,
+            AutoSpacing->False],
+           $CellContext`\[Theta]BS[],
+           Editable->False], "]"}], "2"]}], "-", 
+       RowBox[{"\[ImaginaryI]", " ", 
+        SuperscriptBox["\[ExponentialE]", 
+         RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+          InterpretationBox[
+           StyleBox[
+            OverscriptBox["\[Phi]", "^"],
+            ShowAutoStyles->False,
+            AutoSpacing->False],
+           $CellContext`\[Phi]BS[],
+           Editable->False]}]], " ", 
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"5", " ", 
+           InterpretationBox[
+            StyleBox["A",
+             ShowAutoStyles->False,
+             AutoSpacing->False],
+            $CellContext`A,
+            Editable->False]}], "+", 
+          RowBox[{
+           RowBox[{
+            InterpretationBox[
+             StyleBox["Cos",
+              ShowAutoStyles->False,
+              AutoSpacing->False],
+             Cos,
+             Editable->False], "[", 
+            RowBox[{"2", " ", 
+             InterpretationBox[
+              StyleBox[
+               OverscriptBox["\[Theta]", "^"],
+               ShowAutoStyles->False,
+               AutoSpacing->False],
+              $CellContext`\[Theta]BS[],
+              Editable->False]}], "]"}], " ", 
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{"3", " ", 
+              InterpretationBox[
+               StyleBox["A",
+                ShowAutoStyles->False,
+                AutoSpacing->False],
+               $CellContext`A,
+               Editable->False]}], "-", 
+             RowBox[{"8", " ", "\[ImaginaryI]", " ", 
+              InterpretationBox[
+               StyleBox["u",
+                ShowAutoStyles->False,
+                AutoSpacing->False],
+               $CellContext`uBS[],
+               Editable->False]}]}], ")"}]}]}], ")"}]}]}], ")"}]}], 
+    RowBox[{"8", " ", 
+     SuperscriptBox[
+      InterpretationBox[
+       StyleBox[
+        OverscriptBox["r", "^"],
+        ShowAutoStyles->False,
+        AutoSpacing->False],
+       $CellContext`rBS[],
+       Editable->False], "2"]}]], "+", 
+   InterpretationBox[
+    SuperscriptBox[
+     RowBox[{"O", "[", 
+      FractionBox["1", 
+       InterpretationBox[
+        StyleBox[
+         OverscriptBox["r", "^"],
+         ShowAutoStyles->False,
+         AutoSpacing->False],
+        $CellContext`rBS[],
+        Editable->False]], "]"}], "3"],
+    SeriesData[
+     $CellContext`rBS[], 
+     DirectedInfinity[1], {}, 0, 3, 1],
+    Editable->False]}],
+  SeriesData[
+   $CellContext`rBS[], 
+   DirectedInfinity[1], {
+   Complex[0, -15] E^(Complex[0, -3] $CellContext`\[Phi]BS[]) Sin[
+       $CellContext`\[Theta]BS[]]^3, 
+    E^(Complex[0, -3] $CellContext`\[Phi]BS[]) $CellContext`M Sin[
+      $CellContext`\[Theta]BS[]] (Complex[0, -6] Sin[
+         $CellContext`\[Theta]BS[]]^2 - 2 
+     E^(Complex[0, 2] $CellContext`\[Phi]BS[]) (-$CellContext`A + 
+      2 $CellContext`A Cos[2 $CellContext`\[Theta]BS[]] + 
+      Complex[0, -1] $CellContext`uBS[])), Rational[3, 8] $CellContext`A 
+    E^(Complex[0, -3] $CellContext`\[Phi]BS[]) $CellContext`M Sin[
+      $CellContext`\[Theta]BS[]] (
+     8 (-3 + 4 Cos[2 $CellContext`\[Theta]BS[]]) Sin[
+         $CellContext`\[Theta]BS[]]^2 + 
+     Complex[0, -1] 
+      E^(Complex[0, 2] $CellContext`\[Phi]BS[]) (5 $CellContext`A + 
+       Cos[2 $CellContext`\[Theta]BS[]] (3 $CellContext`A + 
+         Complex[0, -8] $CellContext`uBS[])))}, 0, 3, 1],
+  Editable->False]], "Output",
+ CellChangeTimes->{
+  3.9505895114968166`*^9, 3.9505898206858745`*^9, 3.950589874209092*^9, 
+   3.9505900424398365`*^9, {3.9505901026658745`*^9, 3.950590131073555*^9}, 
+   3.9505901876283846`*^9, {3.9605273076472473`*^9, 3.960527315772315*^9}},
+ CellLabel->
+  "Out[430]=",ExpressionUUID->"3b75bfee-6fc9-49cd-b800-73714e2a3d9b"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{
+    RowBox[{
+     RowBox[{
+      RowBox[{
+       RowBox[{
+        RowBox[{"GaugeTransformBSCoords", "[", 
+         RowBox[{"[", 
+          RowBox[{"3", ",", "3"}], "]"}], "]"}], "//.", "X0ruleBMS"}], "//.", 
+       "X3ruleBMS"}], "//.", "X2ruleBMS"}], "//.", "X1ruleBMS"}], "/.", 
+    "RDerivativeRule"}], "/.", "BMSgaugevectorRule"}], "//", 
+  "FullSimplify"}]], "Input",
+ CellChangeTimes->{{3.950588989916703*^9, 3.950589049227337*^9}, {
+   3.950589313221798*^9, 3.9505893181657667`*^9}, 3.950590180029597*^9},
+ CellLabel->
+  "In[431]:=",ExpressionUUID->"dab208ac-c3a6-4b91-963f-2be5b0003a14"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   RowBox[{"-", 
+    RowBox[{
+     FractionBox["3", "2"], " ", 
+     RowBox[{"(", 
+      RowBox[{
+       SuperscriptBox["\[ExponentialE]", 
+        RowBox[{
+         RowBox[{"-", "3"}], " ", "\[ImaginaryI]", " ", 
+         InterpretationBox[
+          StyleBox[
+           OverscriptBox["\[Phi]", "^"],
+           ShowAutoStyles->False,
+           AutoSpacing->False],
+          $CellContext`\[Phi]BS[],
+          Editable->False]}]], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"5", " ", 
+          RowBox[{
+           InterpretationBox[
+            StyleBox["Sin",
+             ShowAutoStyles->False,
+             AutoSpacing->False],
+            Sin,
+            Editable->False], "[", 
+           InterpretationBox[
+            StyleBox[
+             OverscriptBox["\[Theta]", "^"],
+             ShowAutoStyles->False,
+             AutoSpacing->False],
+            $CellContext`\[Theta]BS[],
+            Editable->False], "]"}]}], "+", 
+         RowBox[{
+          InterpretationBox[
+           StyleBox["Sin",
+            ShowAutoStyles->False,
+            AutoSpacing->False],
+           Sin,
+           Editable->False], "[", 
+          RowBox[{"3", " ", 
+           InterpretationBox[
+            StyleBox[
+             OverscriptBox["\[Theta]", "^"],
+             ShowAutoStyles->False,
+             AutoSpacing->False],
+            $CellContext`\[Theta]BS[],
+            Editable->False]}], "]"}]}], ")"}]}], ")"}], " ", 
+     InterpretationBox[
+      StyleBox[
+       OverscriptBox["r", "^"],
+       ShowAutoStyles->False,
+       AutoSpacing->False],
+      $CellContext`rBS[],
+      Editable->False]}]}], "+", 
+   FractionBox[
+    RowBox[{
+     InterpretationBox[
+      StyleBox["A",
+       ShowAutoStyles->False,
+       AutoSpacing->False],
+      $CellContext`A,
+      Editable->False], " ", 
+     SuperscriptBox["\[ExponentialE]", 
+      RowBox[{
+       RowBox[{"-", "3"}], " ", "\[ImaginaryI]", " ", 
+       InterpretationBox[
+        StyleBox[
+         OverscriptBox["\[Phi]", "^"],
+         ShowAutoStyles->False,
+         AutoSpacing->False],
+        $CellContext`\[Phi]BS[],
+        Editable->False]}]], " ", 
+     InterpretationBox[
+      StyleBox["M",
+       ShowAutoStyles->False,
+       AutoSpacing->False],
+      $CellContext`M,
+      Editable->False], " ", 
+     RowBox[{
+      InterpretationBox[
+       StyleBox["Sin",
+        ShowAutoStyles->False,
+        AutoSpacing->False],
+       Sin,
+       Editable->False], "[", 
+      InterpretationBox[
+       StyleBox[
+        OverscriptBox["\[Theta]", "^"],
+        ShowAutoStyles->False,
+        AutoSpacing->False],
+       $CellContext`\[Theta]BS[],
+       Editable->False], "]"}], " ", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"-", "12"}], " ", "\[ImaginaryI]", " ", 
+        SuperscriptBox[
+         RowBox[{
+          InterpretationBox[
+           StyleBox["Sin",
+            ShowAutoStyles->False,
+            AutoSpacing->False],
+           Sin,
+           Editable->False], "[", 
+          InterpretationBox[
+           StyleBox[
+            OverscriptBox["\[Theta]", "^"],
+            ShowAutoStyles->False,
+            AutoSpacing->False],
+           $CellContext`\[Theta]BS[],
+           Editable->False], "]"}], "2"]}], "+", 
+       RowBox[{
+        SuperscriptBox["\[ExponentialE]", 
+         RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+          InterpretationBox[
+           StyleBox[
+            OverscriptBox["\[Phi]", "^"],
+            ShowAutoStyles->False,
+            AutoSpacing->False],
+           $CellContext`\[Phi]BS[],
+           Editable->False]}]], " ", 
+        RowBox[{"(", 
+         RowBox[{
+          InterpretationBox[
+           StyleBox["A",
+            ShowAutoStyles->False,
+            AutoSpacing->False],
+           $CellContext`A,
+           Editable->False], "-", 
+          RowBox[{"5", " ", 
+           InterpretationBox[
+            StyleBox["A",
+             ShowAutoStyles->False,
+             AutoSpacing->False],
+            $CellContext`A,
+            Editable->False], " ", 
+           RowBox[{
+            InterpretationBox[
+             StyleBox["Cos",
+              ShowAutoStyles->False,
+              AutoSpacing->False],
+             Cos,
+             Editable->False], "[", 
+            RowBox[{"2", " ", 
+             InterpretationBox[
+              StyleBox[
+               OverscriptBox["\[Theta]", "^"],
+               ShowAutoStyles->False,
+               AutoSpacing->False],
+              $CellContext`\[Theta]BS[],
+              Editable->False]}], "]"}]}], "+", 
+          RowBox[{"4", " ", "\[ImaginaryI]", " ", 
+           InterpretationBox[
+            StyleBox["u",
+             ShowAutoStyles->False,
+             AutoSpacing->False],
+            $CellContext`uBS[],
+            Editable->False]}]}], ")"}]}]}], ")"}]}], 
+    RowBox[{"2", " ", 
+     InterpretationBox[
+      StyleBox[
+       OverscriptBox["r", "^"],
+       ShowAutoStyles->False,
+       AutoSpacing->False],
+      $CellContext`rBS[],
+      Editable->False]}]], "+", 
+   InterpretationBox[
+    SuperscriptBox[
+     RowBox[{"O", "[", 
+      FractionBox["1", 
+       InterpretationBox[
+        StyleBox[
+         OverscriptBox["r", "^"],
+         ShowAutoStyles->False,
+         AutoSpacing->False],
+        $CellContext`rBS[],
+        Editable->False]], "]"}], "2"],
+    SeriesData[
+     $CellContext`rBS[], 
+     DirectedInfinity[1], {}, -1, 2, 1],
+    Editable->False]}],
+  SeriesData[
+   $CellContext`rBS[], 
+   DirectedInfinity[1], {
+   Rational[-3, 2] E^(Complex[0, -3] $CellContext`\[Phi]BS[]) (5 Sin[
+        $CellContext`\[Theta]BS[]] + Sin[3 $CellContext`\[Theta]BS[]]), 0, 
+    Rational[1, 2] $CellContext`A 
+    E^(Complex[0, -3] $CellContext`\[Phi]BS[]) $CellContext`M Sin[
+      $CellContext`\[Theta]BS[]] (Complex[0, -12] Sin[
+         $CellContext`\[Theta]BS[]]^2 + 
+     E^(Complex[0, 2] $CellContext`\[Phi]BS[]) ($CellContext`A - 
+       5 $CellContext`A Cos[2 $CellContext`\[Theta]BS[]] + 
+       Complex[0, 4] $CellContext`uBS[]))}, -1, 2, 1],
+  Editable->False]], "Output",
+ CellChangeTimes->{
+  3.9505890522959003`*^9, 3.95058927542966*^9, 3.950589318920206*^9, 
+   3.95058982073102*^9, 3.950589874251872*^9, 3.950590043903127*^9, {
+   3.9505901027121305`*^9, 3.9505901881084156`*^9}, {3.9605273082424583`*^9, 
+   3.9605273158402596`*^9}},
+ CellLabel->
+  "Out[431]=",ExpressionUUID->"b751c778-62bf-4695-b8a8-793f1b1daa15"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{
+    RowBox[{
+     RowBox[{
+      RowBox[{
+       RowBox[{
+        RowBox[{"GaugeTransformBSCoords", "[", 
+         RowBox[{"[", 
+          RowBox[{"3", ",", "4"}], "]"}], "]"}], "//.", "X0ruleBMS"}], "//.", 
+       "X3ruleBMS"}], "//.", "X2ruleBMS"}], "//.", "X1ruleBMS"}], "/.", 
+    "RDerivativeRule"}], "/.", "BMSgaugevectorRule"}], "//", 
+  "FullSimplify"}]], "Input",
+ CellChangeTimes->{{3.950588989916703*^9, 3.950589049227337*^9}, {
+   3.950589313221798*^9, 3.9505893181657667`*^9}, 3.950589433173*^9, {
+   3.9505894988279886`*^9, 3.950589520826009*^9}},
+ CellLabel->
+  "In[432]:=",ExpressionUUID->"733fa125-2409-4a15-b86a-e293ff6b5bbc"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   RowBox[{"6", " ", "\[ImaginaryI]", " ", 
+    SuperscriptBox["\[ExponentialE]", 
+     RowBox[{
+      RowBox[{"-", "3"}], " ", "\[ImaginaryI]", " ", 
+      InterpretationBox[
+       StyleBox[
+        OverscriptBox["\[Phi]", "^"],
+        ShowAutoStyles->False,
+        AutoSpacing->False],
+       $CellContext`\[Phi]BS[],
+       Editable->False]}]], " ", 
+    RowBox[{
+     InterpretationBox[
+      StyleBox["Sin",
+       ShowAutoStyles->False,
+       AutoSpacing->False],
+      Sin,
+      Editable->False], "[", 
+     InterpretationBox[
+      StyleBox[
+       OverscriptBox["\[Theta]", "^"],
+       ShowAutoStyles->False,
+       AutoSpacing->False],
+      $CellContext`\[Theta]BS[],
+      Editable->False], "]"}], " ", 
+    RowBox[{
+     InterpretationBox[
+      StyleBox["Sin",
+       ShowAutoStyles->False,
+       AutoSpacing->False],
+      Sin,
+      Editable->False], "[", 
+     RowBox[{"2", " ", 
+      InterpretationBox[
+       StyleBox[
+        OverscriptBox["\[Theta]", "^"],
+        ShowAutoStyles->False,
+        AutoSpacing->False],
+       $CellContext`\[Theta]BS[],
+       Editable->False]}], "]"}], " ", 
+    InterpretationBox[
+     StyleBox[
+      OverscriptBox["r", "^"],
+      ShowAutoStyles->False,
+      AutoSpacing->False],
+     $CellContext`rBS[],
+     Editable->False]}], "+", 
+   FractionBox[
+    RowBox[{
+     InterpretationBox[
+      StyleBox["A",
+       ShowAutoStyles->False,
+       AutoSpacing->False],
+      $CellContext`A,
+      Editable->False], " ", 
+     SuperscriptBox["\[ExponentialE]", 
+      RowBox[{
+       RowBox[{"-", "3"}], " ", "\[ImaginaryI]", " ", 
+       InterpretationBox[
+        StyleBox[
+         OverscriptBox["\[Phi]", "^"],
+         ShowAutoStyles->False,
+         AutoSpacing->False],
+        $CellContext`\[Phi]BS[],
+        Editable->False]}]], " ", 
+     InterpretationBox[
+      StyleBox["M",
+       ShowAutoStyles->False,
+       AutoSpacing->False],
+      $CellContext`M,
+      Editable->False], " ", 
+     RowBox[{
+      InterpretationBox[
+       StyleBox["Sin",
+        ShowAutoStyles->False,
+        AutoSpacing->False],
+       Sin,
+       Editable->False], "[", 
+      InterpretationBox[
+       StyleBox[
+        OverscriptBox["\[Theta]", "^"],
+        ShowAutoStyles->False,
+        AutoSpacing->False],
+       $CellContext`\[Theta]BS[],
+       Editable->False], "]"}], " ", 
+     RowBox[{
+      InterpretationBox[
+       StyleBox["Sin",
+        ShowAutoStyles->False,
+        AutoSpacing->False],
+       Sin,
+       Editable->False], "[", 
+      RowBox[{"2", " ", 
+       InterpretationBox[
+        StyleBox[
+         OverscriptBox["\[Theta]", "^"],
+         ShowAutoStyles->False,
+         AutoSpacing->False],
+        $CellContext`\[Theta]BS[],
+        Editable->False]}], "]"}], " ", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"-", "3"}], " ", 
+        SuperscriptBox[
+         RowBox[{
+          InterpretationBox[
+           StyleBox["Sin",
+            ShowAutoStyles->False,
+            AutoSpacing->False],
+           Sin,
+           Editable->False], "[", 
+          InterpretationBox[
+           StyleBox[
+            OverscriptBox["\[Theta]", "^"],
+            ShowAutoStyles->False,
+            AutoSpacing->False],
+           $CellContext`\[Theta]BS[],
+           Editable->False], "]"}], "2"]}], "+", 
+       RowBox[{
+        SuperscriptBox["\[ExponentialE]", 
+         RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+          InterpretationBox[
+           StyleBox[
+            OverscriptBox["\[Phi]", "^"],
+            ShowAutoStyles->False,
+            AutoSpacing->False],
+           $CellContext`\[Phi]BS[],
+           Editable->False]}]], " ", 
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"\[ImaginaryI]", " ", 
+           InterpretationBox[
+            StyleBox["A",
+             ShowAutoStyles->False,
+             AutoSpacing->False],
+            $CellContext`A,
+            Editable->False]}], "+", 
+          InterpretationBox[
+           StyleBox["u",
+            ShowAutoStyles->False,
+            AutoSpacing->False],
+           $CellContext`uBS[],
+           Editable->False]}], ")"}]}]}], ")"}]}], 
+    InterpretationBox[
+     StyleBox[
+      OverscriptBox["r", "^"],
+      ShowAutoStyles->False,
+      AutoSpacing->False],
+     $CellContext`rBS[],
+     Editable->False]], "+", 
+   FractionBox[
+    RowBox[{"5", " ", "\[ImaginaryI]", " ", 
+     SuperscriptBox[
+      InterpretationBox[
+       StyleBox["A",
+        ShowAutoStyles->False,
+        AutoSpacing->False],
+       $CellContext`A,
+       Editable->False], "2"], " ", 
+     SuperscriptBox["\[ExponentialE]", 
+      RowBox[{
+       RowBox[{"-", "3"}], " ", "\[ImaginaryI]", " ", 
+       InterpretationBox[
+        StyleBox[
+         OverscriptBox["\[Phi]", "^"],
+         ShowAutoStyles->False,
+         AutoSpacing->False],
+        $CellContext`\[Phi]BS[],
+        Editable->False]}]], " ", 
+     InterpretationBox[
+      StyleBox["M",
+       ShowAutoStyles->False,
+       AutoSpacing->False],
+      $CellContext`M,
+      Editable->False], " ", 
+     RowBox[{
+      InterpretationBox[
+       StyleBox["Cos",
+        ShowAutoStyles->False,
+        AutoSpacing->False],
+       Cos,
+       Editable->False], "[", 
+      InterpretationBox[
+       StyleBox[
+        OverscriptBox["\[Theta]", "^"],
+        ShowAutoStyles->False,
+        AutoSpacing->False],
+       $CellContext`\[Theta]BS[],
+       Editable->False], "]"}], " ", 
+     SuperscriptBox[
+      RowBox[{
+       InterpretationBox[
+        StyleBox["Sin",
+         ShowAutoStyles->False,
+         AutoSpacing->False],
+        Sin,
+        Editable->False], "[", 
+       InterpretationBox[
+        StyleBox[
+         OverscriptBox["\[Theta]", "^"],
+         ShowAutoStyles->False,
+         AutoSpacing->False],
+        $CellContext`\[Theta]BS[],
+        Editable->False], "]"}], "2"], " ", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"-", "3"}], " ", 
+        SuperscriptBox[
+         RowBox[{
+          InterpretationBox[
+           StyleBox["Sin",
+            ShowAutoStyles->False,
+            AutoSpacing->False],
+           Sin,
+           Editable->False], "[", 
+          InterpretationBox[
+           StyleBox[
+            OverscriptBox["\[Theta]", "^"],
+            ShowAutoStyles->False,
+            AutoSpacing->False],
+           $CellContext`\[Theta]BS[],
+           Editable->False], "]"}], "2"]}], "+", 
+       RowBox[{
+        SuperscriptBox["\[ExponentialE]", 
+         RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+          InterpretationBox[
+           StyleBox[
+            OverscriptBox["\[Phi]", "^"],
+            ShowAutoStyles->False,
+            AutoSpacing->False],
+           $CellContext`\[Phi]BS[],
+           Editable->False]}]], " ", 
+        InterpretationBox[
+         StyleBox["u",
+          ShowAutoStyles->False,
+          AutoSpacing->False],
+         $CellContext`uBS[],
+         Editable->False]}]}], ")"}]}], 
+    SuperscriptBox[
+     InterpretationBox[
+      StyleBox[
+       OverscriptBox["r", "^"],
+       ShowAutoStyles->False,
+       AutoSpacing->False],
+      $CellContext`rBS[],
+      Editable->False], "2"]], "+", 
+   InterpretationBox[
+    SuperscriptBox[
+     RowBox[{"O", "[", 
+      FractionBox["1", 
+       InterpretationBox[
+        StyleBox[
+         OverscriptBox["r", "^"],
+         ShowAutoStyles->False,
+         AutoSpacing->False],
+        $CellContext`rBS[],
+        Editable->False]], "]"}], "4"],
+    SeriesData[
+     $CellContext`rBS[], 
+     DirectedInfinity[1], {}, -1, 4, 1],
+    Editable->False]}],
+  SeriesData[
+   $CellContext`rBS[], 
+   DirectedInfinity[1], {
+   Complex[0, 6] E^(Complex[0, -3] $CellContext`\[Phi]BS[]) Sin[
+      $CellContext`\[Theta]BS[]] Sin[2 $CellContext`\[Theta]BS[]], 
+    0, $CellContext`A 
+    E^(Complex[0, -3] $CellContext`\[Phi]BS[]) $CellContext`M Sin[
+      $CellContext`\[Theta]BS[]] Sin[2 $CellContext`\[Theta]BS[]] ((-3) Sin[
+         $CellContext`\[Theta]BS[]]^2 + 
+     E^(Complex[0, 2] $CellContext`\[Phi]BS[]) (
+       Complex[0, 1] $CellContext`A + $CellContext`uBS[])), 
+    Complex[0, 5] $CellContext`A^2 
+    E^(Complex[0, -3] $CellContext`\[Phi]BS[]) $CellContext`M Cos[
+      $CellContext`\[Theta]BS[]] Sin[
+       $CellContext`\[Theta]BS[]]^2 ((-3) Sin[
+         $CellContext`\[Theta]BS[]]^2 + 
+     E^(Complex[0, 2] $CellContext`\[Phi]BS[]) $CellContext`uBS[])}, -1, 4, 1],
+  Editable->False]], "Output",
+ CellChangeTimes->{
+  3.9505895217117414`*^9, 3.9505898208850183`*^9, 3.9505898744886904`*^9, 
+   3.950590045827494*^9, {3.9505901028852067`*^9, 3.9505901312467413`*^9}, {
+   3.950590162273182*^9, 3.9505901884893613`*^9}, {3.960527308720662*^9, 
+   3.9605273159094324`*^9}},
+ CellLabel->
+  "Out[432]=",ExpressionUUID->"fb3717eb-17df-43c6-abfe-80986ccedb17"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Test non BMS vector", "Subsection",
+ CellChangeTimes->{{3.9505886737664003`*^9, 3.950588705512102*^9}, {
+  3.9505902185846*^9, 
+  3.950590219531791*^9}},ExpressionUUID->"0f90ba11-41bd-4a51-af1c-\
+813f8bd39ba7"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Y1", "=", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"Sin", "[", 
+     RowBox[{"\[Theta]BS", "[", "]"}], "]"}], "^", "2"}], 
+   RowBox[{"Exp", "[", 
+    RowBox[{
+     RowBox[{"-", "2"}], "I", " ", 
+     RowBox[{"\[Phi]BS", "[", "]"}]}], "]"}]}]}]], "Input",
+ CellChangeTimes->{{3.95058883129867*^9, 3.950588835624178*^9}, {
+   3.950588895255914*^9, 3.9505889070392904`*^9}, 3.9505891706776047`*^9, {
+   3.9505899397124414`*^9, 3.950589952026896*^9}, {3.9505902318501453`*^9, 
+   3.950590238274358*^9}},
+ CellLabel->
+  "In[433]:=",ExpressionUUID->"6f63f803-9437-4041-9e43-776a181acd85"],
+
+Cell[BoxData[
+ RowBox[{
+  SuperscriptBox["\[ExponentialE]", 
+   RowBox[{
+    RowBox[{"-", "2"}], " ", "\[ImaginaryI]", " ", 
+    InterpretationBox[
+     StyleBox[
+      OverscriptBox["\[Phi]", "^"],
+      ShowAutoStyles->False,
+      AutoSpacing->False],
+     $CellContext`\[Phi]BS[],
+     Editable->False]}]], " ", 
+  SuperscriptBox[
+   RowBox[{
+    InterpretationBox[
+     StyleBox["Sin",
+      ShowAutoStyles->False,
+      AutoSpacing->False],
+     Sin,
+     Editable->False], "[", 
+    InterpretationBox[
+     StyleBox[
+      OverscriptBox["\[Theta]", "^"],
+      ShowAutoStyles->False,
+      AutoSpacing->False],
+     $CellContext`\[Theta]BS[],
+     Editable->False], "]"}], "2"]}]], "Output",
+ CellChangeTimes->{3.9505889078139052`*^9, 3.950589194591707*^9, 
+  3.9505899527235117`*^9, 3.950590184900302*^9, 3.950590252326439*^9, 
+  3.9605273182830153`*^9},
+ CellLabel->
+  "Out[433]=",ExpressionUUID->"d4e9ee10-6525-4498-a4b9-ff36f3ce1873"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Ytheta", "=", 
+  RowBox[{"D", "[", 
+   RowBox[{"Y1", ",", 
+    RowBox[{"\[Theta]BS", "[", "]"}]}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.9505887214198236`*^9, 3.950588722920436*^9}, {
+   3.950588821265457*^9, 3.95058886958274*^9}, {3.95058895807358*^9, 
+   3.950588965734336*^9}, {3.9505891528883996`*^9, 3.9505891556385593`*^9}, 
+   3.950589191888598*^9},
+ CellLabel->
+  "In[434]:=",ExpressionUUID->"378f86a4-d9cf-4a9b-b509-c482fc2ce57f"],
+
+Cell[BoxData[
+ RowBox[{"2", " ", 
+  SuperscriptBox["\[ExponentialE]", 
+   RowBox[{
+    RowBox[{"-", "2"}], " ", "\[ImaginaryI]", " ", 
+    InterpretationBox[
+     StyleBox[
+      OverscriptBox["\[Phi]", "^"],
+      ShowAutoStyles->False,
+      AutoSpacing->False],
+     $CellContext`\[Phi]BS[],
+     Editable->False]}]], " ", 
+  RowBox[{
+   InterpretationBox[
+    StyleBox["Cos",
+     ShowAutoStyles->False,
+     AutoSpacing->False],
+    Cos,
+    Editable->False], "[", 
+   InterpretationBox[
+    StyleBox[
+     OverscriptBox["\[Theta]", "^"],
+     ShowAutoStyles->False,
+     AutoSpacing->False],
+    $CellContext`\[Theta]BS[],
+    Editable->False], "]"}], " ", 
+  RowBox[{
+   InterpretationBox[
+    StyleBox["Sin",
+     ShowAutoStyles->False,
+     AutoSpacing->False],
+    Sin,
+    Editable->False], "[", 
+   InterpretationBox[
+    StyleBox[
+     OverscriptBox["\[Theta]", "^"],
+     ShowAutoStyles->False,
+     AutoSpacing->False],
+    $CellContext`\[Theta]BS[],
+    Editable->False], "]"}]}]], "Output",
+ CellChangeTimes->{{3.9505891927354155`*^9, 3.9505891957646*^9}, 
+   3.9505899551515837`*^9, 3.950590184967424*^9, 3.9505902523864803`*^9, 
+   3.9605273184229937`*^9},
+ CellLabel->
+  "Out[434]=",ExpressionUUID->"50254b92-ae34-4e94-a40a-62506ab4e0dd"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Yphi", "=", 
+  RowBox[{
+   RowBox[{"1", "/", 
+    RowBox[{
+     RowBox[{"Sin", "[", 
+      RowBox[{"\[Theta]BS", "[", "]"}], "]"}], "^", "2"}]}], 
+   RowBox[{"D", "[", 
+    RowBox[{"Y1", ",", 
+     RowBox[{"\[Phi]BS", "[", "]"}]}], "]"}]}]}]], "Input",
+ CellChangeTimes->{{3.9505889677632203`*^9, 3.9505889741418734`*^9}, {
+  3.9505891798581195`*^9, 3.9505891822346497`*^9}, {3.950590124914486*^9, 
+  3.9505901252992706`*^9}},
+ CellLabel->
+  "In[435]:=",ExpressionUUID->"71de105f-1fbf-4ddf-b610-d7f1f586389d"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"-", "2"}], " ", "\[ImaginaryI]", " ", 
+  SuperscriptBox["\[ExponentialE]", 
+   RowBox[{
+    RowBox[{"-", "2"}], " ", "\[ImaginaryI]", " ", 
+    InterpretationBox[
+     StyleBox[
+      OverscriptBox["\[Phi]", "^"],
+      ShowAutoStyles->False,
+      AutoSpacing->False],
+     $CellContext`\[Phi]BS[],
+     Editable->False]}]]}]], "Output",
+ CellChangeTimes->{
+  3.950588974933109*^9, {3.950589185619131*^9, 3.950589197220287*^9}, 
+   3.9505899568100386`*^9, 3.9505901258920813`*^9, 3.9505901850053253`*^9, 
+   3.950590252422577*^9, 3.9605273184730215`*^9},
+ CellLabel->
+  "Out[435]=",ExpressionUUID->"2e5d57a0-c506-408f-9e42-8b6864fb67ca"]
+}, Open  ]],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{3.9505892664108915`*^9},
+ CellLabel->
+  "In[436]:=",ExpressionUUID->"d380a08f-0fc0-4155-b401-524ec06c0ccb"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"xiu", "=", 
+  RowBox[{
+   RowBox[{"alpha", "+", 
+    RowBox[{
+     RowBox[{"1", "/", "2"}], " ", 
+     RowBox[{"uBS", "[", "]"}], 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"-", "6"}], "Y1"}], ")"}]}]}], "/.", 
+   RowBox[{"alpha", "->", "0", 
+    RowBox[{"(*", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"Sin", "[", 
+        RowBox[{"\[Theta]BS", "[", "]"}], "]"}], "^", "3"}], 
+      RowBox[{"Exp", "[", 
+       RowBox[{
+        RowBox[{"-", "3"}], " ", "I", " ", 
+        RowBox[{"\[Phi]BS", "[", "]"}]}], "]"}]}], "*)"}]}]}]}]], "Input",
+ CellChangeTimes->{{3.950589120758211*^9, 3.950589145536543*^9}, {
+   3.9505892155698223`*^9, 3.950589271995187*^9}, {3.9505897747159786`*^9, 
+   3.950589809146969*^9}, {3.950589858834013*^9, 3.95058986442396*^9}, {
+   3.950590078434148*^9, 3.9505900966963625`*^9}, {3.9505901363678026`*^9, 
+   3.9505901379974117`*^9}, {3.950590245849866*^9, 3.9505902486508636`*^9}, 
+   3.9505922197057467`*^9, 3.950592258148654*^9},
+ CellLabel->
+  "In[437]:=",ExpressionUUID->"e329102e-229d-45a1-b243-ead3846bf62a"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"-", "3"}], " ", 
+  SuperscriptBox["\[ExponentialE]", 
+   RowBox[{
+    RowBox[{"-", "2"}], " ", "\[ImaginaryI]", " ", 
+    InterpretationBox[
+     StyleBox[
+      OverscriptBox["\[Phi]", "^"],
+      ShowAutoStyles->False,
+      AutoSpacing->False],
+     $CellContext`\[Phi]BS[],
+     Editable->False]}]], " ", 
+  SuperscriptBox[
+   RowBox[{
+    InterpretationBox[
+     StyleBox["Sin",
+      ShowAutoStyles->False,
+      AutoSpacing->False],
+     Sin,
+     Editable->False], "[", 
+    InterpretationBox[
+     StyleBox[
+      OverscriptBox["\[Theta]", "^"],
+      ShowAutoStyles->False,
+      AutoSpacing->False],
+     $CellContext`\[Theta]BS[],
+     Editable->False], "]"}], "2"], " ", 
+  InterpretationBox[
+   StyleBox["u",
+    ShowAutoStyles->False,
+    AutoSpacing->False],
+   $CellContext`uBS[],
+   Editable->False]}]], "Output",
+ CellChangeTimes->{3.9505922585443172`*^9, 3.9605273185429993`*^9},
+ CellLabel->
+  "Out[437]=",ExpressionUUID->"563c4c44-faf3-4167-8ad8-d56248fac40e"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  InterpretationBox[
+   StyleBox[
+    SubsuperscriptBox["\[Xi]", "\[SmallCircle]", "\[Theta]"],
+    ShowAutoStyles->False,
+    AutoSpacing->False],
+   $CellContext`xitcirc[],
+   Editable->False], "//", "InputForm"}]], "Input",
+ CellChangeTimes->{{3.950588997400117*^9, 3.950588998349902*^9}},
+ CellLabel->
+  "In[438]:=",ExpressionUUID->"a5c43686-2a27-40bb-b79e-88134de5a8dc"],
+
+Cell["xitcirc[]", "Output",
+ CellChangeTimes->{3.950588998745902*^9, 3.95059018508034*^9, 
+  3.950590252516264*^9, 3.9605273186010017`*^9},
+ CellLabel->
+  "Out[438]//InputForm=",ExpressionUUID->"4fa6e0f6-43a3-4a92-8841-\
+c7717ff2f107"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"BMSgaugevectorRule", "=", 
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"xitcirc", "[", "]"}], "->", "Ytheta"}], ",", 
+    RowBox[{
+     RowBox[{"xipcirc", "[", "]"}], "->", "Yphi"}], ",", 
+    RowBox[{
+     RowBox[{"xiucirc", "[", "]"}], "->", "xiu"}]}], "}"}]}]], "Input",
+ CellChangeTimes->{{3.950589292036747*^9, 3.9505893061650095`*^9}},
+ CellLabel->
+  "In[439]:=",ExpressionUUID->"5762fe73-59c4-4240-9ef4-a9e61e4f7860"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{
+    InterpretationBox[
+     StyleBox[
+      SubsuperscriptBox["\[Xi]", "\[SmallCircle]", "\[Theta]"],
+      ShowAutoStyles->False,
+      AutoSpacing->False],
+     $CellContext`xitcirc[],
+     Editable->False], "\[Rule]", 
+    RowBox[{"2", " ", 
+     SuperscriptBox["\[ExponentialE]", 
+      RowBox[{
+       RowBox[{"-", "2"}], " ", "\[ImaginaryI]", " ", 
+       InterpretationBox[
+        StyleBox[
+         OverscriptBox["\[Phi]", "^"],
+         ShowAutoStyles->False,
+         AutoSpacing->False],
+        $CellContext`\[Phi]BS[],
+        Editable->False]}]], " ", 
+     RowBox[{
+      InterpretationBox[
+       StyleBox["Cos",
+        ShowAutoStyles->False,
+        AutoSpacing->False],
+       Cos,
+       Editable->False], "[", 
+      InterpretationBox[
+       StyleBox[
+        OverscriptBox["\[Theta]", "^"],
+        ShowAutoStyles->False,
+        AutoSpacing->False],
+       $CellContext`\[Theta]BS[],
+       Editable->False], "]"}], " ", 
+     RowBox[{
+      InterpretationBox[
+       StyleBox["Sin",
+        ShowAutoStyles->False,
+        AutoSpacing->False],
+       Sin,
+       Editable->False], "[", 
+      InterpretationBox[
+       StyleBox[
+        OverscriptBox["\[Theta]", "^"],
+        ShowAutoStyles->False,
+        AutoSpacing->False],
+       $CellContext`\[Theta]BS[],
+       Editable->False], "]"}]}]}], ",", 
+   RowBox[{
+    InterpretationBox[
+     StyleBox[
+      SubsuperscriptBox["\[Xi]", "\[SmallCircle]", "\[Phi]"],
+      ShowAutoStyles->False,
+      AutoSpacing->False],
+     $CellContext`xipcirc[],
+     Editable->False], "\[Rule]", 
+    RowBox[{
+     RowBox[{"-", "2"}], " ", "\[ImaginaryI]", " ", 
+     SuperscriptBox["\[ExponentialE]", 
+      RowBox[{
+       RowBox[{"-", "2"}], " ", "\[ImaginaryI]", " ", 
+       InterpretationBox[
+        StyleBox[
+         OverscriptBox["\[Phi]", "^"],
+         ShowAutoStyles->False,
+         AutoSpacing->False],
+        $CellContext`\[Phi]BS[],
+        Editable->False]}]]}]}], ",", 
+   RowBox[{
+    InterpretationBox[
+     StyleBox[
+      SubsuperscriptBox["\[Xi]", "\[SmallCircle]", "u"],
+      ShowAutoStyles->False,
+      AutoSpacing->False],
+     $CellContext`xiucirc[],
+     Editable->False], "\[Rule]", 
+    RowBox[{
+     RowBox[{"-", "3"}], " ", 
+     SuperscriptBox["\[ExponentialE]", 
+      RowBox[{
+       RowBox[{"-", "2"}], " ", "\[ImaginaryI]", " ", 
+       InterpretationBox[
+        StyleBox[
+         OverscriptBox["\[Phi]", "^"],
+         ShowAutoStyles->False,
+         AutoSpacing->False],
+        $CellContext`\[Phi]BS[],
+        Editable->False]}]], " ", 
+     SuperscriptBox[
+      RowBox[{
+       InterpretationBox[
+        StyleBox["Sin",
+         ShowAutoStyles->False,
+         AutoSpacing->False],
+        Sin,
+        Editable->False], "[", 
+       InterpretationBox[
+        StyleBox[
+         OverscriptBox["\[Theta]", "^"],
+         ShowAutoStyles->False,
+         AutoSpacing->False],
+        $CellContext`\[Theta]BS[],
+        Editable->False], "]"}], "2"], " ", 
+     InterpretationBox[
+      StyleBox["u",
+       ShowAutoStyles->False,
+       AutoSpacing->False],
+      $CellContext`uBS[],
+      Editable->False]}]}]}], "}"}]], "Output",
+ CellChangeTimes->{
+  3.950589306661105*^9, 3.95058981753189*^9, 3.9505898692912827`*^9, 
+   3.9505899605430512`*^9, {3.9505900995288067`*^9, 3.950590129199602*^9}, 
+   3.950590185093297*^9, 3.950590252555581*^9, 3.9505922224390526`*^9, 
+   3.950592260542006*^9, 3.9605273186523085`*^9},
+ CellLabel->
+  "Out[439]=",ExpressionUUID->"59f2ac2a-4cd2-4711-9ea5-7d0b503c8009"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Check flatness of other conmponents", "Subsubsection",
+ CellChangeTimes->{{3.9505893540906277`*^9, 
+  3.9505893677152023`*^9}},ExpressionUUID->"9e7efb22-3c01-4386-b0e3-\
+5fe0cd51642c"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{
+    RowBox[{
+     RowBox[{
+      RowBox[{
+       RowBox[{
+        RowBox[{"GaugeTransformBSCoords", "[", 
+         RowBox[{"[", 
+          RowBox[{"1", ",", "1"}], "]"}], "]"}], "//.", "X0ruleBMS"}], "//.", 
+       "X3ruleBMS"}], "//.", "X2ruleBMS"}], "//.", "X1ruleBMS"}], "/.", 
+    "RDerivativeRule"}], "/.", "BMSgaugevectorRule"}], "//", 
+  "FullSimplify"}]], "Input",
+ CellChangeTimes->{{3.950588989916703*^9, 3.950589049227337*^9}, {
+   3.950589313221798*^9, 3.9505893181657667`*^9}, {3.9505894067746663`*^9, 
+   3.950589408185322*^9}, 3.9505899726191807`*^9},
+ CellLabel->
+  "In[440]:=",ExpressionUUID->"2691ce32-70eb-4466-af47-e8c9e942247f"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   RowBox[{"-", 
+    RowBox[{"12", " ", 
+     RowBox[{"(", 
+      RowBox[{
+       SuperscriptBox["\[ExponentialE]", 
+        RowBox[{
+         RowBox[{"-", "2"}], " ", "\[ImaginaryI]", " ", 
+         InterpretationBox[
+          StyleBox[
+           OverscriptBox["\[Phi]", "^"],
+           ShowAutoStyles->False,
+           AutoSpacing->False],
+          $CellContext`\[Phi]BS[],
+          Editable->False]}]], " ", 
+       SuperscriptBox[
+        RowBox[{
+         InterpretationBox[
+          StyleBox["Sin",
+           ShowAutoStyles->False,
+           AutoSpacing->False],
+          Sin,
+          Editable->False], "[", 
+         InterpretationBox[
+          StyleBox[
+           OverscriptBox["\[Theta]", "^"],
+           ShowAutoStyles->False,
+           AutoSpacing->False],
+          $CellContext`\[Theta]BS[],
+          Editable->False], "]"}], "2"]}], ")"}]}]}], "-", 
+   FractionBox[
+    RowBox[{"18", " ", 
+     RowBox[{"(", 
+      RowBox[{
+       SuperscriptBox["\[ExponentialE]", 
+        RowBox[{
+         RowBox[{"-", "2"}], " ", "\[ImaginaryI]", " ", 
+         InterpretationBox[
+          StyleBox[
+           OverscriptBox["\[Phi]", "^"],
+           ShowAutoStyles->False,
+           AutoSpacing->False],
+          $CellContext`\[Phi]BS[],
+          Editable->False]}]], " ", 
+       InterpretationBox[
+        StyleBox["M",
+         ShowAutoStyles->False,
+         AutoSpacing->False],
+        $CellContext`M,
+        Editable->False], " ", 
+       SuperscriptBox[
+        RowBox[{
+         InterpretationBox[
+          StyleBox["Sin",
+           ShowAutoStyles->False,
+           AutoSpacing->False],
+          Sin,
+          Editable->False], "[", 
+         InterpretationBox[
+          StyleBox[
+           OverscriptBox["\[Theta]", "^"],
+           ShowAutoStyles->False,
+           AutoSpacing->False],
+          $CellContext`\[Theta]BS[],
+          Editable->False], "]"}], "2"]}], ")"}]}], 
+    InterpretationBox[
+     StyleBox[
+      OverscriptBox["r", "^"],
+      ShowAutoStyles->False,
+      AutoSpacing->False],
+     $CellContext`rBS[],
+     Editable->False]], "+", 
+   FractionBox[
+    RowBox[{"6", " ", 
+     SuperscriptBox["\[ExponentialE]", 
+      RowBox[{
+       RowBox[{"-", "2"}], " ", "\[ImaginaryI]", " ", 
+       InterpretationBox[
+        StyleBox[
+         OverscriptBox["\[Phi]", "^"],
+         ShowAutoStyles->False,
+         AutoSpacing->False],
+        $CellContext`\[Phi]BS[],
+        Editable->False]}]], " ", 
+     InterpretationBox[
+      StyleBox["M",
+       ShowAutoStyles->False,
+       AutoSpacing->False],
+      $CellContext`M,
+      Editable->False], " ", 
+     SuperscriptBox[
+      RowBox[{
+       InterpretationBox[
+        StyleBox["Sin",
+         ShowAutoStyles->False,
+         AutoSpacing->False],
+        Sin,
+        Editable->False], "[", 
+       InterpretationBox[
+        StyleBox[
+         OverscriptBox["\[Theta]", "^"],
+         ShowAutoStyles->False,
+         AutoSpacing->False],
+        $CellContext`\[Theta]BS[],
+        Editable->False], "]"}], "2"], " ", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+        InterpretationBox[
+         StyleBox["A",
+          ShowAutoStyles->False,
+          AutoSpacing->False],
+         $CellContext`A,
+         Editable->False]}], "-", 
+       RowBox[{"3", " ", 
+        InterpretationBox[
+         StyleBox["u",
+          ShowAutoStyles->False,
+          AutoSpacing->False],
+         $CellContext`uBS[],
+         Editable->False]}]}], ")"}]}], 
+    SuperscriptBox[
+     InterpretationBox[
+      StyleBox[
+       OverscriptBox["r", "^"],
+       ShowAutoStyles->False,
+       AutoSpacing->False],
+      $CellContext`rBS[],
+      Editable->False], "2"]], "+", 
+   InterpretationBox[
+    SuperscriptBox[
+     RowBox[{"O", "[", 
+      FractionBox["1", 
+       InterpretationBox[
+        StyleBox[
+         OverscriptBox["r", "^"],
+         ShowAutoStyles->False,
+         AutoSpacing->False],
+        $CellContext`rBS[],
+        Editable->False]], "]"}], "3"],
+    SeriesData[
+     $CellContext`rBS[], 
+     DirectedInfinity[1], {}, 0, 3, 1],
+    Editable->False]}],
+  SeriesData[
+   $CellContext`rBS[], 
+   DirectedInfinity[1], {(-12) E^(Complex[0, -2] $CellContext`\[Phi]BS[]) Sin[
+       $CellContext`\[Theta]BS[]]^2, (-18) 
+    E^(Complex[0, -2] $CellContext`\[Phi]BS[]) $CellContext`M Sin[
+       $CellContext`\[Theta]BS[]]^2, 6 
+    E^(Complex[0, -2] $CellContext`\[Phi]BS[]) $CellContext`M Sin[
+       $CellContext`\[Theta]BS[]]^2 (Complex[0, 2] $CellContext`A - 
+     3 $CellContext`uBS[])}, 0, 3, 1],
+  Editable->False]], "Output",
+ CellChangeTimes->{
+  3.9505894090695844`*^9, 3.9505898199125195`*^9, 3.9505898731982417`*^9, {
+   3.9505899629379473`*^9, 3.9505899738465767`*^9}, {3.9505901020353537`*^9, 
+   3.95059013056151*^9}, 3.9505901854944725`*^9, 3.950590252784586*^9, 
+   3.950592224576708*^9, 3.9505922640364857`*^9, 3.9605273189234266`*^9},
+ CellLabel->
+  "Out[440]=",ExpressionUUID->"7507d97f-7e6b-46b3-b3f1-f71273797cbc"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{
+    RowBox[{
+     RowBox[{
+      RowBox[{
+       RowBox[{
+        RowBox[{"GaugeTransformBSCoords", "[", 
+         RowBox[{"[", 
+          RowBox[{"1", ",", "2"}], "]"}], "]"}], "//.", "X0ruleBMS"}], "//.", 
+       "X3ruleBMS"}], "//.", "X2ruleBMS"}], "//.", "X1ruleBMS"}], "/.", 
+    "RDerivativeRule"}], "/.", "BMSgaugevectorRule"}], "//", 
+  "FullSimplify"}]], "Input",
+ CellChangeTimes->{{3.950588989916703*^9, 3.950589049227337*^9}, {
+   3.950589313221798*^9, 3.9505893181657667`*^9}, {3.9505894195129104`*^9, 
+   3.9505894207516108`*^9}, 3.9505899770734024`*^9},
+ CellLabel->
+  "In[441]:=",ExpressionUUID->"30162130-99c6-4904-87c9-02e75edcc0cd"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   FractionBox[
+    RowBox[{
+     SuperscriptBox[
+      InterpretationBox[
+       StyleBox["A",
+        ShowAutoStyles->False,
+        AutoSpacing->False],
+       $CellContext`A,
+       Editable->False], "2"], " ", 
+     SuperscriptBox["\[ExponentialE]", 
+      RowBox[{
+       RowBox[{"-", "2"}], " ", "\[ImaginaryI]", " ", 
+       InterpretationBox[
+        StyleBox[
+         OverscriptBox["\[Phi]", "^"],
+         ShowAutoStyles->False,
+         AutoSpacing->False],
+        $CellContext`\[Phi]BS[],
+        Editable->False]}]], " ", 
+     InterpretationBox[
+      StyleBox["M",
+       ShowAutoStyles->False,
+       AutoSpacing->False],
+      $CellContext`M,
+      Editable->False], " ", 
+     RowBox[{"(", 
+      RowBox[{"3", "+", 
+       RowBox[{
+        InterpretationBox[
+         StyleBox["Cos",
+          ShowAutoStyles->False,
+          AutoSpacing->False],
+         Cos,
+         Editable->False], "[", 
+        RowBox[{"2", " ", 
+         InterpretationBox[
+          StyleBox[
+           OverscriptBox["\[Theta]", "^"],
+           ShowAutoStyles->False,
+           AutoSpacing->False],
+          $CellContext`\[Theta]BS[],
+          Editable->False]}], "]"}]}], ")"}], " ", 
+     SuperscriptBox[
+      RowBox[{
+       InterpretationBox[
+        StyleBox["Sin",
+         ShowAutoStyles->False,
+         AutoSpacing->False],
+        Sin,
+        Editable->False], "[", 
+       InterpretationBox[
+        StyleBox[
+         OverscriptBox["\[Theta]", "^"],
+         ShowAutoStyles->False,
+         AutoSpacing->False],
+        $CellContext`\[Theta]BS[],
+        Editable->False], "]"}], "2"]}], 
+    SuperscriptBox[
+     InterpretationBox[
+      StyleBox[
+       OverscriptBox["r", "^"],
+       ShowAutoStyles->False,
+       AutoSpacing->False],
+      $CellContext`rBS[],
+      Editable->False], "3"]], "+", 
+   InterpretationBox[
+    SuperscriptBox[
+     RowBox[{"O", "[", 
+      FractionBox["1", 
+       InterpretationBox[
+        StyleBox[
+         OverscriptBox["r", "^"],
+         ShowAutoStyles->False,
+         AutoSpacing->False],
+        $CellContext`rBS[],
+        Editable->False]], "]"}], "4"],
+    SeriesData[
+     $CellContext`rBS[], 
+     DirectedInfinity[1], {}, 3, 4, 1],
+    Editable->False]}],
+  SeriesData[
+   $CellContext`rBS[], 
+   DirectedInfinity[
+   1], {$CellContext`A^2 
+    E^(Complex[0, -2] $CellContext`\[Phi]BS[]) $CellContext`M (3 + 
+     Cos[2 $CellContext`\[Theta]BS[]]) Sin[
+       $CellContext`\[Theta]BS[]]^2}, 3, 4, 1],
+  Editable->False]], "Output",
+ CellChangeTimes->{
+  3.9505894215730133`*^9, 3.9505894741803217`*^9, 3.9505898200245237`*^9, 
+   3.9505898732722144`*^9, 3.9505899782818737`*^9, {3.9505901021684713`*^9, 
+   3.9505901306342864`*^9}, 3.950590185579506*^9, 3.9505902528935375`*^9, 
+   3.9505922247462635`*^9, 3.950592264111357*^9, 3.9605273190475597`*^9},
+ CellLabel->
+  "Out[441]=",ExpressionUUID->"0cb01783-77e5-4763-a3b6-1a11fefc88ce"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{
+    RowBox[{
+     RowBox[{
+      RowBox[{
+       RowBox[{
+        RowBox[{"GaugeTransformBSCoords", "[", 
+         RowBox[{"[", 
+          RowBox[{"1", ",", "3"}], "]"}], "]"}], "//.", "X0ruleBMS"}], "//.", 
+       "X3ruleBMS"}], "//.", "X2ruleBMS"}], "//.", "X1ruleBMS"}], "/.", 
+    "RDerivativeRule"}], "/.", "BMSgaugevectorRule"}], "//", 
+  "FullSimplify"}]], "Input",
+ CellChangeTimes->{{3.950588989916703*^9, 3.950589049227337*^9}, {
+   3.950589313221798*^9, 3.9505893181657667`*^9}, 3.950589433173*^9, 
+   3.9505894988279886`*^9},
+ CellLabel->
+  "In[442]:=",ExpressionUUID->"b64831b2-1627-4d35-8934-eca8b7e3ab03"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   RowBox[{"-", 
+    RowBox[{"6", " ", 
+     RowBox[{"(", 
+      RowBox[{
+       SuperscriptBox["\[ExponentialE]", 
+        RowBox[{
+         RowBox[{"-", "2"}], " ", "\[ImaginaryI]", " ", 
+         InterpretationBox[
+          StyleBox[
+           OverscriptBox["\[Phi]", "^"],
+           ShowAutoStyles->False,
+           AutoSpacing->False],
+          $CellContext`\[Phi]BS[],
+          Editable->False]}]], " ", 
+       RowBox[{
+        InterpretationBox[
+         StyleBox["Sin",
+          ShowAutoStyles->False,
+          AutoSpacing->False],
+         Sin,
+         Editable->False], "[", 
+        RowBox[{"2", " ", 
+         InterpretationBox[
+          StyleBox[
+           OverscriptBox["\[Theta]", "^"],
+           ShowAutoStyles->False,
+           AutoSpacing->False],
+          $CellContext`\[Theta]BS[],
+          Editable->False]}], "]"}], " ", 
+       InterpretationBox[
+        StyleBox["u",
+         ShowAutoStyles->False,
+         AutoSpacing->False],
+        $CellContext`uBS[],
+        Editable->False]}], ")"}]}]}], "-", 
+   FractionBox[
+    RowBox[{"6", " ", 
+     RowBox[{"(", 
+      RowBox[{
+       SuperscriptBox["\[ExponentialE]", 
+        RowBox[{
+         RowBox[{"-", "2"}], " ", "\[ImaginaryI]", " ", 
+         InterpretationBox[
+          StyleBox[
+           OverscriptBox["\[Phi]", "^"],
+           ShowAutoStyles->False,
+           AutoSpacing->False],
+          $CellContext`\[Phi]BS[],
+          Editable->False]}]], " ", 
+       InterpretationBox[
+        StyleBox["M",
+         ShowAutoStyles->False,
+         AutoSpacing->False],
+        $CellContext`M,
+        Editable->False], " ", 
+       RowBox[{
+        InterpretationBox[
+         StyleBox["Sin",
+          ShowAutoStyles->False,
+          AutoSpacing->False],
+         Sin,
+         Editable->False], "[", 
+        RowBox[{"2", " ", 
+         InterpretationBox[
+          StyleBox[
+           OverscriptBox["\[Theta]", "^"],
+           ShowAutoStyles->False,
+           AutoSpacing->False],
+          $CellContext`\[Theta]BS[],
+          Editable->False]}], "]"}], " ", 
+       InterpretationBox[
+        StyleBox["u",
+         ShowAutoStyles->False,
+         AutoSpacing->False],
+        $CellContext`uBS[],
+        Editable->False]}], ")"}]}], 
+    InterpretationBox[
+     StyleBox[
+      OverscriptBox["r", "^"],
+      ShowAutoStyles->False,
+      AutoSpacing->False],
+     $CellContext`rBS[],
+     Editable->False]], "+", 
+   FractionBox[
+    RowBox[{
+     InterpretationBox[
+      StyleBox["A",
+       ShowAutoStyles->False,
+       AutoSpacing->False],
+      $CellContext`A,
+      Editable->False], " ", 
+     SuperscriptBox["\[ExponentialE]", 
+      RowBox[{
+       RowBox[{"-", "2"}], " ", "\[ImaginaryI]", " ", 
+       InterpretationBox[
+        StyleBox[
+         OverscriptBox["\[Phi]", "^"],
+         ShowAutoStyles->False,
+         AutoSpacing->False],
+        $CellContext`\[Phi]BS[],
+        Editable->False]}]], " ", 
+     InterpretationBox[
+      StyleBox["M",
+       ShowAutoStyles->False,
+       AutoSpacing->False],
+      $CellContext`M,
+      Editable->False], " ", 
+     RowBox[{
+      InterpretationBox[
+       StyleBox["Sin",
+        ShowAutoStyles->False,
+        AutoSpacing->False],
+       Sin,
+       Editable->False], "[", 
+      RowBox[{"2", " ", 
+       InterpretationBox[
+        StyleBox[
+         OverscriptBox["\[Theta]", "^"],
+         ShowAutoStyles->False,
+         AutoSpacing->False],
+        $CellContext`\[Theta]BS[],
+        Editable->False]}], "]"}], " ", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"-", "71"}], " ", 
+        InterpretationBox[
+         StyleBox["A",
+          ShowAutoStyles->False,
+          AutoSpacing->False],
+         $CellContext`A,
+         Editable->False]}], "+", 
+       RowBox[{"103", " ", 
+        InterpretationBox[
+         StyleBox["A",
+          ShowAutoStyles->False,
+          AutoSpacing->False],
+         $CellContext`A,
+         Editable->False], " ", 
+        RowBox[{
+         InterpretationBox[
+          StyleBox["Cos",
+           ShowAutoStyles->False,
+           AutoSpacing->False],
+          Cos,
+          Editable->False], "[", 
+         RowBox[{"2", " ", 
+          InterpretationBox[
+           StyleBox[
+            OverscriptBox["\[Theta]", "^"],
+            ShowAutoStyles->False,
+            AutoSpacing->False],
+           $CellContext`\[Theta]BS[],
+           Editable->False]}], "]"}]}], "-", 
+       RowBox[{"48", " ", "\[ImaginaryI]", " ", 
+        InterpretationBox[
+         StyleBox["u",
+          ShowAutoStyles->False,
+          AutoSpacing->False],
+         $CellContext`uBS[],
+         Editable->False]}]}], ")"}]}], 
+    RowBox[{"8", " ", 
+     SuperscriptBox[
+      InterpretationBox[
+       StyleBox[
+        OverscriptBox["r", "^"],
+        ShowAutoStyles->False,
+        AutoSpacing->False],
+       $CellContext`rBS[],
+       Editable->False], "2"]}]], "+", 
+   InterpretationBox[
+    SuperscriptBox[
+     RowBox[{"O", "[", 
+      FractionBox["1", 
+       InterpretationBox[
+        StyleBox[
+         OverscriptBox["r", "^"],
+         ShowAutoStyles->False,
+         AutoSpacing->False],
+        $CellContext`rBS[],
+        Editable->False]], "]"}], "3"],
+    SeriesData[
+     $CellContext`rBS[], 
+     DirectedInfinity[1], {}, 0, 3, 1],
+    Editable->False]}],
+  SeriesData[
+   $CellContext`rBS[], 
+   DirectedInfinity[
+   1], {(-6) E^(Complex[0, -2] $CellContext`\[Phi]BS[]) 
+    Sin[2 $CellContext`\[Theta]BS[]] $CellContext`uBS[], (-6) 
+    E^(Complex[0, -2] $CellContext`\[Phi]BS[]) $CellContext`M 
+    Sin[2 $CellContext`\[Theta]BS[]] $CellContext`uBS[], 
+    Rational[1, 8] $CellContext`A 
+    E^(Complex[0, -2] $CellContext`\[Phi]BS[]) $CellContext`M 
+    Sin[2 $CellContext`\[Theta]BS[]] ((-71) $CellContext`A + 
+     103 $CellContext`A Cos[2 $CellContext`\[Theta]BS[]] + 
+     Complex[0, -48] $CellContext`uBS[])}, 0, 3, 1],
+  Editable->False]], "Output",
+ CellChangeTimes->{
+  3.9505894356009984`*^9, {3.950589476153678*^9, 3.9505894997099366`*^9}, 
+   3.950589820314588*^9, 3.950589873803257*^9, 3.950590028687522*^9, {
+   3.9505901023813534`*^9, 3.9505901308103223`*^9}, 3.950590186326441*^9, 
+   3.950590253815623*^9, 3.9505922248371954`*^9, 3.95059226433527*^9, 
+   3.960527319332806*^9},
+ CellLabel->
+  "Out[442]=",ExpressionUUID->"b4a5f7f0-d043-45d2-b288-c21d21d09b0f"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{
+    RowBox[{
+     RowBox[{
+      RowBox[{
+       RowBox[{
+        RowBox[{"GaugeTransformBSCoords", "[", 
+         RowBox[{"[", 
+          RowBox[{"1", ",", "4"}], "]"}], "]"}], "//.", "X0ruleBMS"}], "//.", 
+       "X3ruleBMS"}], "//.", "X2ruleBMS"}], "//.", "X1ruleBMS"}], "/.", 
+    "RDerivativeRule"}], "/.", "BMSgaugevectorRule"}], "//", 
+  "FullSimplify"}]], "Input",
+ CellChangeTimes->{{3.950588989916703*^9, 3.950589049227337*^9}, {
+   3.950589313221798*^9, 3.9505893181657667`*^9}, 3.950589433173*^9, {
+   3.9505894988279886`*^9, 3.9505895107602425`*^9}},
+ CellLabel->
+  "In[443]:=",ExpressionUUID->"95071d0b-8cdb-4cac-91e1-f77f93a7ba50"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   RowBox[{"12", " ", "\[ImaginaryI]", " ", 
+    SuperscriptBox["\[ExponentialE]", 
+     RowBox[{
+      RowBox[{"-", "2"}], " ", "\[ImaginaryI]", " ", 
+      InterpretationBox[
+       StyleBox[
+        OverscriptBox["\[Phi]", "^"],
+        ShowAutoStyles->False,
+        AutoSpacing->False],
+       $CellContext`\[Phi]BS[],
+       Editable->False]}]], " ", 
+    SuperscriptBox[
+     RowBox[{
+      InterpretationBox[
+       StyleBox["Sin",
+        ShowAutoStyles->False,
+        AutoSpacing->False],
+       Sin,
+       Editable->False], "[", 
+      InterpretationBox[
+       StyleBox[
+        OverscriptBox["\[Theta]", "^"],
+        ShowAutoStyles->False,
+        AutoSpacing->False],
+       $CellContext`\[Theta]BS[],
+       Editable->False], "]"}], "2"], " ", 
+    InterpretationBox[
+     StyleBox["u",
+      ShowAutoStyles->False,
+      AutoSpacing->False],
+     $CellContext`uBS[],
+     Editable->False]}], "+", 
+   FractionBox[
+    RowBox[{"2", " ", 
+     SuperscriptBox["\[ExponentialE]", 
+      RowBox[{
+       RowBox[{"-", "2"}], " ", "\[ImaginaryI]", " ", 
+       InterpretationBox[
+        StyleBox[
+         OverscriptBox["\[Phi]", "^"],
+         ShowAutoStyles->False,
+         AutoSpacing->False],
+        $CellContext`\[Phi]BS[],
+        Editable->False]}]], " ", 
+     InterpretationBox[
+      StyleBox["M",
+       ShowAutoStyles->False,
+       AutoSpacing->False],
+      $CellContext`M,
+      Editable->False], " ", 
+     SuperscriptBox[
+      RowBox[{
+       InterpretationBox[
+        StyleBox["Sin",
+         ShowAutoStyles->False,
+         AutoSpacing->False],
+        Sin,
+        Editable->False], "[", 
+       InterpretationBox[
+        StyleBox[
+         OverscriptBox["\[Theta]", "^"],
+         ShowAutoStyles->False,
+         AutoSpacing->False],
+        $CellContext`\[Theta]BS[],
+        Editable->False], "]"}], "2"], " ", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"5", " ", 
+        InterpretationBox[
+         StyleBox["A",
+          ShowAutoStyles->False,
+          AutoSpacing->False],
+         $CellContext`A,
+         Editable->False]}], "-", 
+       RowBox[{"5", " ", 
+        InterpretationBox[
+         StyleBox["A",
+          ShowAutoStyles->False,
+          AutoSpacing->False],
+         $CellContext`A,
+         Editable->False], " ", 
+        RowBox[{
+         InterpretationBox[
+          StyleBox["Cos",
+           ShowAutoStyles->False,
+           AutoSpacing->False],
+          Cos,
+          Editable->False], "[", 
+         RowBox[{"2", " ", 
+          InterpretationBox[
+           StyleBox[
+            OverscriptBox["\[Theta]", "^"],
+            ShowAutoStyles->False,
+            AutoSpacing->False],
+           $CellContext`\[Theta]BS[],
+           Editable->False]}], "]"}]}], "+", 
+       RowBox[{"6", " ", "\[ImaginaryI]", " ", 
+        InterpretationBox[
+         StyleBox["u",
+          ShowAutoStyles->False,
+          AutoSpacing->False],
+         $CellContext`uBS[],
+         Editable->False]}]}], ")"}]}], 
+    InterpretationBox[
+     StyleBox[
+      OverscriptBox["r", "^"],
+      ShowAutoStyles->False,
+      AutoSpacing->False],
+     $CellContext`rBS[],
+     Editable->False]], "+", 
+   FractionBox[
+    RowBox[{
+     InterpretationBox[
+      StyleBox["A",
+       ShowAutoStyles->False,
+       AutoSpacing->False],
+      $CellContext`A,
+      Editable->False], " ", 
+     SuperscriptBox["\[ExponentialE]", 
+      RowBox[{
+       RowBox[{"-", "2"}], " ", "\[ImaginaryI]", " ", 
+       InterpretationBox[
+        StyleBox[
+         OverscriptBox["\[Phi]", "^"],
+         ShowAutoStyles->False,
+         AutoSpacing->False],
+        $CellContext`\[Phi]BS[],
+        Editable->False]}]], " ", 
+     InterpretationBox[
+      StyleBox["M",
+       ShowAutoStyles->False,
+       AutoSpacing->False],
+      $CellContext`M,
+      Editable->False], " ", 
+     SuperscriptBox[
+      RowBox[{
+       InterpretationBox[
+        StyleBox["Sin",
+         ShowAutoStyles->False,
+         AutoSpacing->False],
+        Sin,
+        Editable->False], "[", 
+       InterpretationBox[
+        StyleBox[
+         OverscriptBox["\[Theta]", "^"],
+         ShowAutoStyles->False,
+         AutoSpacing->False],
+        $CellContext`\[Theta]BS[],
+        Editable->False], "]"}], "2"], " ", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"-", "21"}], " ", "\[ImaginaryI]", " ", 
+        InterpretationBox[
+         StyleBox["A",
+          ShowAutoStyles->False,
+          AutoSpacing->False],
+         $CellContext`A,
+         Editable->False]}], "+", 
+       RowBox[{
+        RowBox[{
+         InterpretationBox[
+          StyleBox["Cos",
+           ShowAutoStyles->False,
+           AutoSpacing->False],
+          Cos,
+          Editable->False], "[", 
+         RowBox[{"2", " ", 
+          InterpretationBox[
+           StyleBox[
+            OverscriptBox["\[Theta]", "^"],
+            ShowAutoStyles->False,
+            AutoSpacing->False],
+           $CellContext`\[Theta]BS[],
+           Editable->False]}], "]"}], " ", 
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{
+           RowBox[{"-", "11"}], " ", "\[ImaginaryI]", " ", 
+           InterpretationBox[
+            StyleBox["A",
+             ShowAutoStyles->False,
+             AutoSpacing->False],
+            $CellContext`A,
+            Editable->False]}], "-", 
+          RowBox[{"84", " ", 
+           InterpretationBox[
+            StyleBox["u",
+             ShowAutoStyles->False,
+             AutoSpacing->False],
+            $CellContext`uBS[],
+            Editable->False]}]}], ")"}]}], "+", 
+       RowBox[{"36", " ", 
+        InterpretationBox[
+         StyleBox["u",
+          ShowAutoStyles->False,
+          AutoSpacing->False],
+         $CellContext`uBS[],
+         Editable->False]}]}], ")"}]}], 
+    RowBox[{"4", " ", 
+     SuperscriptBox[
+      InterpretationBox[
+       StyleBox[
+        OverscriptBox["r", "^"],
+        ShowAutoStyles->False,
+        AutoSpacing->False],
+       $CellContext`rBS[],
+       Editable->False], "2"]}]], "+", 
+   InterpretationBox[
+    SuperscriptBox[
+     RowBox[{"O", "[", 
+      FractionBox["1", 
+       InterpretationBox[
+        StyleBox[
+         OverscriptBox["r", "^"],
+         ShowAutoStyles->False,
+         AutoSpacing->False],
+        $CellContext`rBS[],
+        Editable->False]], "]"}], "3"],
+    SeriesData[
+     $CellContext`rBS[], 
+     DirectedInfinity[1], {}, 0, 3, 1],
+    Editable->False]}],
+  SeriesData[
+   $CellContext`rBS[], 
+   DirectedInfinity[1], {
+   Complex[0, 12] E^(Complex[0, -2] $CellContext`\[Phi]BS[]) Sin[
+       $CellContext`\[Theta]BS[]]^2 $CellContext`uBS[], 2 
+    E^(Complex[0, -2] $CellContext`\[Phi]BS[]) $CellContext`M Sin[
+       $CellContext`\[Theta]BS[]]^2 (5 $CellContext`A - 5 $CellContext`A 
+     Cos[2 $CellContext`\[Theta]BS[]] + Complex[0, 6] $CellContext`uBS[]), 
+    Rational[1, 4] $CellContext`A 
+    E^(Complex[0, -2] $CellContext`\[Phi]BS[]) $CellContext`M Sin[
+       $CellContext`\[Theta]BS[]]^2 (Complex[0, -21] $CellContext`A + 
+     Cos[2 $CellContext`\[Theta]BS[]] (Complex[0, -11] $CellContext`A - 
+       84 $CellContext`uBS[]) + 36 $CellContext`uBS[])}, 0, 3, 1],
+  Editable->False]], "Output",
+ CellChangeTimes->{
+  3.9505895114968166`*^9, 3.9505898206858745`*^9, 3.950589874209092*^9, 
+   3.9505900424398365`*^9, {3.9505901026658745`*^9, 3.950590131073555*^9}, 
+   3.9505901876283846`*^9, 3.95059025543386*^9, 3.950592225211459*^9, 
+   3.9505922647608566`*^9, 3.960527319936064*^9},
+ CellLabel->
+  "Out[443]=",ExpressionUUID->"393769d0-b9dc-4861-aa5f-1d43d1a1104b"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{
+    RowBox[{
+     RowBox[{
+      RowBox[{
+       RowBox[{
+        RowBox[{"GaugeTransformBSCoords", "[", 
+         RowBox[{"[", 
+          RowBox[{"3", ",", "3"}], "]"}], "]"}], "//.", "X0ruleBMS"}], "//.", 
+       "X3ruleBMS"}], "//.", "X2ruleBMS"}], "//.", "X1ruleBMS"}], "/.", 
+    "RDerivativeRule"}], "/.", "BMSgaugevectorRule"}], "//", 
+  "FullSimplify"}]], "Input",
+ CellChangeTimes->{{3.950588989916703*^9, 3.950589049227337*^9}, {
+   3.950589313221798*^9, 3.9505893181657667`*^9}, 3.950590180029597*^9},
+ CellLabel->
+  "In[444]:=",ExpressionUUID->"26fa3568-5b70-48ca-b298-ce5390c3114e"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   RowBox[{
+    SuperscriptBox["\[ExponentialE]", 
+     RowBox[{
+      RowBox[{"-", "2"}], " ", "\[ImaginaryI]", " ", 
+      InterpretationBox[
+       StyleBox[
+        OverscriptBox["\[Phi]", "^"],
+        ShowAutoStyles->False,
+        AutoSpacing->False],
+       $CellContext`\[Phi]BS[],
+       Editable->False]}]], " ", 
+    RowBox[{"(", 
+     RowBox[{"3", "+", 
+      RowBox[{
+       InterpretationBox[
+        StyleBox["Cos",
+         ShowAutoStyles->False,
+         AutoSpacing->False],
+        Cos,
+        Editable->False], "[", 
+       RowBox[{"2", " ", 
+        InterpretationBox[
+         StyleBox[
+          OverscriptBox["\[Theta]", "^"],
+          ShowAutoStyles->False,
+          AutoSpacing->False],
+         $CellContext`\[Theta]BS[],
+         Editable->False]}], "]"}]}], ")"}], " ", 
+    SuperscriptBox[
+     InterpretationBox[
+      StyleBox[
+       OverscriptBox["r", "^"],
+       ShowAutoStyles->False,
+       AutoSpacing->False],
+      $CellContext`rBS[],
+      Editable->False], "2"]}], "+", 
+   RowBox[{"3", " ", 
+    SuperscriptBox["\[ExponentialE]", 
+     RowBox[{
+      RowBox[{"-", "2"}], " ", "\[ImaginaryI]", " ", 
+      InterpretationBox[
+       StyleBox[
+        OverscriptBox["\[Phi]", "^"],
+        ShowAutoStyles->False,
+        AutoSpacing->False],
+       $CellContext`\[Phi]BS[],
+       Editable->False]}]], " ", 
+    RowBox[{"(", 
+     RowBox[{"3", "+", 
+      RowBox[{
+       InterpretationBox[
+        StyleBox["Cos",
+         ShowAutoStyles->False,
+         AutoSpacing->False],
+        Cos,
+        Editable->False], "[", 
+       RowBox[{"2", " ", 
+        InterpretationBox[
+         StyleBox[
+          OverscriptBox["\[Theta]", "^"],
+          ShowAutoStyles->False,
+          AutoSpacing->False],
+         $CellContext`\[Theta]BS[],
+         Editable->False]}], "]"}]}], ")"}], " ", 
+    InterpretationBox[
+     StyleBox["u",
+      ShowAutoStyles->False,
+      AutoSpacing->False],
+     $CellContext`uBS[],
+     Editable->False], " ", 
+    InterpretationBox[
+     StyleBox[
+      OverscriptBox["r", "^"],
+      ShowAutoStyles->False,
+      AutoSpacing->False],
+     $CellContext`rBS[],
+     Editable->False]}], "+", 
+   FractionBox[
+    RowBox[{
+     InterpretationBox[
+      StyleBox["A",
+       ShowAutoStyles->False,
+       AutoSpacing->False],
+      $CellContext`A,
+      Editable->False], " ", 
+     SuperscriptBox["\[ExponentialE]", 
+      RowBox[{
+       RowBox[{"-", "2"}], " ", "\[ImaginaryI]", " ", 
+       InterpretationBox[
+        StyleBox[
+         OverscriptBox["\[Phi]", "^"],
+         ShowAutoStyles->False,
+         AutoSpacing->False],
+        $CellContext`\[Phi]BS[],
+        Editable->False]}]], " ", 
+     InterpretationBox[
+      StyleBox["M",
+       ShowAutoStyles->False,
+       AutoSpacing->False],
+      $CellContext`M,
+      Editable->False], " ", 
+     SuperscriptBox[
+      RowBox[{
+       InterpretationBox[
+        StyleBox["Sin",
+         ShowAutoStyles->False,
+         AutoSpacing->False],
+        Sin,
+        Editable->False], "[", 
+       InterpretationBox[
+        StyleBox[
+         OverscriptBox["\[Theta]", "^"],
+         ShowAutoStyles->False,
+         AutoSpacing->False],
+        $CellContext`\[Theta]BS[],
+        Editable->False], "]"}], "2"], " ", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"5", " ", 
+        InterpretationBox[
+         StyleBox["A",
+          ShowAutoStyles->False,
+          AutoSpacing->False],
+         $CellContext`A,
+         Editable->False]}], "-", 
+       RowBox[{"13", " ", 
+        InterpretationBox[
+         StyleBox["A",
+          ShowAutoStyles->False,
+          AutoSpacing->False],
+         $CellContext`A,
+         Editable->False], " ", 
+        RowBox[{
+         InterpretationBox[
+          StyleBox["Cos",
+           ShowAutoStyles->False,
+           AutoSpacing->False],
+          Cos,
+          Editable->False], "[", 
+         RowBox[{"2", " ", 
+          InterpretationBox[
+           StyleBox[
+            OverscriptBox["\[Theta]", "^"],
+            ShowAutoStyles->False,
+            AutoSpacing->False],
+           $CellContext`\[Theta]BS[],
+           Editable->False]}], "]"}]}], "+", 
+       RowBox[{"24", " ", "\[ImaginaryI]", " ", 
+        InterpretationBox[
+         StyleBox["u",
+          ShowAutoStyles->False,
+          AutoSpacing->False],
+         $CellContext`uBS[],
+         Editable->False]}]}], ")"}]}], 
+    RowBox[{"2", " ", 
+     InterpretationBox[
+      StyleBox[
+       OverscriptBox["r", "^"],
+       ShowAutoStyles->False,
+       AutoSpacing->False],
+      $CellContext`rBS[],
+      Editable->False]}]], "+", 
+   InterpretationBox[
+    SuperscriptBox[
+     RowBox[{"O", "[", 
+      FractionBox["1", 
+       InterpretationBox[
+        StyleBox[
+         OverscriptBox["r", "^"],
+         ShowAutoStyles->False,
+         AutoSpacing->False],
+        $CellContext`rBS[],
+        Editable->False]], "]"}], "2"],
+    SeriesData[
+     $CellContext`rBS[], 
+     DirectedInfinity[1], {}, -2, 2, 1],
+    Editable->False]}],
+  SeriesData[
+   $CellContext`rBS[], 
+   DirectedInfinity[1], {
+   E^(Complex[0, -2] $CellContext`\[Phi]BS[]) (3 + 
+     Cos[2 $CellContext`\[Theta]BS[]]), 3 
+    E^(Complex[0, -2] $CellContext`\[Phi]BS[]) (3 + 
+     Cos[2 $CellContext`\[Theta]BS[]]) $CellContext`uBS[], 0, 
+    Rational[1, 2] $CellContext`A 
+    E^(Complex[0, -2] $CellContext`\[Phi]BS[]) $CellContext`M Sin[
+       $CellContext`\[Theta]BS[]]^2 (5 $CellContext`A - 13 $CellContext`A 
+     Cos[2 $CellContext`\[Theta]BS[]] + 
+     Complex[0, 24] $CellContext`uBS[])}, -2, 2, 1],
+  Editable->False]], "Output",
+ CellChangeTimes->{
+  3.9505890522959003`*^9, 3.95058927542966*^9, 3.950589318920206*^9, 
+   3.95058982073102*^9, 3.950589874251872*^9, 3.950590043903127*^9, {
+   3.9505901027121305`*^9, 3.9505901881084156`*^9}, 3.950590255869796*^9, 
+   3.9505922252643957`*^9, 3.9505922649828243`*^9, 3.9605273202034864`*^9},
+ CellLabel->
+  "Out[444]=",ExpressionUUID->"3b4f41f2-2975-4ced-ac48-372a5e4ccff9"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{
+    RowBox[{
+     RowBox[{
+      RowBox[{
+       RowBox[{
+        RowBox[{"GaugeTransformBSCoords", "[", 
+         RowBox[{"[", 
+          RowBox[{"3", ",", "4"}], "]"}], "]"}], "//.", "X0ruleBMS"}], "//.", 
+       "X3ruleBMS"}], "//.", "X2ruleBMS"}], "//.", "X1ruleBMS"}], "/.", 
+    "RDerivativeRule"}], "/.", "BMSgaugevectorRule"}], "//", 
+  "FullSimplify"}]], "Input",
+ CellChangeTimes->{{3.950588989916703*^9, 3.950589049227337*^9}, {
+   3.950589313221798*^9, 3.9505893181657667`*^9}, 3.950589433173*^9, {
+   3.9505894988279886`*^9, 3.950589520826009*^9}},
+ CellLabel->
+  "In[445]:=",ExpressionUUID->"acb95c5b-c31b-43e1-9143-d4cad25e8e50"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   RowBox[{"-", 
+    RowBox[{"4", " ", "\[ImaginaryI]", " ", 
+     SuperscriptBox["\[ExponentialE]", 
+      RowBox[{
+       RowBox[{"-", "2"}], " ", "\[ImaginaryI]", " ", 
+       InterpretationBox[
+        StyleBox[
+         OverscriptBox["\[Phi]", "^"],
+         ShowAutoStyles->False,
+         AutoSpacing->False],
+        $CellContext`\[Phi]BS[],
+        Editable->False]}]], " ", 
+     RowBox[{
+      InterpretationBox[
+       StyleBox["Cos",
+        ShowAutoStyles->False,
+        AutoSpacing->False],
+       Cos,
+       Editable->False], "[", 
+      InterpretationBox[
+       StyleBox[
+        OverscriptBox["\[Theta]", "^"],
+        ShowAutoStyles->False,
+        AutoSpacing->False],
+       $CellContext`\[Theta]BS[],
+       Editable->False], "]"}], " ", 
+     RowBox[{
+      InterpretationBox[
+       StyleBox["Sin",
+        ShowAutoStyles->False,
+        AutoSpacing->False],
+       Sin,
+       Editable->False], "[", 
+      InterpretationBox[
+       StyleBox[
+        OverscriptBox["\[Theta]", "^"],
+        ShowAutoStyles->False,
+        AutoSpacing->False],
+       $CellContext`\[Theta]BS[],
+       Editable->False], "]"}], " ", 
+     SuperscriptBox[
+      InterpretationBox[
+       StyleBox[
+        OverscriptBox["r", "^"],
+        ShowAutoStyles->False,
+        AutoSpacing->False],
+       $CellContext`rBS[],
+       Editable->False], "2"]}]}], "-", 
+   RowBox[{"6", " ", "\[ImaginaryI]", " ", 
+    SuperscriptBox["\[ExponentialE]", 
+     RowBox[{
+      RowBox[{"-", "2"}], " ", "\[ImaginaryI]", " ", 
+      InterpretationBox[
+       StyleBox[
+        OverscriptBox["\[Phi]", "^"],
+        ShowAutoStyles->False,
+        AutoSpacing->False],
+       $CellContext`\[Phi]BS[],
+       Editable->False]}]], " ", 
+    RowBox[{
+     InterpretationBox[
+      StyleBox["Sin",
+       ShowAutoStyles->False,
+       AutoSpacing->False],
+      Sin,
+      Editable->False], "[", 
+     RowBox[{"2", " ", 
+      InterpretationBox[
+       StyleBox[
+        OverscriptBox["\[Theta]", "^"],
+        ShowAutoStyles->False,
+        AutoSpacing->False],
+       $CellContext`\[Theta]BS[],
+       Editable->False]}], "]"}], " ", 
+    InterpretationBox[
+     StyleBox["u",
+      ShowAutoStyles->False,
+      AutoSpacing->False],
+     $CellContext`uBS[],
+     Editable->False], " ", 
+    InterpretationBox[
+     StyleBox[
+      OverscriptBox["r", "^"],
+      ShowAutoStyles->False,
+      AutoSpacing->False],
+     $CellContext`rBS[],
+     Editable->False]}], "+", 
+   FractionBox[
+    RowBox[{"4", " ", 
+     InterpretationBox[
+      StyleBox["A",
+       ShowAutoStyles->False,
+       AutoSpacing->False],
+      $CellContext`A,
+      Editable->False], " ", 
+     SuperscriptBox["\[ExponentialE]", 
+      RowBox[{
+       RowBox[{"-", "2"}], " ", "\[ImaginaryI]", " ", 
+       InterpretationBox[
+        StyleBox[
+         OverscriptBox["\[Phi]", "^"],
+         ShowAutoStyles->False,
+         AutoSpacing->False],
+        $CellContext`\[Phi]BS[],
+        Editable->False]}]], " ", 
+     InterpretationBox[
+      StyleBox["M",
+       ShowAutoStyles->False,
+       AutoSpacing->False],
+      $CellContext`M,
+      Editable->False], " ", 
+     RowBox[{
+      InterpretationBox[
+       StyleBox["Cos",
+        ShowAutoStyles->False,
+        AutoSpacing->False],
+       Cos,
+       Editable->False], "[", 
+      InterpretationBox[
+       StyleBox[
+        OverscriptBox["\[Theta]", "^"],
+        ShowAutoStyles->False,
+        AutoSpacing->False],
+       $CellContext`\[Theta]BS[],
+       Editable->False], "]"}], " ", 
+     SuperscriptBox[
+      RowBox[{
+       InterpretationBox[
+        StyleBox["Sin",
+         ShowAutoStyles->False,
+         AutoSpacing->False],
+        Sin,
+        Editable->False], "[", 
+       InterpretationBox[
+        StyleBox[
+         OverscriptBox["\[Theta]", "^"],
+         ShowAutoStyles->False,
+         AutoSpacing->False],
+        $CellContext`\[Theta]BS[],
+        Editable->False], "]"}], "3"], " ", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"\[ImaginaryI]", " ", 
+        InterpretationBox[
+         StyleBox["A",
+          ShowAutoStyles->False,
+          AutoSpacing->False],
+         $CellContext`A,
+         Editable->False]}], "+", 
+       RowBox[{"3", " ", 
+        InterpretationBox[
+         StyleBox["u",
+          ShowAutoStyles->False,
+          AutoSpacing->False],
+         $CellContext`uBS[],
+         Editable->False]}]}], ")"}]}], 
+    InterpretationBox[
+     StyleBox[
+      OverscriptBox["r", "^"],
+      ShowAutoStyles->False,
+      AutoSpacing->False],
+     $CellContext`rBS[],
+     Editable->False]], "+", 
+   FractionBox[
+    RowBox[{"30", " ", "\[ImaginaryI]", " ", 
+     SuperscriptBox[
+      InterpretationBox[
+       StyleBox["A",
+        ShowAutoStyles->False,
+        AutoSpacing->False],
+       $CellContext`A,
+       Editable->False], "2"], " ", 
+     SuperscriptBox["\[ExponentialE]", 
+      RowBox[{
+       RowBox[{"-", "2"}], " ", "\[ImaginaryI]", " ", 
+       InterpretationBox[
+        StyleBox[
+         OverscriptBox["\[Phi]", "^"],
+         ShowAutoStyles->False,
+         AutoSpacing->False],
+        $CellContext`\[Phi]BS[],
+        Editable->False]}]], " ", 
+     InterpretationBox[
+      StyleBox["M",
+       ShowAutoStyles->False,
+       AutoSpacing->False],
+      $CellContext`M,
+      Editable->False], " ", 
+     RowBox[{
+      InterpretationBox[
+       StyleBox["Cos",
+        ShowAutoStyles->False,
+        AutoSpacing->False],
+       Cos,
+       Editable->False], "[", 
+      InterpretationBox[
+       StyleBox[
+        OverscriptBox["\[Theta]", "^"],
+        ShowAutoStyles->False,
+        AutoSpacing->False],
+       $CellContext`\[Theta]BS[],
+       Editable->False], "]"}], " ", 
+     SuperscriptBox[
+      RowBox[{
+       InterpretationBox[
+        StyleBox["Sin",
+         ShowAutoStyles->False,
+         AutoSpacing->False],
+        Sin,
+        Editable->False], "[", 
+       InterpretationBox[
+        StyleBox[
+         OverscriptBox["\[Theta]", "^"],
+         ShowAutoStyles->False,
+         AutoSpacing->False],
+        $CellContext`\[Theta]BS[],
+        Editable->False], "]"}], "3"], " ", 
+     InterpretationBox[
+      StyleBox["u",
+       ShowAutoStyles->False,
+       AutoSpacing->False],
+      $CellContext`uBS[],
+      Editable->False]}], 
+    SuperscriptBox[
+     InterpretationBox[
+      StyleBox[
+       OverscriptBox["r", "^"],
+       ShowAutoStyles->False,
+       AutoSpacing->False],
+      $CellContext`rBS[],
+      Editable->False], "2"]], "+", 
+   InterpretationBox[
+    SuperscriptBox[
+     RowBox[{"O", "[", 
+      FractionBox["1", 
+       InterpretationBox[
+        StyleBox[
+         OverscriptBox["r", "^"],
+         ShowAutoStyles->False,
+         AutoSpacing->False],
+        $CellContext`rBS[],
+        Editable->False]], "]"}], "4"],
+    SeriesData[
+     $CellContext`rBS[], 
+     DirectedInfinity[1], {}, -2, 4, 1],
+    Editable->False]}],
+  SeriesData[
+   $CellContext`rBS[], 
+   DirectedInfinity[1], {
+   Complex[0, -4] E^(Complex[0, -2] $CellContext`\[Phi]BS[]) Cos[
+      $CellContext`\[Theta]BS[]] Sin[
+      $CellContext`\[Theta]BS[]], Complex[0, -6] 
+    E^(Complex[0, -2] $CellContext`\[Phi]BS[]) 
+    Sin[2 $CellContext`\[Theta]BS[]] $CellContext`uBS[], 0, 4 $CellContext`A 
+    E^(Complex[0, -2] $CellContext`\[Phi]BS[]) $CellContext`M Cos[
+      $CellContext`\[Theta]BS[]] Sin[
+       $CellContext`\[Theta]BS[]]^3 (Complex[0, 1] $CellContext`A + 
+     3 $CellContext`uBS[]), Complex[0, 30] $CellContext`A^2 
+    E^(Complex[0, -2] $CellContext`\[Phi]BS[]) $CellContext`M Cos[
+      $CellContext`\[Theta]BS[]] Sin[
+       $CellContext`\[Theta]BS[]]^3 $CellContext`uBS[]}, -2, 4, 1],
+  Editable->False]], "Output",
+ CellChangeTimes->{
+  3.9505895217117414`*^9, 3.9505898208850183`*^9, 3.9505898744886904`*^9, 
+   3.950590045827494*^9, {3.9505901028852067`*^9, 3.9505901312467413`*^9}, {
+   3.950590162273182*^9, 3.9505901884893613`*^9}, 3.9505902561635036`*^9, 
+   3.950592225321146*^9, 3.950592265216665*^9, 3.9605273204884624`*^9},
+ CellLabel->
+  "Out[445]=",ExpressionUUID->"3fa5dbd7-e19e-4136-9ad3-93fcec3a7d6a"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+},
+Evaluator->"New Kernel",
+WindowSize->{1141.2, 664.1999999999999},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+FrontEndVersion->"13.2 for Microsoft Windows (64-bit) (January 30, 2023)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"4bf3955e-4b9a-4a02-9760-a694c2332dda"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 222, 3, 35, "Text",ExpressionUUID->"2ff77ce8-be8d-4dcf-9ad4-daccc80aae67"],
+Cell[CellGroupData[{
+Cell[805, 27, 220, 5, 54, "Subsection",ExpressionUUID->"8b35dc37-866b-4136-9260-bf3ed784864e"],
+Cell[CellGroupData[{
+Cell[1050, 36, 1202, 35, 32, "Input",ExpressionUUID->"eda0d268-af48-4456-aa57-1cb38928c2af"],
+Cell[2255, 73, 215, 4, 47, "Output",ExpressionUUID->"b5f962b6-d789-4572-a43c-90eb5de96604"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2507, 82, 586, 16, 28, "Input",ExpressionUUID->"b8bfc90f-1fa0-4103-ac8d-86b8c1214707"],
+Cell[3096, 100, 1325, 40, 36, "Output",ExpressionUUID->"66336f91-2ffe-4b15-aa35-0c8c5e4f5583"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4458, 145, 584, 16, 28, "Input",ExpressionUUID->"97af68ca-5dc5-443f-98f8-bd248a26138a"],
+Cell[5045, 163, 12454, 381, 91, "Output",ExpressionUUID->"6b6d1c74-d460-4cb4-82f0-7f017b5b571c"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[17536, 549, 555, 16, 28, "Input",ExpressionUUID->"2b4327b2-c83a-4624-9169-8d979e521786"],
+Cell[18094, 567, 4191, 137, 53, "Output",ExpressionUUID->"ba830947-17b8-4156-8a83-06750c8ae9eb"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[22322, 709, 555, 16, 28, "Input",ExpressionUUID->"1b936853-dd51-44b3-97c6-47a518fcd81c"],
+Cell[22880, 727, 4189, 138, 53, "Output",ExpressionUUID->"657ef774-9787-4487-bc35-54b4e7d44a31"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[27118, 871, 202, 3, 54, "Subsection",ExpressionUUID->"07abccf3-85d0-4469-94de-e89fb7edb97c"],
+Cell[CellGroupData[{
+Cell[27345, 878, 472, 13, 28, "Input",ExpressionUUID->"9424e90e-902a-4ea5-b474-dd692dfd0e93"],
+Cell[27820, 893, 22256, 673, 99, "Output",ExpressionUUID->"bfa2d5d5-3986-466c-8206-e3d8e93ae7b0"]
+}, Open  ]],
+Cell[50091, 1569, 1336, 39, 81, "Text",ExpressionUUID->"35ff1e59-3f7c-4b4b-9f19-8e6b5d20f234"],
+Cell[CellGroupData[{
+Cell[51452, 1612, 448, 13, 28, "Input",ExpressionUUID->"3987fcf4-d1dc-4119-9a3c-6bc612e8e227"],
+Cell[51903, 1627, 7504, 241, 53, "Output",ExpressionUUID->"feb78036-6810-4ec8-b44f-763aeeeed73a"]
+}, Open  ]],
+Cell[59422, 1871, 1725, 59, 35, "Text",ExpressionUUID->"3c86280b-92ea-4df5-9de9-1df22f608c7d"],
+Cell[CellGroupData[{
+Cell[61172, 1934, 470, 13, 28, "Input",ExpressionUUID->"48555c9b-dc43-4e39-85b8-7912b4f83b70"],
+Cell[61645, 1949, 11191, 355, 77, "Output",ExpressionUUID->"f51e0bff-7890-40f9-a479-f9f6c0e5c04b"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[72885, 2310, 165, 3, 54, "Subsection",ExpressionUUID->"3827f4bd-6b23-405f-9727-f0a79266261a"],
+Cell[CellGroupData[{
+Cell[73075, 2317, 519, 13, 28, "Input",ExpressionUUID->"1f1a822a-1bee-4a43-989a-e62f164b4d38"],
+Cell[73597, 2332, 870, 29, 36, "Output",ExpressionUUID->"0f1a96d4-4ef1-428c-ab71-206800b412e1"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[74504, 2366, 466, 10, 28, "Input",ExpressionUUID->"1bb55631-190a-4b61-8762-ae69549a281b"],
+Cell[74973, 2378, 871, 29, 36, "Output",ExpressionUUID->"a53b9fe3-c8ea-4540-b2c7-4f1a34dad58a"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[75881, 2412, 533, 14, 28, "Input",ExpressionUUID->"7e7ab496-9888-4f8c-a7ce-256b368fa40c"],
+Cell[76417, 2428, 968, 32, 36, "Output",ExpressionUUID->"331af1a6-a8c6-45cc-aa94-9b0c6363b5c6"]
+}, Open  ]],
+Cell[77400, 2463, 153, 3, 28, "Input",ExpressionUUID->"bde8966b-1b87-4b00-adc2-ac31b33a3f94"],
+Cell[CellGroupData[{
+Cell[77578, 2470, 933, 25, 28, "Input",ExpressionUUID->"72c715b5-4c83-45b9-8e28-19be7395f7df"],
+Cell[78514, 2497, 1737, 62, 36, "Output",ExpressionUUID->"b7631409-212a-4fe5-8b22-3c7167b1a9db"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[80288, 2564, 399, 11, 29, "Input",ExpressionUUID->"98212b4a-582a-4513-8647-3c91fbcd7098"],
+Cell[80690, 2577, 213, 5, 47, "Output",ExpressionUUID->"76432baa-61e6-4be6-ac45-e7015e873438"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[80940, 2587, 458, 12, 28, "Input",ExpressionUUID->"e0666a8d-e7d7-4e35-836b-ac767d799b90"],
+Cell[81401, 2601, 4201, 141, 42, "Output",ExpressionUUID->"d8199480-f570-47b0-ab42-82963c1dc437"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[85639, 2747, 190, 3, 45, "Subsubsection",ExpressionUUID->"6ee9a251-a09d-4fb9-83fc-ce5e361f2ee5"],
+Cell[CellGroupData[{
+Cell[85854, 2754, 696, 18, 28, "Input",ExpressionUUID->"751e2c09-2a35-498d-ab68-7684a8cf6a99"],
+Cell[86553, 2774, 5001, 161, 60, "Output",ExpressionUUID->"c4841a0f-64f4-46bd-9fb4-6324f3d3eea7"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[91591, 2940, 698, 18, 28, "Input",ExpressionUUID->"5f955396-6f42-40e0-8508-1cf5ec2a1af9"],
+Cell[92292, 2960, 754, 22, 49, "Output",ExpressionUUID->"021606c3-c8fe-4482-9459-519f85f4977a"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[93083, 2987, 667, 18, 28, "Input",ExpressionUUID->"b74ecc44-d268-43e5-a93c-7fc6b73ed41e"],
+Cell[93753, 3007, 8712, 279, 60, "Output",ExpressionUUID->"9279fcc4-9c49-43f5-8b73-4bb9c77fdff9"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[102502, 3291, 693, 18, 28, "Input",ExpressionUUID->"04da65d4-4beb-4661-bb06-0277b2b8ba3e"],
+Cell[103198, 3311, 9954, 311, 111, "Output",ExpressionUUID->"3b75bfee-6fc9-49cd-b800-73714e2a3d9b"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[113189, 3627, 642, 17, 28, "Input",ExpressionUUID->"dab208ac-c3a6-4b91-963f-2be5b0003a14"],
+Cell[113834, 3646, 6438, 203, 60, "Output",ExpressionUUID->"b751c778-62bf-4695-b8a8-793f1b1daa15"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[120309, 3854, 691, 18, 28, "Input",ExpressionUUID->"733fa125-2409-4a15-b86a-e293ff6b5bbc"],
+Cell[121003, 3874, 8782, 290, 60, "Output",ExpressionUUID->"fb3717eb-17df-43c6-abfe-80986ccedb17"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[129846, 4171, 216, 4, 54, "Subsection",ExpressionUUID->"0f90ba11-41bd-4a51-af1c-813f8bd39ba7"],
+Cell[CellGroupData[{
+Cell[130087, 4179, 602, 15, 28, "Input",ExpressionUUID->"6f63f803-9437-4041-9e43-776a181acd85"],
+Cell[130692, 4196, 945, 31, 36, "Output",ExpressionUUID->"d4e9ee10-6525-4498-a4b9-ff36f3ce1873"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[131674, 4232, 466, 10, 28, "Input",ExpressionUUID->"378f86a4-d9cf-4a9b-b509-c482fc2ce57f"],
+Cell[132143, 4244, 1258, 44, 36, "Output",ExpressionUUID->"50254b92-ae34-4e94-a40a-62506ab4e0dd"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[133438, 4293, 533, 14, 28, "Input",ExpressionUUID->"71de105f-1fbf-4ddf-b610-d7f1f586389d"],
+Cell[133974, 4309, 673, 18, 36, "Output",ExpressionUUID->"2e5d57a0-c506-408f-9e42-8b6864fb67ca"]
+}, Open  ]],
+Cell[134662, 4330, 153, 3, 28, "Input",ExpressionUUID->"d380a08f-0fc0-4155-b401-524ec06c0ccb"],
+Cell[CellGroupData[{
+Cell[134840, 4337, 1075, 27, 28, "Input",ExpressionUUID->"e329102e-229d-45a1-b243-ead3846bf62a"],
+Cell[135918, 4366, 1017, 36, 36, "Output",ExpressionUUID->"563c4c44-faf3-4167-8ad8-d56248fac40e"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[136972, 4407, 399, 11, 29, "Input",ExpressionUUID->"a5c43686-2a27-40bb-b79e-88134de5a8dc"],
+Cell[137374, 4420, 235, 5, 47, "Output",ExpressionUUID->"4fa6e0f6-43a3-4a92-8841-c7717ff2f107"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[137646, 4430, 458, 12, 28, "Input",ExpressionUUID->"5762fe73-59c4-4240-9ef4-a9e61e4f7860"],
+Cell[138107, 4444, 3567, 117, 42, "Output",ExpressionUUID->"59f2ac2a-4cd2-4711-9ea5-7d0b503c8009"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[141711, 4566, 190, 3, 45, "Subsubsection",ExpressionUUID->"9e7efb22-3c01-4386-b0e3-5fe0cd51642c"],
+Cell[CellGroupData[{
+Cell[141926, 4573, 696, 18, 28, "Input",ExpressionUUID->"2691ce32-70eb-4466-af47-e8c9e942247f"],
+Cell[142625, 4593, 5040, 162, 60, "Output",ExpressionUUID->"7507d97f-7e6b-46b3-b3f1-f71273797cbc"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[147702, 4760, 698, 18, 28, "Input",ExpressionUUID->"30162130-99c6-4904-87c9-02e75edcc0cd"],
+Cell[148403, 4780, 2947, 97, 57, "Output",ExpressionUUID->"0cb01783-77e5-4763-a3b6-1a11fefc88ce"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[151387, 4882, 667, 18, 28, "Input",ExpressionUUID->"b64831b2-1627-4d35-8934-eca8b7e3ab03"],
+Cell[152057, 4902, 6368, 208, 60, "Output",ExpressionUUID->"b4a5f7f0-d043-45d2-b288-c21d21d09b0f"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[158462, 5115, 693, 18, 28, "Input",ExpressionUUID->"95071d0b-8cdb-4cac-91e1-f77f93a7ba50"],
+Cell[159158, 5135, 7568, 246, 57, "Output",ExpressionUUID->"393769d0-b9dc-4861-aa5f-1d43d1a1104b"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[166763, 5386, 642, 17, 28, "Input",ExpressionUUID->"26fa3568-5b70-48ca-b298-ce5390c3114e"],
+Cell[167408, 5405, 6003, 199, 57, "Output",ExpressionUUID->"3b4f41f2-2975-4ced-ac48-372a5e4ccff9"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[173448, 5609, 691, 18, 28, "Input",ExpressionUUID->"acb95c5b-c31b-43e1-9143-d4cad25e8e50"],
+Cell[174142, 5629, 8087, 271, 55, "Output",ExpressionUUID->"3fa5dbd7-e19e-4136-9ad3-93fcec3a7d6a"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
