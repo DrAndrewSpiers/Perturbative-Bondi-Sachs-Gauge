@@ -1,0 +1,948 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Wolfram 14.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       154,          7]
+NotebookDataLength[     28947,        940]
+NotebookOptionsPosition[     25777,        874]
+NotebookOutlinePosition[     26192,        891]
+CellTagsIndexPosition[     26149,        888]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"1", "^", "I"}], "//", "N"}]], "Input",
+ CellChangeTimes->{{3.986959158249845*^9, 3.986959193687151*^9}},
+ CellLabel->"In[7]:=",ExpressionUUID->"27d972bd-61f8-4277-860f-64e194307368"],
+
+Cell[BoxData["1.`"], "Output",
+ CellChangeTimes->{{3.986959161608934*^9, 3.9869591945436907`*^9}},
+ CellLabel->"Out[7]=",ExpressionUUID->"4142f19b-9452-4d02-9caa-81f189ebe26c"]
+}, Open  ]],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.986959189093116*^9, 
+  3.986959190057316*^9}},ExpressionUUID->"d4297833-a469-42ec-a329-\
+08259e1c6052"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"2", "^", "I"}], "//", "N"}]], "Input",
+ CellChangeTimes->{{3.986959174232656*^9, 3.986959181081702*^9}},
+ CellLabel->"In[5]:=",ExpressionUUID->"46552953-b334-49d5-8006-7e1bf60c140a"],
+
+Cell[BoxData[
+ RowBox[{"0.7692389013639721`", "\[VeryThinSpace]", "+", 
+  RowBox[{"0.6389612763136348`", " ", "\[ImaginaryI]"}]}]], "Output",
+ CellChangeTimes->{{3.9869591772940493`*^9, 3.9869591815445547`*^9}},
+ CellLabel->"Out[5]=",ExpressionUUID->"666725a8-5209-452e-a65f-b3d2b3fab4ec"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   SuperscriptBox["2", 
+    RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+     InterpretationBox[
+      StyleBox["M",
+       ShowAutoStyles->False,
+       AutoSpacing->False],
+      $CellContext`M,
+      Editable->False], " ", 
+     InterpretationBox[
+      StyleBox["\[Omega]",
+       ShowAutoStyles->False,
+       AutoSpacing->False],
+      $CellContext`\[Omega],
+      Editable->False]}]], " ", 
+   SuperscriptBox[
+    RowBox[{"(", 
+     FractionBox[
+      InterpretationBox[
+       StyleBox["M",
+        ShowAutoStyles->False,
+        AutoSpacing->False],
+       $CellContext`M,
+       Editable->False], 
+      RowBox[{
+       InterpretationBox[
+        StyleBox["M",
+         ShowAutoStyles->False,
+         AutoSpacing->False],
+        $CellContext`M,
+        Editable->False], "+", 
+       SqrtBox[
+        RowBox[{
+         RowBox[{"-", 
+          SuperscriptBox[
+           InterpretationBox[
+            StyleBox["A",
+             ShowAutoStyles->False,
+             AutoSpacing->False],
+            $CellContext`A,
+            Editable->False], "2"]}], "+", 
+         SuperscriptBox[
+          InterpretationBox[
+           StyleBox["M",
+            ShowAutoStyles->False,
+            AutoSpacing->False],
+           $CellContext`M,
+           Editable->False], "2"]}]]}]], ")"}], 
+    RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+     InterpretationBox[
+      StyleBox["M",
+       ShowAutoStyles->False,
+       AutoSpacing->False],
+      $CellContext`M,
+      Editable->False], " ", 
+     InterpretationBox[
+      StyleBox["\[Omega]",
+       ShowAutoStyles->False,
+       AutoSpacing->False],
+      $CellContext`\[Omega],
+      Editable->False]}]]}], "/.", 
+  RowBox[{"M", "->", "1"}]}]], "Input",
+ CellLabel->"In[10]:=",ExpressionUUID->"0602d795-dcd0-4af7-b01d-253cbac38c12"],
+
+Cell[BoxData[
+ RowBox[{
+  SuperscriptBox["2", 
+   RowBox[{"2", " ", "\[ImaginaryI]", " ", "\[Omega]"}]], " ", 
+  SuperscriptBox[
+   RowBox[{"(", 
+    FractionBox["1", 
+     RowBox[{"1", "+", 
+      SqrtBox[
+       RowBox[{"1", "-", 
+        SuperscriptBox["A", "2"]}]]}]], ")"}], 
+   RowBox[{"2", " ", "\[ImaginaryI]", " ", "\[Omega]"}]]}]], "Output",
+ CellChangeTimes->{3.9869592718783827`*^9},
+ CellLabel->"Out[10]=",ExpressionUUID->"b75b528c-04fe-480d-a1da-44689bc90199"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{
+    SuperscriptBox["2", 
+     RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+      InterpretationBox[
+       StyleBox["M",
+        ShowAutoStyles->False,
+        AutoSpacing->False],
+       $CellContext`M,
+       Editable->False], " ", 
+      InterpretationBox[
+       StyleBox["\[Omega]",
+        ShowAutoStyles->False,
+        AutoSpacing->False],
+       $CellContext`\[Omega],
+       Editable->False]}]], " ", 
+    SuperscriptBox[
+     RowBox[{"(", 
+      FractionBox[
+       InterpretationBox[
+        StyleBox["M",
+         ShowAutoStyles->False,
+         AutoSpacing->False],
+        $CellContext`M,
+        Editable->False], 
+       RowBox[{
+        InterpretationBox[
+         StyleBox["M",
+          ShowAutoStyles->False,
+          AutoSpacing->False],
+         $CellContext`M,
+         Editable->False], "+", 
+        SqrtBox[
+         RowBox[{
+          RowBox[{"-", 
+           SuperscriptBox[
+            InterpretationBox[
+             StyleBox["A",
+              ShowAutoStyles->False,
+              AutoSpacing->False],
+             $CellContext`A,
+             Editable->False], "2"]}], "+", 
+          SuperscriptBox[
+           InterpretationBox[
+            StyleBox["M",
+             ShowAutoStyles->False,
+             AutoSpacing->False],
+            $CellContext`M,
+            Editable->False], "2"]}]]}]], ")"}], 
+     RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+      InterpretationBox[
+       StyleBox["M",
+        ShowAutoStyles->False,
+        AutoSpacing->False],
+       $CellContext`M,
+       Editable->False], " ", 
+      InterpretationBox[
+       StyleBox["\[Omega]",
+        ShowAutoStyles->False,
+        AutoSpacing->False],
+       $CellContext`\[Omega],
+       Editable->False]}]]}], "/.", 
+   RowBox[{"M", "->", "1"}]}], "/.", 
+  RowBox[{"A", "->", "0"}]}]], "Input",
+ CellChangeTimes->{{3.986959249618071*^9, 3.986959265297711*^9}},
+ CellLabel->"In[11]:=",ExpressionUUID->"3fcb3873-d3a4-41ce-b911-1df1652d01c6"],
+
+Cell[BoxData["1"], "Output",
+ CellChangeTimes->{{3.9869592547745028`*^9, 3.9869592747773867`*^9}},
+ CellLabel->"Out[11]=",ExpressionUUID->"40026035-55c7-478e-ae2c-c6a1a3a7bfcf"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   SuperscriptBox["2", 
+    RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+     InterpretationBox[
+      StyleBox["M",
+       ShowAutoStyles->False,
+       AutoSpacing->False],
+      $CellContext`M,
+      Editable->False], " ", 
+     InterpretationBox[
+      StyleBox["\[Omega]",
+       ShowAutoStyles->False,
+       AutoSpacing->False],
+      $CellContext`\[Omega],
+      Editable->False]}]], " ", 
+   SuperscriptBox[
+    RowBox[{"(", 
+     FractionBox[
+      InterpretationBox[
+       StyleBox["M",
+        ShowAutoStyles->False,
+        AutoSpacing->False],
+       $CellContext`M,
+       Editable->False], 
+      RowBox[{
+       InterpretationBox[
+        StyleBox["M",
+         ShowAutoStyles->False,
+         AutoSpacing->False],
+        $CellContext`M,
+        Editable->False], "+", 
+       SqrtBox[
+        RowBox[{
+         RowBox[{"-", 
+          SuperscriptBox[
+           InterpretationBox[
+            StyleBox["A",
+             ShowAutoStyles->False,
+             AutoSpacing->False],
+            $CellContext`A,
+            Editable->False], "2"]}], "+", 
+         SuperscriptBox[
+          InterpretationBox[
+           StyleBox["M",
+            ShowAutoStyles->False,
+            AutoSpacing->False],
+           $CellContext`M,
+           Editable->False], "2"]}]]}]], ")"}], 
+    RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+     InterpretationBox[
+      StyleBox["M",
+       ShowAutoStyles->False,
+       AutoSpacing->False],
+      $CellContext`M,
+      Editable->False], " ", 
+     InterpretationBox[
+      StyleBox["\[Omega]",
+       ShowAutoStyles->False,
+       AutoSpacing->False],
+      $CellContext`\[Omega],
+      Editable->False]}]]}], "/.", 
+  RowBox[{"\[Omega]", "->", "0"}]}]], "Input",
+ CellChangeTimes->{{3.986959278922141*^9, 3.98695929526206*^9}},
+ CellLabel->"In[12]:=",ExpressionUUID->"80d7baf6-83b6-4bcb-a941-8608eef0602e"],
+
+Cell[BoxData["1"], "Output",
+ CellChangeTimes->{3.9869592958011417`*^9},
+ CellLabel->"Out[12]=",ExpressionUUID->"07f6eb14-6ee4-4059-9c50-04615897986e"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{
+    SuperscriptBox["2", 
+     RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+      InterpretationBox[
+       StyleBox["M",
+        ShowAutoStyles->False,
+        AutoSpacing->False],
+       $CellContext`M,
+       Editable->False], " ", 
+      InterpretationBox[
+       StyleBox["\[Omega]",
+        ShowAutoStyles->False,
+        AutoSpacing->False],
+       $CellContext`\[Omega],
+       Editable->False]}]], " ", 
+    SuperscriptBox[
+     RowBox[{"(", 
+      FractionBox[
+       InterpretationBox[
+        StyleBox["M",
+         ShowAutoStyles->False,
+         AutoSpacing->False],
+        $CellContext`M,
+        Editable->False], 
+       RowBox[{
+        InterpretationBox[
+         StyleBox["M",
+          ShowAutoStyles->False,
+          AutoSpacing->False],
+         $CellContext`M,
+         Editable->False], "+", 
+        SqrtBox[
+         RowBox[{
+          RowBox[{"-", 
+           SuperscriptBox[
+            InterpretationBox[
+             StyleBox["A",
+              ShowAutoStyles->False,
+              AutoSpacing->False],
+             $CellContext`A,
+             Editable->False], "2"]}], "+", 
+          SuperscriptBox[
+           InterpretationBox[
+            StyleBox["M",
+             ShowAutoStyles->False,
+             AutoSpacing->False],
+            $CellContext`M,
+            Editable->False], "2"]}]]}]], ")"}], 
+     RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+      InterpretationBox[
+       StyleBox["M",
+        ShowAutoStyles->False,
+        AutoSpacing->False],
+       $CellContext`M,
+       Editable->False], " ", 
+      InterpretationBox[
+       StyleBox["\[Omega]",
+        ShowAutoStyles->False,
+        AutoSpacing->False],
+       $CellContext`\[Omega],
+       Editable->False]}]]}], "/.", 
+   RowBox[{"M", "->", "1"}]}], "/.", 
+  RowBox[{"A", "->", "1"}]}]], "Input",
+ CellChangeTimes->{{3.986959306895441*^9, 3.98695930713586*^9}},
+ CellLabel->"In[13]:=",ExpressionUUID->"1c0f1840-bb64-4aff-b9ed-b2d5c9c5974d"],
+
+Cell[BoxData[
+ SuperscriptBox["2", 
+  RowBox[{"2", " ", "\[ImaginaryI]", " ", "\[Omega]"}]]], "Output",
+ CellChangeTimes->{3.986959307401874*^9},
+ CellLabel->"Out[13]=",ExpressionUUID->"8735050c-a1aa-468b-8a37-c6feb9d662f9"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{
+    RowBox[{
+     RowBox[{
+      SuperscriptBox["2", 
+       RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+        InterpretationBox[
+         StyleBox["M",
+          ShowAutoStyles->False,
+          AutoSpacing->False],
+         $CellContext`M,
+         Editable->False], " ", 
+        InterpretationBox[
+         StyleBox["\[Omega]",
+          ShowAutoStyles->False,
+          AutoSpacing->False],
+         $CellContext`\[Omega],
+         Editable->False]}]], " ", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        FractionBox[
+         InterpretationBox[
+          StyleBox["M",
+           ShowAutoStyles->False,
+           AutoSpacing->False],
+          $CellContext`M,
+          Editable->False], 
+         RowBox[{
+          InterpretationBox[
+           StyleBox["M",
+            ShowAutoStyles->False,
+            AutoSpacing->False],
+           $CellContext`M,
+           Editable->False], "+", 
+          SqrtBox[
+           RowBox[{
+            RowBox[{"-", 
+             SuperscriptBox[
+              InterpretationBox[
+               StyleBox["A",
+                ShowAutoStyles->False,
+                AutoSpacing->False],
+               $CellContext`A,
+               Editable->False], "2"]}], "+", 
+            SuperscriptBox[
+             InterpretationBox[
+              StyleBox["M",
+               ShowAutoStyles->False,
+               AutoSpacing->False],
+              $CellContext`M,
+              Editable->False], "2"]}]]}]], ")"}], 
+       RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+        InterpretationBox[
+         StyleBox["M",
+          ShowAutoStyles->False,
+          AutoSpacing->False],
+         $CellContext`M,
+         Editable->False], " ", 
+        InterpretationBox[
+         StyleBox["\[Omega]",
+          ShowAutoStyles->False,
+          AutoSpacing->False],
+         $CellContext`\[Omega],
+         Editable->False]}]]}], "/.", 
+     RowBox[{"M", "->", "1"}]}], "/.", 
+    RowBox[{"A", "->", 
+     RowBox[{"1", "/", "2"}]}]}], "/.", 
+   RowBox[{"\[Omega]", "->", "1"}]}], "//", "Abs"}]], "Input",
+ CellChangeTimes->{{3.986959318344205*^9, 3.9869593536535063`*^9}},
+ CellLabel->"In[18]:=",ExpressionUUID->"7ef4a77e-7eea-4f9a-8c62-8e1325f92173"],
+
+Cell[BoxData["1"], "Output",
+ CellChangeTimes->{{3.9869593231897173`*^9, 3.986959354025833*^9}},
+ CellLabel->"Out[18]=",ExpressionUUID->"be188dfc-63a5-4f74-8961-f89aa6364440"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Simplify", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{
+     SuperscriptBox["2", 
+      RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+       InterpretationBox[
+        StyleBox["M",
+         ShowAutoStyles->False,
+         AutoSpacing->False],
+        $CellContext`M,
+        Editable->False], " ", 
+       InterpretationBox[
+        StyleBox["\[Omega]",
+         ShowAutoStyles->False,
+         AutoSpacing->False],
+        $CellContext`\[Omega],
+        Editable->False]}]], " ", 
+     SuperscriptBox[
+      RowBox[{"(", 
+       FractionBox[
+        InterpretationBox[
+         StyleBox["M",
+          ShowAutoStyles->False,
+          AutoSpacing->False],
+         $CellContext`M,
+         Editable->False], 
+        RowBox[{
+         InterpretationBox[
+          StyleBox["M",
+           ShowAutoStyles->False,
+           AutoSpacing->False],
+          $CellContext`M,
+          Editable->False], "+", 
+         SqrtBox[
+          RowBox[{
+           RowBox[{"-", 
+            SuperscriptBox[
+             InterpretationBox[
+              StyleBox["A",
+               ShowAutoStyles->False,
+               AutoSpacing->False],
+              $CellContext`A,
+              Editable->False], "2"]}], "+", 
+           SuperscriptBox[
+            InterpretationBox[
+             StyleBox["M",
+              ShowAutoStyles->False,
+              AutoSpacing->False],
+             $CellContext`M,
+             Editable->False], "2"]}]]}]], ")"}], 
+      RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+       InterpretationBox[
+        StyleBox["M",
+         ShowAutoStyles->False,
+         AutoSpacing->False],
+        $CellContext`M,
+        Editable->False], " ", 
+       InterpretationBox[
+        StyleBox["\[Omega]",
+         ShowAutoStyles->False,
+         AutoSpacing->False],
+        $CellContext`\[Omega],
+        Editable->False]}]]}], "//", "Abs"}], ",", 
+   RowBox[{"Assumptions", "->", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"M", ",", "A", ",", 
+         RowBox[{"r", "[", "]"}], ",", "\[Omega]"}], " ", "}"}], "\[Element]",
+        "Reals"}], ",", 
+      RowBox[{"M", ">", "0"}], ",", 
+      RowBox[{"A", ">", "0"}], ",", 
+      RowBox[{
+       RowBox[{"r", "[", "]"}], ">", "0"}], ",", 
+      RowBox[{"A", "<", "1"}]}], "}"}]}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.9869593644616737`*^9, 3.986959409270255*^9}},
+ CellLabel->"In[21]:=",ExpressionUUID->"94ffb5c0-0343-4fa9-83d9-37558c3d8152"],
+
+Cell[BoxData[
+ SuperscriptBox["\[ExponentialE]", 
+  RowBox[{
+   RowBox[{"-", "2"}], " ", "M", " ", "\[Omega]", " ", 
+   RowBox[{"Im", "[", 
+    RowBox[{"Log", "[", 
+     FractionBox["M", 
+      RowBox[{"M", "+", 
+       SqrtBox[
+        RowBox[{
+         RowBox[{"-", 
+          SuperscriptBox["A", "2"]}], "+", 
+         SuperscriptBox["M", "2"]}]]}]], "]"}], "]"}]}]]], "Output",
+ CellChangeTimes->{
+  3.986959366284712*^9, {3.9869593985445557`*^9, 3.986959409692518*^9}},
+ CellLabel->"Out[21]=",ExpressionUUID->"39a43621-a1db-4282-b023-f02d700f91b4"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Simplify", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{
+     RowBox[{
+      SuperscriptBox["2", 
+       RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+        InterpretationBox[
+         StyleBox["M",
+          ShowAutoStyles->False,
+          AutoSpacing->False],
+         $CellContext`M,
+         Editable->False], " ", 
+        InterpretationBox[
+         StyleBox["\[Omega]",
+          ShowAutoStyles->False,
+          AutoSpacing->False],
+         $CellContext`\[Omega],
+         Editable->False]}]], " ", 
+      SuperscriptBox[
+       RowBox[{"(", 
+        FractionBox[
+         InterpretationBox[
+          StyleBox["M",
+           ShowAutoStyles->False,
+           AutoSpacing->False],
+          $CellContext`M,
+          Editable->False], 
+         RowBox[{
+          InterpretationBox[
+           StyleBox["M",
+            ShowAutoStyles->False,
+            AutoSpacing->False],
+           $CellContext`M,
+           Editable->False], "+", 
+          SqrtBox[
+           RowBox[{
+            RowBox[{"-", 
+             SuperscriptBox[
+              InterpretationBox[
+               StyleBox["A",
+                ShowAutoStyles->False,
+                AutoSpacing->False],
+               $CellContext`A,
+               Editable->False], "2"]}], "+", 
+            SuperscriptBox[
+             InterpretationBox[
+              StyleBox["M",
+               ShowAutoStyles->False,
+               AutoSpacing->False],
+              $CellContext`M,
+              Editable->False], "2"]}]]}]], ")"}], 
+       RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+        InterpretationBox[
+         StyleBox["M",
+          ShowAutoStyles->False,
+          AutoSpacing->False],
+         $CellContext`M,
+         Editable->False], " ", 
+        InterpretationBox[
+         StyleBox["\[Omega]",
+          ShowAutoStyles->False,
+          AutoSpacing->False],
+         $CellContext`\[Omega],
+         Editable->False]}]]}], "/.", 
+     RowBox[{"M", "->", "1"}]}], "//", "Abs"}], ",", 
+   RowBox[{"Assumptions", "->", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"M", ",", "A", ",", 
+         RowBox[{"r", "[", "]"}], ",", "\[Omega]"}], " ", "}"}], "\[Element]",
+        "Reals"}], ",", 
+      RowBox[{"M", ">", "0"}], ",", 
+      RowBox[{"A", ">", "0"}], ",", 
+      RowBox[{
+       RowBox[{"r", "[", "]"}], ">", "0"}], ",", 
+      RowBox[{"A", "<", "1"}]}], "}"}]}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.986959423973544*^9, 3.9869594377508297`*^9}},
+ CellLabel->"In[24]:=",ExpressionUUID->"645f4979-a489-4a2b-b2fa-9ef2b4d6df7a"],
+
+Cell[BoxData["1"], "Output",
+ CellChangeTimes->{{3.986959426825251*^9, 3.986959443761427*^9}},
+ CellLabel->"Out[24]=",ExpressionUUID->"1664cb3b-e85c-4eba-87ff-42660d798df4"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Look at P1", "Subsection",
+ CellChangeTimes->{{3.98695970429881*^9, 
+  3.986959706910128*^9}},ExpressionUUID->"3b4bae80-32a6-4a2e-8e7a-\
+be20519b95e5"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"P0", "=", 
+  RowBox[{
+   SuperscriptBox["2", 
+    RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+     InterpretationBox[
+      StyleBox["M",
+       ShowAutoStyles->False,
+       AutoSpacing->False],
+      $CellContext`M,
+      Editable->False], " ", 
+     InterpretationBox[
+      StyleBox["\[Omega]",
+       ShowAutoStyles->False,
+       AutoSpacing->False],
+      $CellContext`\[Omega],
+      Editable->False]}]], " ", 
+   SuperscriptBox[
+    RowBox[{"(", 
+     FractionBox[
+      InterpretationBox[
+       StyleBox["M",
+        ShowAutoStyles->False,
+        AutoSpacing->False],
+       $CellContext`M,
+       Editable->False], 
+      RowBox[{
+       InterpretationBox[
+        StyleBox["M",
+         ShowAutoStyles->False,
+         AutoSpacing->False],
+        $CellContext`M,
+        Editable->False], "+", 
+       SqrtBox[
+        RowBox[{
+         RowBox[{"-", 
+          SuperscriptBox[
+           InterpretationBox[
+            StyleBox["A",
+             ShowAutoStyles->False,
+             AutoSpacing->False],
+            $CellContext`A,
+            Editable->False], "2"]}], "+", 
+         SuperscriptBox[
+          InterpretationBox[
+           StyleBox["M",
+            ShowAutoStyles->False,
+            AutoSpacing->False],
+           $CellContext`M,
+           Editable->False], "2"]}]]}]], ")"}], 
+    RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+     InterpretationBox[
+      StyleBox["M",
+       ShowAutoStyles->False,
+       AutoSpacing->False],
+      $CellContext`M,
+      Editable->False], " ", 
+     InterpretationBox[
+      StyleBox["\[Omega]",
+       ShowAutoStyles->False,
+       AutoSpacing->False],
+      $CellContext`\[Omega],
+      Editable->False]}]]}]}]], "Input",
+ CellChangeTimes->{{3.986959708928851*^9, 3.9869597096771097`*^9}},
+ CellLabel->"In[25]:=",ExpressionUUID->"cb481366-9e20-4bcb-bfd0-a86e242e39b0"],
+
+Cell[BoxData[
+ RowBox[{
+  SuperscriptBox["2", 
+   RowBox[{"2", " ", "\[ImaginaryI]", " ", "M", " ", "\[Omega]"}]], " ", 
+  SuperscriptBox[
+   RowBox[{"(", 
+    FractionBox["M", 
+     RowBox[{"M", "+", 
+      SqrtBox[
+       RowBox[{
+        RowBox[{"-", 
+         SuperscriptBox["A", "2"]}], "+", 
+        SuperscriptBox["M", "2"]}]]}]], ")"}], 
+   RowBox[{
+   "2", " ", "\[ImaginaryI]", " ", "M", " ", "\[Omega]"}]]}]], "Output",
+ CellChangeTimes->{3.986959710492785*^9},
+ CellLabel->"Out[25]=",ExpressionUUID->"18081d35-b35a-432e-87c0-ccd4bdc52d7b"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"P1", "=", 
+  RowBox[{
+   RowBox[{"-", "\[ImaginaryI]"}], " ", 
+   SuperscriptBox["2", 
+    RowBox[{
+     RowBox[{"-", "1"}], "+", 
+     RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+      InterpretationBox[
+       StyleBox["M",
+        ShowAutoStyles->False,
+        AutoSpacing->False],
+       $CellContext`M,
+       Editable->False], " ", 
+      InterpretationBox[
+       StyleBox["\[Omega]",
+        ShowAutoStyles->False,
+        AutoSpacing->False],
+       $CellContext`\[Omega],
+       Editable->False]}]}]], " ", 
+   SuperscriptBox[
+    InterpretationBox[
+     StyleBox["A",
+      ShowAutoStyles->False,
+      AutoSpacing->False],
+     $CellContext`A,
+     Editable->False], "2"], " ", 
+   SuperscriptBox[
+    RowBox[{"(", 
+     FractionBox[
+      InterpretationBox[
+       StyleBox["M",
+        ShowAutoStyles->False,
+        AutoSpacing->False],
+       $CellContext`M,
+       Editable->False], 
+      RowBox[{
+       InterpretationBox[
+        StyleBox["M",
+         ShowAutoStyles->False,
+         AutoSpacing->False],
+        $CellContext`M,
+        Editable->False], "+", 
+       SqrtBox[
+        RowBox[{
+         RowBox[{"-", 
+          SuperscriptBox[
+           InterpretationBox[
+            StyleBox["A",
+             ShowAutoStyles->False,
+             AutoSpacing->False],
+            $CellContext`A,
+            Editable->False], "2"]}], "+", 
+         SuperscriptBox[
+          InterpretationBox[
+           StyleBox["M",
+            ShowAutoStyles->False,
+            AutoSpacing->False],
+           $CellContext`M,
+           Editable->False], "2"]}]]}]], ")"}], 
+    RowBox[{"2", " ", "\[ImaginaryI]", " ", 
+     InterpretationBox[
+      StyleBox["M",
+       ShowAutoStyles->False,
+       AutoSpacing->False],
+      $CellContext`M,
+      Editable->False], " ", 
+     InterpretationBox[
+      StyleBox["\[Omega]",
+       ShowAutoStyles->False,
+       AutoSpacing->False],
+      $CellContext`\[Omega],
+      Editable->False]}]], " ", 
+   InterpretationBox[
+    StyleBox["\[Omega]",
+     ShowAutoStyles->False,
+     AutoSpacing->False],
+    $CellContext`\[Omega],
+    Editable->False]}]}]], "Input",
+ CellChangeTimes->{{3.986959713121798*^9, 3.986959714250979*^9}},
+ CellLabel->"In[44]:=",ExpressionUUID->"546948d2-f15c-4da8-9a67-9e28e0e7b6a7"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"-", "\[ImaginaryI]"}], " ", 
+  SuperscriptBox["2", 
+   RowBox[{
+    RowBox[{"-", "1"}], "+", 
+    RowBox[{"2", " ", "\[ImaginaryI]", " ", "M", " ", "\[Omega]"}]}]], " ", 
+  SuperscriptBox["A", "2"], " ", 
+  SuperscriptBox[
+   RowBox[{"(", 
+    FractionBox["M", 
+     RowBox[{"M", "+", 
+      SqrtBox[
+       RowBox[{
+        RowBox[{"-", 
+         SuperscriptBox["A", "2"]}], "+", 
+        SuperscriptBox["M", "2"]}]]}]], ")"}], 
+   RowBox[{"2", " ", "\[ImaginaryI]", " ", "M", " ", "\[Omega]"}]], " ", 
+  "\[Omega]"}]], "Output",
+ CellChangeTimes->{3.986959714734086*^9, 3.986959968014633*^9},
+ CellLabel->"Out[44]=",ExpressionUUID->"3116853e-8844-48dd-9fee-cee6a306285c"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"FullSimplify", "[", 
+  RowBox[{
+   RowBox[{"P1", "+", 
+    RowBox[{"(", 
+     RowBox[{"\[Omega]", " ", 
+      RowBox[{"A", "^", "2"}], 
+      RowBox[{"(", 
+       RowBox[{"I", "/", "2"}], ")"}], "P0"}], ")"}]}], ",", 
+   RowBox[{"Assumptions", "->", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"M", ",", "A", ",", 
+         RowBox[{"r", "[", "]"}], ",", "\[Omega]"}], " ", "}"}], "\[Element]",
+        "Reals"}], ",", 
+      RowBox[{"M", ">", "0"}], ",", 
+      RowBox[{"A", ">", "0"}], ",", 
+      RowBox[{
+       RowBox[{"r", "[", "]"}], ">", "0"}], ",", 
+      RowBox[{"A", "<", "1"}]}], "}"}]}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.986959721938402*^9, 3.9869597711259613`*^9}, {
+  3.986959835966125*^9, 3.986959847211918*^9}, {3.986959878413906*^9, 
+  3.986959895450441*^9}},
+ CellLabel->"In[46]:=",ExpressionUUID->"ca770d43-55d1-40aa-b1d3-252103d1af19"],
+
+Cell[BoxData["0"], "Output",
+ CellChangeTimes->{{3.986959738644532*^9, 3.986959771988167*^9}, {
+   3.986959833039846*^9, 3.986959847593104*^9}, {3.986959881475544*^9, 
+   3.986959896362235*^9}, 3.986959974496228*^9},
+ CellLabel->"Out[46]=",ExpressionUUID->"dedab538-d5bd-4617-b34d-8bfc2b89a339"]
+}, Open  ]]
+}, Open  ]]
+},
+Evaluator->"New Kernel",
+WindowSize->{808, 591},
+WindowMargins->{{4, Automatic}, {Automatic, 4}},
+FrontEndVersion->"14.3 for Mac OS X ARM (64-bit) (July 8, 2025)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"6e23cb92-6fec-48a3-9eb3-fe8e26e27d35"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[576, 22, 217, 4, 29, "Input",ExpressionUUID->"27d972bd-61f8-4277-860f-64e194307368"],
+Cell[796, 28, 176, 2, 33, "Output",ExpressionUUID->"4142f19b-9452-4d02-9caa-81f189ebe26c"]
+}, Open  ]],
+Cell[987, 33, 152, 3, 29, "Input",ExpressionUUID->"d4297833-a469-42ec-a329-08259e1c6052"],
+Cell[CellGroupData[{
+Cell[1164, 40, 217, 4, 29, "Input",ExpressionUUID->"46552953-b334-49d5-8006-7e1bf60c140a"],
+Cell[1384, 46, 289, 4, 33, "Output",ExpressionUUID->"666725a8-5209-452e-a65f-b3d2b3fab4ec"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1710, 55, 1814, 64, 54, "Input",ExpressionUUID->"0602d795-dcd0-4af7-b01d-253cbac38c12"],
+Cell[3527, 121, 474, 13, 53, "Output",ExpressionUUID->"b75b528c-04fe-480d-a1da-44689bc90199"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4038, 139, 1990, 67, 54, "Input",ExpressionUUID->"3fcb3873-d3a4-41ce-b911-1df1652d01c6"],
+Cell[6031, 208, 177, 2, 33, "Output",ExpressionUUID->"40026035-55c7-478e-ae2c-c6a1a3a7bfcf"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[6245, 215, 1886, 65, 54, "Input",ExpressionUUID->"80d7baf6-83b6-4bcb-a941-8608eef0602e"],
+Cell[8134, 282, 151, 2, 33, "Output",ExpressionUUID->"07f6eb14-6ee4-4059-9c50-04615897986e"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[8322, 289, 1989, 67, 54, "Input",ExpressionUUID->"1c0f1840-bb64-4aff-b9ed-b2d5c9c5974d"],
+Cell[10314, 358, 224, 4, 33, "Output",ExpressionUUID->"8735050c-a1aa-468b-8a37-c6feb9d662f9"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[10575, 367, 2229, 71, 54, "Input",ExpressionUUID->"7ef4a77e-7eea-4f9a-8c62-8e1325f92173"],
+Cell[12807, 440, 175, 2, 33, "Output",ExpressionUUID->"be188dfc-63a5-4f74-8961-f89aa6364440"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[13019, 447, 2460, 79, 84, "Input",ExpressionUUID->"94ffb5c0-0343-4fa9-83d9-37558c3d8152"],
+Cell[15482, 528, 553, 15, 44, "Output",ExpressionUUID->"39a43621-a1db-4282-b023-f02d700f91b4"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[16072, 548, 2574, 81, 84, "Input",ExpressionUUID->"645f4979-a489-4a2b-b2fa-9ef2b4d6df7a"],
+Cell[18649, 631, 173, 2, 33, "Output",ExpressionUUID->"1664cb3b-e85c-4eba-87ff-42660d798df4"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[18859, 638, 157, 3, 53, "Subsection",ExpressionUUID->"3b4bae80-32a6-4a2e-8e7a-be20519b95e5"],
+Cell[CellGroupData[{
+Cell[19041, 645, 1858, 64, 54, "Input",ExpressionUUID->"cb481366-9e20-4bcb-bfd0-a86e242e39b0"],
+Cell[20902, 711, 551, 16, 53, "Output",ExpressionUUID->"18081d35-b35a-432e-87c0-ccd4bdc52d7b"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[21490, 732, 2285, 80, 54, "Input",ExpressionUUID->"546948d2-f15c-4da8-9a67-9e28e0e7b6a7"],
+Cell[23778, 814, 708, 20, 53, "Output",ExpressionUUID->"3116853e-8844-48dd-9fee-cee6a306285c"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[24523, 839, 928, 25, 49, "Input",ExpressionUUID->"ca770d43-55d1-40aa-b1d3-252103d1af19"],
+Cell[25454, 866, 295, 4, 33, "Output",ExpressionUUID->"dedab538-d5bd-4617-b34d-8bfc2b89a339"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
