@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       154,          7]
-NotebookDataLength[     28947,        940]
-NotebookOptionsPosition[     25777,        874]
-NotebookOutlinePosition[     26192,        891]
-CellTagsIndexPosition[     26149,        888]
+NotebookDataLength[     30425,        984]
+NotebookOptionsPosition[     27028,        914]
+NotebookOutlinePosition[     27447,        931]
+CellTagsIndexPosition[     27404,        928]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -869,12 +869,52 @@ Cell[BoxData["0"], "Output",
    3.986959833039846*^9, 3.986959847593104*^9}, {3.986959881475544*^9, 
    3.986959896362235*^9}, 3.986959974496228*^9},
  CellLabel->"Out[46]=",ExpressionUUID->"dedab538-d5bd-4617-b34d-8bfc2b89a339"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Series", "[", 
+  RowBox[{
+   RowBox[{"Exp", "[", 
+    RowBox[{"I", " ", "m", " ", 
+     RowBox[{"A", "/", "r"}]}], "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"r", ",", "Infinity", ",", "2"}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.986964100603578*^9, 3.986964131948865*^9}},
+ CellLabel->"In[47]:=",ExpressionUUID->"5b2940ab-231f-4bbc-811e-0292f819396c"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"1", "+", 
+   FractionBox[
+    RowBox[{"\[ImaginaryI]", " ", "A", " ", "m"}], "r"], "-", 
+   FractionBox[
+    RowBox[{
+     SuperscriptBox["A", "2"], " ", 
+     SuperscriptBox["m", "2"]}], 
+    RowBox[{"2", " ", 
+     SuperscriptBox["r", "2"]}]], "+", 
+   InterpretationBox[
+    SuperscriptBox[
+     RowBox[{"O", "[", 
+      FractionBox["1", "r"], "]"}], "3"],
+    SeriesData[$CellContext`r, 
+     DirectedInfinity[1], {}, 0, 3, 1],
+    Editable->False]}],
+  SeriesData[$CellContext`r, 
+   DirectedInfinity[1], {
+   1, Complex[0, 1] $CellContext`A $CellContext`m, 
+    Rational[-1, 2] $CellContext`A^2 $CellContext`m^2}, 0, 3, 1],
+  Editable->False]], "Output",
+ CellChangeTimes->{3.986964132619536*^9},
+ CellLabel->"Out[47]=",ExpressionUUID->"4d2d9dfa-a12d-4d13-884a-33d7c86f92ee"]
 }, Open  ]]
 }, Open  ]]
 },
 Evaluator->"New Kernel",
-WindowSize->{808, 591},
-WindowMargins->{{4, Automatic}, {Automatic, 4}},
+WindowSize->{1439, 921},
+WindowMargins->{{Automatic, 0}, {Automatic, -237}},
 FrontEndVersion->"14.3 for Mac OS X ARM (64-bit) (July 8, 2025)",
 StyleDefinitions->"Default.nb",
 ExpressionUUID->"6e23cb92-6fec-48a3-9eb3-fe8e26e27d35"
@@ -920,11 +960,11 @@ Cell[10575, 367, 2229, 71, 54, "Input",ExpressionUUID->"7ef4a77e-7eea-4f9a-8c62-
 Cell[12807, 440, 175, 2, 33, "Output",ExpressionUUID->"be188dfc-63a5-4f74-8961-f89aa6364440"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[13019, 447, 2460, 79, 84, "Input",ExpressionUUID->"94ffb5c0-0343-4fa9-83d9-37558c3d8152"],
+Cell[13019, 447, 2460, 79, 54, "Input",ExpressionUUID->"94ffb5c0-0343-4fa9-83d9-37558c3d8152"],
 Cell[15482, 528, 553, 15, 44, "Output",ExpressionUUID->"39a43621-a1db-4282-b023-f02d700f91b4"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[16072, 548, 2574, 81, 84, "Input",ExpressionUUID->"645f4979-a489-4a2b-b2fa-9ef2b4d6df7a"],
+Cell[16072, 548, 2574, 81, 54, "Input",ExpressionUUID->"645f4979-a489-4a2b-b2fa-9ef2b4d6df7a"],
 Cell[18649, 631, 173, 2, 33, "Output",ExpressionUUID->"1664cb3b-e85c-4eba-87ff-42660d798df4"]
 }, Open  ]],
 Cell[CellGroupData[{
@@ -938,8 +978,12 @@ Cell[21490, 732, 2285, 80, 54, "Input",ExpressionUUID->"546948d2-f15c-4da8-9a67-
 Cell[23778, 814, 708, 20, 53, "Output",ExpressionUUID->"3116853e-8844-48dd-9fee-cee6a306285c"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[24523, 839, 928, 25, 49, "Input",ExpressionUUID->"ca770d43-55d1-40aa-b1d3-252103d1af19"],
+Cell[24523, 839, 928, 25, 29, "Input",ExpressionUUID->"ca770d43-55d1-40aa-b1d3-252103d1af19"],
 Cell[25454, 866, 295, 4, 33, "Output",ExpressionUUID->"dedab538-d5bd-4617-b34d-8bfc2b89a339"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[25786, 875, 385, 9, 29, "Input",ExpressionUUID->"5b2940ab-231f-4bbc-811e-0292f819396c"],
+Cell[26174, 886, 826, 24, 68, "Output",ExpressionUUID->"4d2d9dfa-a12d-4d13-884a-33d7c86f92ee"]
 }, Open  ]]
 }, Open  ]]
 }
