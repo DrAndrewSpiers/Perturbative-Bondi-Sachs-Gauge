@@ -1,10 +1,10 @@
 Author: Andrew Spiers (DrAndrewSpiers)
-email: andrew.spiers@nottingham.ac.uk (alt email: andrewsp33@hotmail.com)
+email: andrew.spiers@ucd.ie (alt email: andrewsp33@hotmail.com)
 https://github.com/DrAndrewSpiers
-Department of Mathematical Sciences, University of Nottingham.
-10/05/2023
+Department of Mathematical Sciences, University College Dublin.
+26/06/2026
 
-Notebook created in Mathematica 13.0
+Notebook created in Mathematica 14.3
 
 This notebook accompanies the paper "The Bondi--Sachs Gauge, BMS Frame, and Memory in Black Hole Perturbation Theory" by Andrew Spiers, Jordan Moxon and Adam Pound
 
